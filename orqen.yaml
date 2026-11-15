@@ -1,0 +1,18 @@
+agent:
+    - claude-code
+    - codex
+    - opencode
+scope: project
+extends:
+  - core
+  - go
+  - workflow
+references:
+    - repo: https://github.com/huskycodes/releasesync
+      name: releasesync
+    - repo: https://github.com/aaronflorey/bin
+      name: bin
+    - repo: https://github.com/auron-labs/mygo-framework
+      name: mygo-framework
+    - repo: https://github.com/auron-labs/mygo
+      name: mygo
