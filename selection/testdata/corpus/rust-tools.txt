@@ -1,0 +1,226 @@
+# Command-line tools from Rust projects: one archive per compiler target.
+
+== BurntSushi/ripgrep kind=tool topics=cli,rust
+ripgrep-14.1.0-x86_64-pc-windows-msvc.zip 2831360
+ripgrep-14.1.0-i686-pc-windows-msvc.zip 2621440
+ripgrep-14.1.0-aarch64-pc-windows-msvc.zip 2621440
+ripgrep-14.1.0-x86_64-pc-windows-gnu.zip 3145728
+ripgrep-14.1.0-x86_64-unknown-linux-musl.tar.gz 2097152
+ripgrep-14.1.0-aarch64-unknown-linux-gnu.tar.gz 2097152
+ripgrep-14.1.0-armv7-unknown-linux-gnueabihf.tar.gz 1992294
+ripgrep-14.1.0-x86_64-apple-darwin.tar.gz 1992294
+ripgrep-14.1.0-aarch64-apple-darwin.tar.gz 1887436
+ripgrep_14.1.0-1_amd64.deb 1887436
+-> x64: ripgrep-14.1.0-x86_64-pc-windows-msvc.zip
+-> arm64: ripgrep-14.1.0-aarch64-pc-windows-msvc.zip
+
+== sharkdp/fd kind=tool topics=cli,rust,find
+fd-v10.1.0-x86_64-pc-windows-msvc.zip 1048576
+fd-v10.1.0-i686-pc-windows-msvc.zip 1000000
+fd-v10.1.0-aarch64-pc-windows-msvc.zip 1000000
+fd-v10.1.0-x86_64-unknown-linux-gnu.tar.gz 1000000
+fd-v10.1.0-x86_64-unknown-linux-musl.tar.gz 1000000
+fd-v10.1.0-aarch64-apple-darwin.tar.gz 1000000
+fd_10.1.0_amd64.deb 1000000
+fd-musl_10.1.0_amd64.deb 1000000
+-> x64: fd-v10.1.0-x86_64-pc-windows-msvc.zip
+-> arm64: fd-v10.1.0-aarch64-pc-windows-msvc.zip
+
+== sharkdp/bat kind=tool topics=cli,rust,syntax-highlighting
+bat-v0.24.0-x86_64-pc-windows-msvc.zip 3145728
+bat-v0.24.0-i686-pc-windows-msvc.zip 3000000
+bat-v0.24.0-x86_64-pc-windows-gnu.zip 3300000
+bat-v0.24.0-i686-pc-windows-gnu.zip 3200000
+bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz 3000000
+bat-v0.24.0-aarch64-unknown-linux-gnu.tar.gz 3000000
+bat-v0.24.0-x86_64-apple-darwin.tar.gz 3000000
+bat_0.24.0_amd64.deb 3000000
+-> all: bat-v0.24.0-x86_64-pc-windows-msvc.zip
+# No arm64 build: the x64 one runs under emulation, and msvc beats gnu.
+
+== eza-community/eza kind=tool topics=cli,rust,ls
+eza.exe_x86_64-pc-windows-gnu.zip 2097152
+eza_x86_64-pc-windows-gnu.zip 2097152
+eza_x86_64-unknown-linux-gnu.tar.gz 2097152
+eza_x86_64-unknown-linux-gnu_no_libgit.tar.gz 2000000
+eza_x86_64-unknown-linux-musl.tar.gz 2097152
+eza_aarch64-unknown-linux-gnu.tar.gz 2097152
+eza_arm-unknown-linux-gnueabihf.tar.gz 2000000
+completions-0.18.14.tar.gz 20480
+man-0.18.14.tar.gz 20480
+-> all: eza_x86_64-pc-windows-gnu.zip
+# The two archives differ only by the .exe in the name: the shorter name wins.
+
+== dandavison/delta kind=tool topics=cli,rust,git,diff
+delta-0.17.0-x86_64-pc-windows-msvc.zip 4194304
+delta-0.17.0-i686-pc-windows-msvc.zip 4000000
+delta-0.17.0-aarch64-pc-windows-msvc.zip 4000000
+delta-0.17.0-x86_64-unknown-linux-gnu.tar.gz 4000000
+delta-0.17.0-aarch64-apple-darwin.tar.gz 4000000
+git-delta_0.17.0_amd64.deb 4000000
+git-delta-musl_0.17.0_amd64.deb 4000000
+-> x64: delta-0.17.0-x86_64-pc-windows-msvc.zip
+-> arm64: delta-0.17.0-aarch64-pc-windows-msvc.zip
+
+== sharkdp/hyperfine kind=tool topics=cli,rust,benchmark
+hyperfine-v1.18.0-x86_64-pc-windows-msvc.zip 1048576
+hyperfine-v1.18.0-i686-pc-windows-msvc.zip 1000000
+hyperfine-v1.18.0-x86_64-unknown-linux-musl.tar.gz 1000000
+hyperfine-v1.18.0-aarch64-unknown-linux-gnu.tar.gz 1000000
+hyperfine-v1.18.0-x86_64-apple-darwin.tar.gz 1000000
+hyperfine_1.18.0_amd64.deb 1000000
+-> all: hyperfine-v1.18.0-x86_64-pc-windows-msvc.zip
+
+== bootandy/dust kind=tool topics=cli,rust,du
+dust-v1.0.0-x86_64-pc-windows-msvc.zip 1048576
+dust-v1.0.0-i686-pc-windows-msvc.zip 1000000
+dust-v1.0.0-x86_64-unknown-linux-gnu.tar.gz 1000000
+dust-v1.0.0-x86_64-unknown-linux-musl.tar.gz 1000000
+dust-v1.0.0-aarch64-unknown-linux-gnu.tar.gz 1000000
+du-dust_1.0.0-1_amd64.deb 1000000
+-> all: dust-v1.0.0-x86_64-pc-windows-msvc.zip
+
+== ajeetdsouza/zoxide kind=tool topics=cli,rust,cd
+zoxide-0.9.4-x86_64-pc-windows-msvc.zip 1048576
+zoxide-0.9.4-aarch64-pc-windows-msvc.zip 1000000
+zoxide-0.9.4-x86_64-unknown-linux-musl.tar.gz 1000000
+zoxide-0.9.4-aarch64-apple-darwin.tar.gz 1000000
+zoxide_0.9.4-1_amd64.deb 1000000
+-> x64: zoxide-0.9.4-x86_64-pc-windows-msvc.zip
+-> arm64: zoxide-0.9.4-aarch64-pc-windows-msvc.zip
+
+== starship/starship kind=app topics=cli,rust,prompt
+starship-x86_64-pc-windows-msvc.zip 6291456
+starship-i686-pc-windows-msvc.zip 6000000
+starship-aarch64-pc-windows-msvc.zip 6000000
+starship-x86_64-pc-windows-msvc.msi 7340032
+starship-i686-pc-windows-msvc.msi 7000000
+starship-aarch64-pc-windows-msvc.msi 7000000
+starship-x86_64-unknown-linux-gnu.tar.gz 6000000
+starship-x86_64-unknown-linux-musl.tar.gz 6000000
+starship-aarch64-apple-darwin.tar.gz 6000000
+starship-x86_64-pc-windows-msvc.zip.sha256 64
+starship-x86_64-pc-windows-msvc.msi.sha256 64
+# Published with an MSI, so the kind is guessed as an app even though the topics
+# say command-line tool; the user can say "Install as: Command-line tool".
+-> x64/installers: starship-x86_64-pc-windows-msvc.msi
+-> arm64/installers: starship-aarch64-pc-windows-msvc.msi
+-> x64/portable: starship-x86_64-pc-windows-msvc.zip
+-> arm64/portable: starship-aarch64-pc-windows-msvc.zip
+
+== casey/just kind=tool topics=cli,rust,make
+just-1.27.0-x86_64-pc-windows-msvc.zip 2097152
+just-1.27.0-aarch64-pc-windows-msvc.zip 2000000
+just-1.27.0-x86_64-unknown-linux-musl.tar.gz 2000000
+just-1.27.0-aarch64-unknown-linux-musl.tar.gz 2000000
+just-1.27.0-armv7-unknown-linux-musleabihf.tar.gz 2000000
+just-1.27.0-x86_64-apple-darwin.tar.gz 2000000
+SHA256SUMS 800
+-> x64: just-1.27.0-x86_64-pc-windows-msvc.zip
+-> arm64: just-1.27.0-aarch64-pc-windows-msvc.zip
+
+== ClementTsang/bottom kind=app topics=cli,rust,tui
+bottom_x86_64-pc-windows-msvc.zip 3145728
+bottom_x86_64-pc-windows-msvc-2-17.zip 3100000
+bottom_i686-pc-windows-msvc.zip 3000000
+bottom_x86_64-pc-windows-gnu.zip 3200000
+bottom_x86_64_installer.msi 3500000
+bottom_x86_64-unknown-linux-gnu.tar.gz 3000000
+bottom_aarch64-apple-darwin.tar.gz 3000000
+bottom_0.9.7_amd64.deb 3000000
+# Published with an MSI, so guessed as an app. As a tool the answer is the zip.
+-> installers: bottom_x86_64_installer.msi
+# An app's score has no say on msvc against gnu, so the shorter name decides.
+-> portable: bottom_x86_64-pc-windows-gnu.zip
+
+== XAMPPRocky/tokei kind=tool topics=cli,rust,loc
+tokei-x86_64-pc-windows-msvc.exe 5242880
+tokei-i686-pc-windows-msvc.exe 5000000
+tokei-x86_64-unknown-linux-gnu.tar.gz 5000000
+tokei-x86_64-apple-darwin.tar.gz 5000000
+tokei-aarch64-unknown-linux-gnu.tar.gz 5000000
+-> all: tokei-x86_64-pc-windows-msvc.exe
+
+== chmln/sd kind=tool topics=cli,rust,sed
+sd-v1.0.0-x86_64-pc-windows-gnu.zip 1000000
+sd-v1.0.0-x86_64-unknown-linux-gnu.tar.gz 1000000
+sd-v1.0.0-x86_64-unknown-linux-musl.tar.gz 1000000
+sd-v1.0.0-aarch64-unknown-linux-gnu.tar.gz 1000000
+sd-v1.0.0-x86_64-apple-darwin.tar.gz 1000000
+sd-v1.0.0-aarch64-apple-darwin.tar.gz 1000000
+-> all: sd-v1.0.0-x86_64-pc-windows-gnu.zip
+
+== extrawurst/gitui kind=app topics=cli,rust,tui,git
+gitui-win.msi 8388608
+gitui-win.tar.gz 7000000
+gitui-linux-x86_64.tar.gz 7000000
+gitui-linux-aarch64.tar.gz 7000000
+gitui-mac.tar.gz 7000000
+gitui-mac-x86.tar.gz 7000000
+# Published with an MSI, so guessed as an app.
+-> installers: gitui-win.msi
+-> portable: gitui-win.tar.gz
+
+== Wilfred/difftastic kind=tool topics=cli,rust,diff
+difft-x86_64-pc-windows-msvc.zip 20971520
+difft-aarch64-pc-windows-msvc.zip 20000000
+difft-x86_64-unknown-linux-gnu.tar.gz 20000000
+difft-x86_64-unknown-linux-musl.tar.gz 20000000
+difft-aarch64-apple-darwin.tar.gz 20000000
+-> x64: difft-x86_64-pc-windows-msvc.zip
+-> arm64: difft-aarch64-pc-windows-msvc.zip
+
+== lsd-rs/lsd kind=tool topics=cli,rust,ls
+lsd-v1.1.5-x86_64-pc-windows-msvc.zip 2097152
+lsd-v1.1.5-aarch64-pc-windows-msvc.zip 2000000
+lsd-v1.1.5-i686-pc-windows-msvc.zip 2000000
+lsd-v1.1.5-x86_64-pc-windows-msvc.zip.sha256 100
+lsd-v1.1.5-x86_64-unknown-linux-gnu.tar.gz 2000000
+lsd_1.1.5_amd64.deb 2000000
+-> x64: lsd-v1.1.5-x86_64-pc-windows-msvc.zip
+-> arm64: lsd-v1.1.5-aarch64-pc-windows-msvc.zip
+
+== Schniz/fnm kind=tool topics=cli,rust,node
+fnm-windows.zip 3145728
+fnm-linux.zip 3000000
+fnm-macos.zip 3000000
+fnm-arm64.zip 3000000
+fnm-arm32.zip 3000000
+-> all: fnm-windows.zip
+
+== astral-sh/uv kind=tool topics=cli,rust,python
+uv-x86_64-pc-windows-msvc.zip 15728640
+uv-aarch64-pc-windows-msvc.zip 15000000
+uv-i686-pc-windows-msvc.zip 15000000
+uv-x86_64-unknown-linux-gnu.tar.gz 15000000
+uv-x86_64-unknown-linux-musl.tar.gz 15000000
+uv-aarch64-apple-darwin.tar.gz 15000000
+uv-installer.ps1 10240
+uv-installer.sh 10240
+sha256.sum 800
+-> x64: uv-x86_64-pc-windows-msvc.zip
+-> arm64: uv-aarch64-pc-windows-msvc.zip
+
+== astral-sh/ruff kind=tool topics=cli,rust,python,linter
+ruff-x86_64-pc-windows-msvc.zip 12582912
+ruff-aarch64-pc-windows-msvc.zip 12000000
+ruff-i686-pc-windows-msvc.zip 12000000
+ruff-x86_64-unknown-linux-gnu.tar.gz 12000000
+ruff-aarch64-apple-darwin.tar.gz 12000000
+ruff-x86_64-pc-windows-msvc.zip.sha256 100
+-> x64: ruff-x86_64-pc-windows-msvc.zip
+-> arm64: ruff-aarch64-pc-windows-msvc.zip
+
+== nushell/nushell kind=app topics=cli,rust,shell
+nu-0.94.0-x86_64-pc-windows-msvc.zip 31457280
+nu-0.94.0-x86_64-pc-windows-msvc.msi 33554432
+nu-0.94.0-aarch64-pc-windows-msvc.zip 30000000
+nu-0.94.0-aarch64-pc-windows-msvc.msi 32000000
+nu-0.94.0-x86_64-unknown-linux-gnu.tar.gz 30000000
+nu-0.94.0-x86_64-unknown-linux-musl.tar.gz 30000000
+nu-0.94.0-aarch64-apple-darwin.tar.gz 30000000
+# Published with an MSI, so guessed as an app.
+-> x64/installers: nu-0.94.0-x86_64-pc-windows-msvc.msi
+-> arm64/installers: nu-0.94.0-aarch64-pc-windows-msvc.msi
+-> x64/portable: nu-0.94.0-x86_64-pc-windows-msvc.zip
+-> arm64/portable: nu-0.94.0-aarch64-pc-windows-msvc.zip

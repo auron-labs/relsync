@@ -1,0 +1,194 @@
+# Electron apps: an installer, often a portable build, and every other system's packages.
+
+== obsidianmd/obsidian-releases kind=app topics=electron
+Obsidian.1.5.12.exe 94371840
+obsidian-1.5.12.tar.gz 107374182
+obsidian-1.5.12.asar.gz 12582912
+Obsidian-1.5.12.AppImage 110100480
+Obsidian-1.5.12-arm64.AppImage 108003328
+Obsidian-1.5.12.dmg 118489088
+obsidian_1.5.12_amd64.deb 85983232
+obsidian_1.5.12_arm64.snap 98566144
+-> all: Obsidian.1.5.12.exe
+# A tarball that names no system is eligible, but an .exe is known to be for
+# Windows, which outweighs the portable preference.
+
+== VSCodium/vscodium kind=app topics=electron,editor
+VSCodium-x64-1.89.1.24130.msi 100663296
+VSCodium-arm64-1.89.1.24130.msi 99614720
+VSCodiumSetup-x64-1.89.1.24130.exe 96468992
+VSCodiumSetup-arm64-1.89.1.24130.exe 95420416
+VSCodiumUserSetup-x64-1.89.1.24130.exe 96468992
+VSCodiumUserSetup-arm64-1.89.1.24130.exe 95420416
+VSCodium-win32-x64-1.89.1.24130.zip 117440512
+VSCodium-win32-arm64-1.89.1.24130.zip 115343360
+VSCodium-darwin-x64-1.89.1.24130.zip 120586240
+vscodium_1.89.1.24130_amd64.deb 99614720
+vscodium-1.89.1.24130-el8.x86_64.rpm 100663296
+VSCodium-linux-x64-1.89.1.24130.tar.gz 111149056
+-> x64/installers: VSCodium-x64-1.89.1.24130.msi
+-> arm64/installers: VSCodium-arm64-1.89.1.24130.msi
+-> x64/portable: VSCodium-win32-x64-1.89.1.24130.zip
+-> arm64/portable: VSCodium-win32-arm64-1.89.1.24130.zip
+
+== laurent22/joplin kind=app topics=electron,notes
+Joplin-Setup-2.14.19.exe 83886080
+Joplin-Portable-2.14.19.exe 83886080
+Joplin-2.14.19.AppImage 102760448
+Joplin-2.14.19.dmg 115343360
+Joplin-2.14.19-arm64.dmg 112197632
+latest.yml 396
+latest-linux.yml 410
+latest-mac.yml 480
+Joplin-Setup-2.14.19.exe.blockmap 92160
+-> installers: Joplin-Setup-2.14.19.exe
+-> portable: Joplin-Portable-2.14.19.exe
+
+== marktext/marktext kind=app topics=electron,markdown
+marktext-setup.exe 76546048
+marktext-win-x64-0.17.0-rc.2.zip 94371840
+marktext-x86_64.AppImage 109051904
+marktext-0.17.0-rc.2-x64.dmg 98566144
+marktext-0.17.0-rc.2-x64.tar.gz 101711872
+marktext-amd64.deb 85983232
+marktext-0.17.0-rc.2.x86_64.rpm 86507520
+latest.yml 340
+-> x64/installers: marktext-setup.exe
+-> x64/portable: marktext-win-x64-0.17.0-rc.2.zip
+# Only an x64 zip exists: on arm64 it runs under emulation, so the setup program
+# that names no architecture ranks ahead of it.
+-> arm64: marktext-setup.exe
+
+== Zettlr/Zettlr kind=app topics=electron,markdown
+Zettlr-3.0.0-x64.exe 88080384
+Zettlr-3.0.0-arm64.exe 86507520
+Zettlr-3.0.0-x64.dmg 117440512
+Zettlr-3.0.0-arm64.dmg 114294784
+Zettlr-3.0.0-x86_64.AppImage 106954752
+Zettlr-3.0.0-arm64.AppImage 105906176
+Zettlr-3.0.0-amd64.deb 91226112
+Zettlr-3.0.0-arm64.deb 89128960
+Zettlr-3.0.0-x86_64.rpm 91226112
+checksums.txt 1210
+-> x64: Zettlr-3.0.0-x64.exe
+-> arm64: Zettlr-3.0.0-arm64.exe
+
+== logseq/logseq kind=app topics=electron
+Logseq-win-x64-0.10.9-installer.exe 101711872
+Logseq-win-x64-0.10.9.zip 130023424
+Logseq-linux-x64-0.10.9.AppImage 120586240
+Logseq-darwin-x64-0.10.9.dmg 117440512
+Logseq-darwin-arm64-0.10.9.dmg 114294784
+Logseq-android-0.10.9.apk 62914560
+-> installers: Logseq-win-x64-0.10.9-installer.exe
+-> portable: Logseq-win-x64-0.10.9.zip
+# The only Windows build is x64, which runs on arm64 under emulation.
+
+== Eugeny/tabby kind=app topics=electron,terminal
+tabby-1.0.215-setup-x64.exe 87031808
+tabby-1.0.215-setup-arm64.exe 85983232
+tabby-1.0.215-portable-x64.zip 108003328
+tabby-1.0.215-portable-arm64.zip 106954752
+tabby-1.0.215-macos-x86_64.dmg 108003328
+tabby-1.0.215-linux-x64.AppImage 111149056
+tabby-1.0.215-linux-x64.deb 91226112
+tabby-1.0.215-linux-x64.rpm 91226112
+-> x64: tabby-1.0.215-setup-x64.exe
+-> arm64: tabby-1.0.215-setup-arm64.exe
+# The archive names no system, so the setup program, known to be for Windows,
+# ties it on score and wins on stated facts even when portable is preferred.
+
+== Kong/insomnia kind=app topics=electron,api
+Insomnia.Core-9.1.0.exe 150994944
+Insomnia.Core-9.1.0.dmg 152043520
+Insomnia.Core-9.1.0.AppImage 156237824
+Insomnia.Core-9.1.0.deb 118489088
+Insomnia.Core-9.1.0.rpm 118489088
+Insomnia.Core-9.1.0.zip 148897792
+Insomnia.Core-9.1.0.tar.gz 140509184
+-> all: Insomnia.Core-9.1.0.exe
+
+== desktop/desktop kind=app topics=electron,git
+GitHubDesktopSetup-x64.exe 112197632
+GitHubDesktopSetup-arm64.exe 110100480
+GitHubDesktopSetup-x64.msi 113246208
+GitHubDesktopSetup-arm64.msi 111149056
+GitHubDesktop-x64-3.4.0-full.nupkg 111149056
+GitHubDesktop-x64-3.4.0-delta.nupkg 5242880
+GitHubDesktop-arm64-3.4.0-full.nupkg 109051904
+RELEASES-x64 512
+RELEASES-arm64 512
+GitHubDesktop-3.4.0-x64.dmg 128974848
+GitHubDesktop-linux-amd64-3.4.0-linux1.deb 98566144
+-> x64/installers: GitHubDesktopSetup-x64.msi
+-> arm64/installers: GitHubDesktopSetup-arm64.msi
+-> x64/portable: GitHubDesktopSetup-x64.exe
+-> arm64/portable: GitHubDesktopSetup-arm64.exe
+# The squirrel feed, delta and full packages are never candidates.
+
+== balena-io/etcher kind=app topics=electron
+balenaEtcher-Setup-1.19.21.exe 188743680
+balenaEtcher-Portable-1.19.21.exe 188743680
+balenaEtcher-1.19.21.dmg 193986560
+balenaEtcher-1.19.21-arm64.dmg 190840832
+balenaEtcher-1.19.21.x86_64.AppImage 201326592
+balena-etcher_1.19.21_amd64.deb 168296448
+balena-etcher-1.19.21.x86_64.rpm 168296448
+-> installers: balenaEtcher-Setup-1.19.21.exe
+-> portable: balenaEtcher-Portable-1.19.21.exe
+
+== standardnotes/app kind=app topics=electron
+standard-notes-3.195.13-win-x64.exe 94371840
+standard-notes-3.195.13-win-ia32.exe 90177536
+standard-notes-3.195.13-win-arm64.exe 91226112
+standard-notes-3.195.13-mac-x64.dmg 106954752
+standard-notes-3.195.13-linux-x86_64.AppImage 117440512
+standard-notes-3.195.13-linux-amd64.deb 98566144
+-> x64: standard-notes-3.195.13-win-x64.exe
+-> arm64: standard-notes-3.195.13-win-arm64.exe
+
+== mattermost/desktop kind=app topics=electron
+mattermost-desktop-5.8.0-win-x64.msi 117440512
+mattermost-desktop-5.8.0-win-arm64.msi 115343360
+mattermost-desktop-5.8.0-win-x86.msi 111149056
+mattermost-desktop-setup-5.8.0-win.exe 122683392
+mattermost-desktop-5.8.0-win-x64.zip 129024000
+mattermost-desktop-5.8.0-win-arm64.zip 127926272
+mattermost-desktop-5.8.0-win-x86.zip 123731968
+mattermost-desktop-5.8.0-mac-x64.dmg 138412032
+mattermost-desktop-5.8.0-linux-x64.tar.gz 133169152
+mattermost-desktop-5.8.0-linux-amd64.deb 100663296
+-> x64/installers: mattermost-desktop-5.8.0-win-x64.msi
+-> arm64/installers: mattermost-desktop-5.8.0-win-arm64.msi
+-> x64/portable: mattermost-desktop-5.8.0-win-x64.zip
+-> arm64/portable: mattermost-desktop-5.8.0-win-arm64.zip
+
+== beekeeper-studio/beekeeper-studio kind=app topics=electron,sql
+Beekeeper-Studio-Setup-4.3.3.exe 105906176
+Beekeeper-Studio-Setup-4.3.3-arm64.exe 104857600
+Beekeeper-Studio-4.3.3-portable.exe 104857600
+Beekeeper-Studio-4.3.3.dmg 125829120
+Beekeeper-Studio-4.3.3.AppImage 119537664
+beekeeper-studio_4.3.3_amd64.deb 99614720
+beekeeper-studio-4.3.3.x86_64.rpm 99614720
+beekeeper-studio_4.3.3_amd64.snap 111149056
+latest.yml 380
+-> x64/installers: Beekeeper-Studio-Setup-4.3.3.exe
+-> arm64/installers: Beekeeper-Studio-Setup-4.3.3-arm64.exe
+-> portable: Beekeeper-Studio-4.3.3-portable.exe
+
+== lencx/ChatGPT kind=app topics=tauri,desktop
+ChatGPT_1.1.0_x64-setup.exe 8388608
+ChatGPT_1.1.0_x64_en-US.msi 9437184
+ChatGPT_1.1.0_amd64.AppImage 78643200
+ChatGPT_1.1.0_amd64.deb 7340032
+ChatGPT_x64.dmg 10485760
+-> all: ChatGPT_1.1.0_x64-setup.exe
+
+== MikeKovarik/ferdium-app kind=app topics=electron
+Ferdium-win-Setup-6.7.4-x64.exe 120586240
+Ferdium-win-Setup-6.7.4-arm64.exe 118489088
+Ferdium-mac-6.7.4-x64.dmg 138412032
+Ferdium-linux-6.7.4-x86_64.AppImage 142606336
+-> x64: Ferdium-win-Setup-6.7.4-x64.exe
+-> arm64: Ferdium-win-Setup-6.7.4-arm64.exe

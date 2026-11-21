@@ -1,0 +1,216 @@
+# Releases for other systems, which must yield nothing, and builds that need care.
+
+== AppImage/appimagetool kind=app topics=appimage
+appimagetool-x86_64.AppImage 30000000
+appimagetool-aarch64.AppImage 30000000
+appimagetool-i686.AppImage 30000000
+appimagetool-armhf.AppImage 30000000
+appimagetool-x86_64.AppImage.zsync 1000
+-> all: none
+
+== aristocratos/btop kind=tool topics=cli,monitor
+btop-x86_64-linux-musl.tbz 2000000
+btop-aarch64-linux-musl.tbz 2000000
+btop-i686-linux-musl.tbz 2000000
+btop-x86_64-linux-musl.tar.gz 2000000
+btop-aarch64-linux-musl.tar.gz 2000000
+btop-armv7-linux-musleabi.tar.gz 2000000
+-> all: none
+
+== TheAssassin/AppImageLauncher kind=app topics=appimage
+appimagelauncher-lite-2.2.0-travis995-0f91801-x86_64.AppImage 20000000
+appimagelauncher_2.2.0-travis995.0f91801.bionic_amd64.deb 5000000
+appimagelauncher-2.2.0-travis995.0f91801.x86_64.rpm 5000000
+appimagelauncher_2.2.0-travis995.0f91801.focal_arm64.deb 5000000
+-> all: none
+
+== exelban/stats kind=app topics=macos,menubar
+Stats.dmg 5000000
+-> all: none
+
+== koekeishiya/skhd kind=tool topics=cli,macos
+skhd-v0.3.9-arm64.tar.gz-darwin 1000000
+skhd-v0.3.9-x86_64.tar.gz-darwin 1000000
+skhd-v0.3.9-darwin-arm64.tar.gz 1000000
+skhd-v0.3.9-darwin-x86_64.tar.gz 1000000
+-> all: none
+
+== Ventoy/Ventoy kind=app topics=usb,boot
+ventoy-1.0.99-windows.zip 15000000
+ventoy-1.0.99-linux.tar.gz 15000000
+ventoy-1.0.99-livecd.iso 100000000
+sha256.txt 1000
+-> all: ventoy-1.0.99-windows.zip
+
+== FreeCAD/FreeCAD kind=app topics=cad
+FreeCAD-0.21.2-WIN-x86_64-installer-1.exe 600000000
+FreeCAD_0.21.2-2023-12-17-conda-Windows-x86_64-py310.7z 800000000
+FreeCAD_0.21.2-2023-12-17-conda-Linux-x86_64-py310.AppImage 800000000
+FreeCAD_0.21.2-2023-12-17-conda-macOS-arm64-py310.dmg 800000000
+FreeCAD_0.21.2-2023-12-17-conda-macOS-x86_64-py310.dmg 800000000
+FreeCAD_0.21.2-2023-12-17-conda-Windows-x86_64-py310.7z-SHA256.txt 200
+-> installers: FreeCAD-0.21.2-WIN-x86_64-installer-1.exe
+-> portable: FreeCAD_0.21.2-2023-12-17-conda-Windows-x86_64-py310.7z
+
+== shinchiro/mpv-winbuild-cmake kind=app topics=mpv,video-player
+mpv-x86_64-20240601-git-1a2b3c4.7z 30000000
+mpv-x86_64-v3-20240601-git-1a2b3c4.7z 30000000
+mpv-i686-20240601-git-1a2b3c4.7z 28000000
+mpv-aarch64-20240601-git-1a2b3c4.7z 28000000
+mpv-dev-x86_64-20240601-git-1a2b3c4.7z 10000000
+mpv-dev-x86_64-v3-20240601-git-1a2b3c4.7z 10000000
+mpv-dev-aarch64-20240601-git-1a2b3c4.7z 9000000
+-> x64: mpv-x86_64-20240601-git-1a2b3c4.7z
+-> arm64: mpv-aarch64-20240601-git-1a2b3c4.7z
+# The x86_64-v3 build needs a newer CPU, so it is only for picking by hand.
+
+== yt-dlp/yt-dlp kind=tool topics=cli,youtube
+yt-dlp.exe 17000000
+yt-dlp_x86.exe 16000000
+yt-dlp_arm64.exe 17000000
+yt-dlp_win.zip 16000000
+yt-dlp_linux 17000000
+yt-dlp_linux_aarch64 17000000
+yt-dlp_macos 17000000
+yt-dlp.tar.gz 3000000
+yt-dlp 3000000
+SHA2-256SUMS 1000
+SHA2-256SUMS.sig 800
+-> x64: yt-dlp.exe
+-> arm64: yt-dlp_arm64.exe
+
+== BtbN/FFmpeg-Builds kind=tool topics=ffmpeg,cli
+ffmpeg-master-latest-win64-gpl.zip 100000000
+ffmpeg-master-latest-win64-lgpl.zip 90000000
+ffmpeg-master-latest-win64-gpl-shared.zip 100000000
+ffmpeg-master-latest-win64-lgpl-shared.zip 90000000
+ffmpeg-master-latest-winarm64-gpl.zip 95000000
+ffmpeg-master-latest-winarm64-lgpl.zip 85000000
+ffmpeg-master-latest-linux64-gpl.tar.xz 100000000
+ffmpeg-master-latest-linuxarm64-gpl.tar.xz 100000000
+checksums.sha256 2000
+# gpl and lgpl are build variants the resolver does not know: the pick is marked
+# ambiguous, but it is deterministic.
+-> x64: ffmpeg-master-latest-win64-gpl.zip
+-> arm64: ffmpeg-master-latest-winarm64-gpl.zip
+
+== neovim/neovim kind=app topics=editor,vim
+nvim-win64.zip 30000000
+nvim-win64.msi 30000000
+nvim-linux64.tar.gz 30000000
+nvim-linux64.deb 30000000
+nvim-macos-arm64.tar.gz 30000000
+nvim-macos-x86_64.tar.gz 30000000
+nvim.appimage 30000000
+shasum.txt 2000
+-> installers: nvim-win64.msi
+-> portable: nvim-win64.zip
+
+== helix-editor/helix kind=app topics=editor,rust
+helix-24.07-x86_64-windows.zip 40000000
+helix-24.07-x86_64-windows.msi 41000000
+helix-24.07-x86_64-linux.tar.xz 40000000
+helix-24.07-aarch64-linux.tar.xz 40000000
+helix-24.07-x86_64.AppImage 40000000
+helix-24.07-source.tar.xz 5000000
+helix-24.07-1.x86_64.rpm 40000000
+-> installers: helix-24.07-x86_64-windows.msi
+-> portable: helix-24.07-x86_64-windows.zip
+
+== jdx/mise kind=tool topics=cli,version-manager
+mise-v2024.8.0-windows-x64.zip 15000000
+mise-v2024.8.0-windows-arm64.zip 14000000
+mise-v2024.8.0-linux-x64.tar.gz 15000000
+mise-v2024.8.0-linux-x64-musl.tar.gz 15000000
+mise-v2024.8.0-macos-arm64.tar.gz 15000000
+SHASUMS256.txt 3000
+-> x64: mise-v2024.8.0-windows-x64.zip
+-> arm64: mise-v2024.8.0-windows-arm64.zip
+
+== pnpm/pnpm kind=tool topics=cli,package-manager
+pnpm-win-x64.exe 70000000
+pnpm-win-arm64.exe 70000000
+pnpm-linux-x64 70000000
+pnpm-linuxstatic-x64 70000000
+pnpm-macos-arm64 70000000
+SHASUMS256.txt 1000
+SHASUMS256.txt.sig 800
+-> x64: pnpm-win-x64.exe
+-> arm64: pnpm-win-arm64.exe
+
+== denoland/deno kind=tool topics=cli,javascript
+deno-x86_64-pc-windows-msvc.zip 40000000
+deno-aarch64-pc-windows-msvc.zip 38000000
+denort-x86_64-pc-windows-msvc.zip 30000000
+denort-aarch64-pc-windows-msvc.zip 28000000
+deno-x86_64-unknown-linux-gnu.zip 40000000
+deno-aarch64-apple-darwin.zip 40000000
+deno-x86_64-pc-windows-msvc.sha256sum 100
+deno_src.tar.gz 20000000
+-> x64: deno-x86_64-pc-windows-msvc.zip
+-> arm64: deno-aarch64-pc-windows-msvc.zip
+
+== oven-sh/bun kind=tool topics=cli,javascript
+bun-windows-x64.zip 40000000
+bun-windows-x64-baseline.zip 40000000
+bun-linux-x64.zip 40000000
+bun-linux-aarch64.zip 40000000
+bun-darwin-aarch64.zip 40000000
+SHASUMS256.txt 1000
+-> all: bun-windows-x64.zip
+
+== volta-cli/volta kind=app topics=node,version-manager
+volta-1.1.1-windows-x86_64.msi 15000000
+volta-1.1.1-linux.tar.gz 15000000
+volta-1.1.1-macos.tar.gz 15000000
+-> all: volta-1.1.1-windows-x86_64.msi
+
+== sxyazi/yazi kind=tool topics=cli,tui
+yazi-x86_64-pc-windows-msvc.zip 15000000
+yazi-aarch64-pc-windows-msvc.zip 14000000
+yazi-x86_64-unknown-linux-gnu.zip 15000000
+yazi-x86_64-unknown-linux-musl.zip 15000000
+yazi-aarch64-apple-darwin.zip 15000000
+yazi-x86_64-unknown-linux-gnu.snap 15000000
+yazi-x86_64-unknown-linux-gnu.deb 15000000
+-> x64: yazi-x86_64-pc-windows-msvc.zip
+-> arm64: yazi-aarch64-pc-windows-msvc.zip
+
+== Genymobile/scrcpy kind=app topics=android,adb
+scrcpy-win64-v2.5.zip 20000000
+scrcpy-win32-v2.5.zip 19000000
+scrcpy-linux-x86_64-v2.5.tar.gz 20000000
+scrcpy-macos-aarch64-v2.5.tar.gz 20000000
+scrcpy-macos-x86_64-v2.5.tar.gz 20000000
+scrcpy-server-v2.5 100000
+-> all: scrcpy-win64-v2.5.zip
+
+== twpayne/chezmoi kind=tool topics=cli,dotfiles
+chezmoi_2.50.0_windows_amd64.zip 15000000
+chezmoi_2.50.0_windows_386.zip 14000000
+chezmoi_2.50.0_windows_arm64.zip 14000000
+chezmoi_2.50.0_linux-musl_amd64.tar.gz 15000000
+chezmoi_2.50.0_linux_amd64.deb 15000000
+chezmoi_2.50.0_darwin_arm64.tar.gz 15000000
+chezmoi_2.50.0_checksums.txt 2000
+-> x64: chezmoi_2.50.0_windows_amd64.zip
+-> arm64: chezmoi_2.50.0_windows_arm64.zip
+
+== tealdeer-rs/tealdeer kind=tool topics=cli,tldr
+tealdeer-windows-x86_64-msvc.exe 3000000
+tealdeer-windows-x86_64-msvc.exe.sha256 100
+tealdeer-linux-x86_64-musl 3000000
+tealdeer-macos-aarch64 3000000
+completions_bash 1000
+-> all: tealdeer-windows-x86_64-msvc.exe
+
+== dbeaver/dbeaver kind=app topics=sql,java
+dbeaver-ce-24.1.0-x86_64-setup.exe 100000000
+dbeaver-ce-24.1.0-win32.win32.x86_64.zip 110000000
+dbeaver-ce-24.1.0-linux.gtk.x86_64.tar.gz 110000000
+dbeaver-ce-24.1.0-macos-x86_64.dmg 110000000
+dbeaver-ce_24.1.0_amd64.deb 100000000
+dbeaver-ce-24.1.0.x86_64.rpm 100000000
+dbeaver-ce-24.1.0-linux.gtk.x86_64-nojdk.tar.gz 80000000
+-> installers: dbeaver-ce-24.1.0-x86_64-setup.exe
+-> portable: dbeaver-ce-24.1.0-win32.win32.x86_64.zip

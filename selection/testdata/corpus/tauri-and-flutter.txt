@@ -1,0 +1,76 @@
+# Tauri and Flutter apps: <name>_<version>_<arch>-setup.exe plus an MSI per architecture.
+
+== clash-verge-rev/clash-verge-rev kind=app topics=tauri,clash
+Clash.Verge_2.0.0_x64-setup.exe 40000000
+Clash.Verge_2.0.0_arm64-setup.exe 39000000
+Clash.Verge_2.0.0_x64_en-US.msi 41000000
+Clash.Verge_2.0.0_arm64_en-US.msi 40000000
+Clash.Verge_2.0.0_x64.dmg 45000000
+Clash.Verge_2.0.0_aarch64.dmg 44000000
+Clash.Verge_2.0.0_amd64.deb 40000000
+Clash.Verge-2.0.0-1.x86_64.rpm 40000000
+latest.json 900
+-> x64: Clash.Verge_2.0.0_x64-setup.exe
+-> arm64: Clash.Verge_2.0.0_arm64-setup.exe
+
+== mountain-loop/yaak kind=app topics=tauri,api-client
+yaak_2024.8.0_x64-setup.exe 30000000
+yaak_2024.8.0_x64_en-US.msi 31000000
+yaak_2024.8.0_arm64-setup.exe 29000000
+yaak_2024.8.0_aarch64.dmg 35000000
+yaak_2024.8.0_x64.dmg 36000000
+yaak_2024.8.0_amd64.AppImage 90000000
+yaak_2024.8.0_amd64.deb 30000000
+-> x64/installers: yaak_2024.8.0_x64-setup.exe
+-> arm64/installers: yaak_2024.8.0_arm64-setup.exe
+-> x64/portable: yaak_2024.8.0_x64-setup.exe
+-> arm64/portable: yaak_2024.8.0_arm64-setup.exe
+# Without an archive to prefer, the portable setting still ends at the setup program.
+
+== hoppscotch/releases kind=app topics=tauri,api
+Hoppscotch_win_x64.msi 45000000
+Hoppscotch_mac_aarch64.dmg 50000000
+Hoppscotch_mac_x64.dmg 50000000
+Hoppscotch_linux_x64.deb 45000000
+Hoppscotch_linux_x64.AppImage 90000000
+-> all: Hoppscotch_win_x64.msi
+# The only Windows build is x64, which runs on arm64 under emulation.
+
+== codexu/note-gen kind=app topics=tauri,notes
+note-gen_0.20.0_x64-setup.exe 30000000
+note-gen_0.20.0_x64_en-US.msi 31000000
+note-gen_0.20.0_arm64-setup.exe 29000000
+note-gen_0.20.0_arm64_en-US.msi 30000000
+note-gen_0.20.0_aarch64.dmg 35000000
+note-gen_0.20.0_amd64.deb 30000000
+-> x64: note-gen_0.20.0_x64-setup.exe
+-> arm64: note-gen_0.20.0_arm64-setup.exe
+
+== AppFlowy-IO/AppFlowy kind=app topics=flutter,notes
+AppFlowy-0.6.3-windows-x86_64.exe 100000000
+AppFlowy-0.6.3-windows-x86_64.zip 100000000
+AppFlowy-0.6.3-macos-universal.zip 100000000
+AppFlowy-0.6.3-linux-x86_64.deb 100000000
+AppFlowy-0.6.3-linux-x86_64.tar.gz 100000000
+AppFlowy-0.6.3-ios.ipa 100000000
+-> installers: AppFlowy-0.6.3-windows-x86_64.exe
+-> portable: AppFlowy-0.6.3-windows-x86_64.zip
+
+== KRTirtho/spotube kind=app topics=flutter,music
+Spotube-windows-x86_64-setup.exe 60000000
+Spotube-windows-x86_64.nupkg 60000000
+Spotube-macos-universal.dmg 60000000
+Spotube-linux-x86_64.deb 60000000
+Spotube-linux-x86_64.AppImage 60000000
+Spotube-android-all-arch.apk 60000000
+-> all: Spotube-windows-x86_64-setup.exe
+
+== Bin-Huang/chatbox kind=app topics=electron,ai
+Chatbox-1.5.0-Setup.exe 90000000
+Chatbox-1.5.0-arm64-Setup.exe 88000000
+Chatbox-1.5.0.dmg 100000000
+Chatbox-1.5.0-arm64.dmg 98000000
+Chatbox-1.5.0.AppImage 100000000
+Chatbox-1.5.0-Setup.exe.blockmap 800000
+-> x64: Chatbox-1.5.0-Setup.exe
+-> arm64: Chatbox-1.5.0-arm64-Setup.exe

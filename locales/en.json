@@ -1,0 +1,4270 @@
+{
+  "@@locale": "en",
+  "pageLibrary": "Library",
+  "pageUpdates": "Updates",
+  "pageDiscover": "Discover",
+  "pageTryLater": "Try later",
+  "pageScan": "Scan PC",
+  "pageImportExport": "Import & Export",
+  "exportTitle": "Export your library",
+  "exportHint": "Save your library to move it to another PC. Only the repositories and your choices for them are saved, never tokens or anything installed.",
+  "exportJson": "Export library (.json)",
+  "exportLinks": "Export as link list (.txt)",
+  "exportCopy": "Copy all links to clipboard",
+  "exportEmpty": "Your library is empty, so there is nothing to export.",
+  "exportSaveTitle": "Export your library",
+  "exportJsonFiles": "JSON files",
+  "exportTextFiles": "Text files",
+  "exportSaved": "Saved {file}",
+  "@exportSaved": {
+    "placeholders": {
+      "file": {
+        "type": "String",
+        "example": "release-sync-library.json"
+      }
+    }
+  },
+  "exportFailed": "Couldn't save the file: {reason}",
+  "@exportFailed": {
+    "placeholders": {
+      "reason": {
+        "type": "String",
+        "example": "Access is denied."
+      }
+    }
+  },
+  "exportCopied": "{count, plural, one {Copied # link to the clipboard} other {Copied # links to the clipboard}}",
+  "@exportCopied": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "example": "12"
+      }
+    }
+  },
+  "importTitle": "Import repositories",
+  "importHint": "Add repositories from a file or pasted text: an export from {product}, an export from ReleaseSync or bin, or any list with repository links.",
+  "@importHint": {
+    "placeholders": {
+      "product": {
+        "type": "String",
+        "example": "Release Sync"
+      }
+    }
+  },
+  "importDropHint": "Drop a file here (.json, .txt, .csv or .md)",
+  "importFileLoaded": "{name} is ready to import",
+  "@importFileLoaded": {
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "library.json"
+      }
+    }
+  },
+  "importFileClear": "Clear",
+  "importBrowse": "Choose file…",
+  "importFileFilter": "Lists of repositories",
+  "importPasteLabel": "Or paste text",
+  "importPastePlaceholder": "Paste repository links, owner/repo lines or an exported list…",
+  "importGroup": "Group",
+  "importGroupLabel": "Group for everything imported",
+  "importAlreadyInstalled": "Already installed on this PC: track updates only",
+  "importInstallAfter": "Install everything after importing",
+  "importStart": "Import",
+  "importProgress": "Importing {done} of {total} · {name}",
+  "@importProgress": {
+    "placeholders": {
+      "done": {
+        "type": "int",
+        "example": "3"
+      },
+      "total": {
+        "type": "int",
+        "example": "40"
+      },
+      "name": {
+        "type": "String",
+        "example": "acme/tool"
+      }
+    }
+  },
+  "importDone": "Imported {count, plural, one {# app} other {# apps}}",
+  "@importDone": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "example": "12"
+      }
+    }
+  },
+  "importAlreadyTracked": "{count} already tracked",
+  "@importAlreadyTracked": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "example": "3"
+      }
+    }
+  },
+  "importFailed": "{count} couldn't be added",
+  "@importFailed": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "example": "2"
+      }
+    }
+  },
+  "importSkipped": "{count} skipped",
+  "@importSkipped": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "example": "1"
+      }
+    }
+  },
+  "importStopped": "stopped early: {reason}",
+  "@importStopped": {
+    "placeholders": {
+      "reason": {
+        "type": "String",
+        "example": "GitHub rate limit reached."
+      }
+    }
+  },
+  "importCanceled": "canceled",
+  "importNone": "No repositories were found in that text.",
+  "importNewer": "That file was exported by a newer version of {product}. Update {product} to import it.",
+  "@importNewer": {
+    "placeholders": {
+      "product": {
+        "type": "String",
+        "example": "Release Sync"
+      }
+    }
+  },
+  "importTooLarge": "That file is too large to import.",
+  "importNotText": "That file isn't a text file.",
+  "importReadFailed": "Couldn't read the file: {reason}",
+  "@importReadFailed": {
+    "placeholders": {
+      "reason": {
+        "type": "String",
+        "example": "Access is denied."
+      }
+    }
+  },
+  "activityImported": "Import finished: {summary}",
+  "@activityImported": {
+    "placeholders": {
+      "summary": {
+        "type": "String",
+        "example": "Imported 12 apps"
+      }
+    }
+  },
+  "pageActivity": "Activity",
+  "pageSettings": "Settings",
+  "emptyLibraryTitle": "Your library is empty",
+  "emptyLibrary": "Paste a GitHub repository link in the box above to start tracking an app or tool.",
+  "emptyUpdatesTitle": "You're all caught up",
+  "emptyTryLaterTitle": "Nothing saved for later",
+  "emptyTryLater": "Repositories you save to look at later will appear here.",
+  "emptyActivityTitle": "No activity yet",
+  "emptyActivity": "Installs, updates and checks will be recorded here.",
+  "drawerEmptyTitle": "Nothing selected",
+  "drawerEmpty": "Select an item to see its details.",
+  "omniboxLabel": "Search or paste a repository link",
+  "omniboxPlaceholder": "Paste a repository link to add it…",
+  "checkForUpdates": "Check for updates",
+  "gitHubCardTitle": "GitHub",
+  "versionLabel": "Version {version}",
+  "@versionLabel": {
+    "placeholders": {
+      "version": {
+        "type": "String",
+        "example": "0.1.0"
+      }
+    }
+  },
+  "updateAvailable": "Update available",
+  "updateInstalling": "Installing version {version}...",
+  "@updateInstalling": {
+    "placeholders": {
+      "version": {
+        "type": "String",
+        "example": "1.2.0"
+      }
+    }
+  },
+  "updateProgressLabel": "Update progress",
+  "updateRestart": "Restart to finish updating",
+  "updateFailed": "The update could not be installed.",
+  "settingsGeneral": "General",
+  "settingsGitHub": "GitHub",
+  "settingsUpdates": "Updates",
+  "settingsInstallation": "Installation",
+  "settingsSecurity": "Security",
+  "settingsAppearance": "Appearance",
+  "settingsData": "Data",
+  "settingsSearchLabel": "Search settings",
+  "settingsSearchPlaceholder": "Search settings",
+  "settingsCategoryLabel": "Section",
+  "settingsResultsTitle": "Search results",
+  "settingsSectionEmpty": "Nothing to set up here yet.",
+  "errorReports": "Send error reports",
+  "errorReportsHint": "Send crashes and unexpected errors so they can be fixed.",
+  "errorReportsLabel": "Toggle sending error reports",
+  "themeLabel": "Theme",
+  "themeSystem": "System",
+  "themeLight": "Light",
+  "themeDark": "Dark",
+  "dataOpenFolder": "Open data folder",
+  "dataOpenFolderHint": "Open the folder that holds the database and settings.",
+  "openFolderFailed": "Could not open the data folder.",
+  "saveSupportBundle": "Save support bundle...",
+  "saveSupportBundleTitle": "Save support bundle",
+  "supportBundleHint": "Write a zip with logs and diagnostic details to attach to a bug report.",
+  "supportBundleSaved": "Support bundle saved.",
+  "supportBundleFailed": "Could not save the support bundle.",
+  "preferencesSaveFailed": "Could not save your preferences. Change a setting or close the window to try again.",
+  "fileMenu": "File",
+  "helpMenu": "Help",
+  "omniboxAdd": "Add",
+  "omniboxSearch": "Search",
+  "checkProgress": "Checking {done}/{total}",
+  "@checkProgress": {
+    "placeholders": {
+      "done": {
+        "type": "int",
+        "example": "3"
+      },
+      "total": {
+        "type": "int",
+        "example": "12"
+      }
+    }
+  },
+  "checkAddFirst": "Add something to your library first.",
+  "toastUpToDate": "Everything is up to date",
+  "toastUpdatesAvailable": "{count, plural, one {# update available} other {# updates available}}",
+  "@toastUpdatesAvailable": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "example": "2"
+      }
+    }
+  },
+  "toastAlreadyTracked": "{name} is already in your library",
+  "@toastAlreadyTracked": {
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "Release Sync"
+      }
+    }
+  },
+  "toastAdded": "Added {name} to your library",
+  "@toastAdded": {
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "Release Sync"
+      }
+    }
+  },
+  "filterAll": "All",
+  "filterUpdates": "Updates",
+  "filterInstalled": "Installed",
+  "filterNotInstalled": "Not installed",
+  "filterLabel": "Filter by status",
+  "libraryFilterLabel": "Filter your library",
+  "libraryFilterPlaceholder": "Filter by name, description, group, note or tag",
+  "libraryNoMatches": "Nothing in your library matches.",
+  "sortLabel": "Sort by",
+  "sortName": "Name",
+  "sortRecentlyUpdated": "Recently updated",
+  "sortRecentlyAdded": "Recently added",
+  "sortStatus": "Status",
+  "viewGrid": "Grid view",
+  "viewList": "List view",
+  "openDetails": "Open details for {name}",
+  "@openDetails": {
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "Release Sync"
+      }
+    }
+  },
+  "statusUpToDate": "Up to date",
+  "statusNotInstalled": "Not installed",
+  "statusUnchecked": "Not checked yet",
+  "statusNotFound": "Project not found",
+  "statusNoReleases": "No releases",
+  "statusCheckFailed": "Check failed",
+  "statusSkipped": "Skipped {version}",
+  "@statusSkipped": {
+    "placeholders": {
+      "version": {
+        "type": "String",
+        "example": "v1.2.0"
+      }
+    }
+  },
+  "statusUpdateIgnored": "Update ignored",
+  "statusChecking": "Checking…",
+  "versionChange": "{installed} → {latest}",
+  "@versionChange": {
+    "placeholders": {
+      "installed": {
+        "type": "String",
+        "example": "v1.0.0"
+      },
+      "latest": {
+        "type": "String",
+        "example": "v1.1.0"
+      }
+    }
+  },
+  "versionAvailable": "{version} available",
+  "@versionAvailable": {
+    "placeholders": {
+      "version": {
+        "type": "String",
+        "example": "v1.1.0"
+      }
+    }
+  },
+  "addTitle": "Add to library",
+  "addLookingUp": "Looking up {repo}…",
+  "@addLookingUp": {
+    "placeholders": {
+      "repo": {
+        "type": "String",
+        "example": "owner/repo"
+      }
+    }
+  },
+  "addStars": "{count, plural, one {# star} other {# stars}}",
+  "@addStars": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "example": "1200"
+      }
+    }
+  },
+  "addLatestVersion": "Latest version: {version}",
+  "@addLatestVersion": {
+    "placeholders": {
+      "version": {
+        "type": "String",
+        "example": "v1.2.0"
+      }
+    }
+  },
+  "addNoReleases": "No releases yet",
+  "addIncludePrereleases": "Include pre-releases",
+  "addAlreadyHave": "I already have this",
+  "addVersionLabel": "Version you have",
+  "addVersionPlaceholder": "Leave blank for the latest",
+  "addConfirm": "Add",
+  "cancel": "Cancel",
+  "close": "Close",
+  "drawerOptions": "Options",
+  "drawerCheckNow": "Check now",
+  "drawerMarkInstalled": "Mark as installed (current version)",
+  "drawerSkipVersion": "Skip this version",
+  "drawerStopSkipping": "Stop skipping",
+  "drawerOpenOnGitHub": "Open on GitHub",
+  "drawerOpenProjectPage": "Open project page",
+  "drawerStopTracking": "Stop tracking",
+  "drawerIgnoreUpdates": "Ignore updates",
+  "drawerVersionInstalled": "Installed",
+  "drawerVersionLatest": "Latest",
+  "drawerVersionReleased": "Released",
+  "drawerVersionChecked": "Last checked",
+  "drawerNever": "Never",
+  "drawerNotesTitle": "Release notes",
+  "drawerNotesSince": "What's new since your version",
+  "drawerNoNotes": "No release notes were provided.",
+  "drawerAllVersions": "All versions",
+  "drawerPrerelease": "pre-release",
+  "drawerLatestMarker": "latest",
+  "drawerNotFound": "{repo} can't be found on {site} any more. It may have moved or been removed. Your installed copy isn't affected.",
+  "@drawerNotFound": {
+    "placeholders": {
+      "repo": {
+        "type": "String",
+        "example": "owner/repo"
+      },
+      "site": {
+        "type": "String",
+        "example": "GitHub"
+      }
+    }
+  },
+  "drawerNoReleases": "No releases have been published for this repository.",
+  "drawerNoStableReleases": "No stable releases yet. Turn on pre-releases to track the newest build.",
+  "drawerStopTrackingTitle": "Stop tracking {name}?",
+  "@drawerStopTrackingTitle": {
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "Release Sync"
+      }
+    }
+  },
+  "drawerStopTrackingBody": "It is removed from your library. Whatever is installed is not affected.",
+  "drawerRemove": "Remove from library",
+  "dateMedium": "{when, date, medium}",
+  "@dateMedium": {
+    "placeholders": {
+      "when": {
+        "type": "DateTime",
+        "example": "2026-11-15"
+      }
+    }
+  },
+  "dateTimeMedium": "{when, date, medium}, {when, time, short}",
+  "@dateTimeMedium": {
+    "placeholders": {
+      "when": {
+        "type": "DateTime",
+        "example": "2026-11-15 10:30"
+      }
+    }
+  },
+  "updatesSkip": "Skip",
+  "updatesDetails": "Details",
+  "updatesReleased": "Released {when, date, medium}",
+  "@updatesReleased": {
+    "placeholders": {
+      "when": {
+        "type": "DateTime",
+        "example": "2026-11-15"
+      }
+    }
+  },
+  "updatesLastChecked": "Last checked {when, date, medium}, {when, time, short}.",
+  "@updatesLastChecked": {
+    "placeholders": {
+      "when": {
+        "type": "DateTime",
+        "example": "2026-11-15 10:30"
+      }
+    }
+  },
+  "updatesNeverChecked": "Check for updates to look for new releases.",
+  "activityClear": "Clear",
+  "activityDetails": "Details",
+  "activityAdded": "Added {name}",
+  "@activityAdded": {
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "owner/repo"
+      }
+    }
+  },
+  "activityAddFailed": "Could not add {name}: {reason}",
+  "@activityAddFailed": {
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "owner/repo"
+      },
+      "reason": {
+        "type": "String",
+        "example": "Can't reach GitHub."
+      }
+    }
+  },
+  "activityRemoved": "Stopped tracking {name}",
+  "@activityRemoved": {
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "owner/repo"
+      }
+    }
+  },
+  "activityMarkedInstalled": "Marked {name} as installed ({version})",
+  "@activityMarkedInstalled": {
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "owner/repo"
+      },
+      "version": {
+        "type": "String",
+        "example": "v1.2.0"
+      }
+    }
+  },
+  "activitySkipped": "Skipped {version} of {name}",
+  "@activitySkipped": {
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "owner/repo"
+      },
+      "version": {
+        "type": "String",
+        "example": "v1.2.0"
+      }
+    }
+  },
+  "activityStoppedSkipping": "Stopped skipping {name}",
+  "@activityStoppedSkipping": {
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "owner/repo"
+      }
+    }
+  },
+  "activityChecked": "{checked, plural, one {Checked # item} other {Checked # items}} · {updates, plural, =0 {no updates} one {# update available} other {# updates available}}",
+  "@activityChecked": {
+    "placeholders": {
+      "checked": {
+        "type": "int",
+        "example": "12"
+      },
+      "updates": {
+        "type": "int",
+        "example": "2"
+      }
+    }
+  },
+  "activityCheckedFailures": "{failed, plural, one {# item} other {# items}} could not be checked.",
+  "@activityCheckedFailures": {
+    "placeholders": {
+      "failed": {
+        "type": "int",
+        "example": "1"
+      }
+    }
+  },
+  "activityRateLimited": "Update check stopped: GitHub rate limit reached.",
+  "activityCheckFailed": "Could not check {name}: {reason}",
+  "@activityCheckFailed": {
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "owner/repo"
+      },
+      "reason": {
+        "type": "String",
+        "example": "Can't reach GitHub."
+      }
+    }
+  },
+  "activityActionFailed": "Could not update {name}: {reason}",
+  "@activityActionFailed": {
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "owner/repo"
+      },
+      "reason": {
+        "type": "String",
+        "example": "database is locked"
+      }
+    }
+  },
+  "activityTokenSaved": "Signed in to GitHub as {login}",
+  "@activityTokenSaved": {
+    "placeholders": {
+      "login": {
+        "type": "String",
+        "example": "octocat"
+      }
+    }
+  },
+  "activityTokenRemoved": "Removed the saved GitHub token",
+  "gitHubSignedIn": "Signed in as {login}",
+  "@gitHubSignedIn": {
+    "placeholders": {
+      "login": {
+        "type": "String",
+        "example": "octocat"
+      }
+    }
+  },
+  "gitHubSignedOut": "Not signed in",
+  "gitHubAllowance": "{remaining}/{limit} requests left",
+  "@gitHubAllowance": {
+    "placeholders": {
+      "remaining": {
+        "type": "int",
+        "example": "4980"
+      },
+      "limit": {
+        "type": "int",
+        "example": "5000"
+      }
+    }
+  },
+  "gitHubAllowanceUnknown": "Request allowance not checked yet",
+  "gitHubCardOpensSettings": "Open GitHub settings",
+  "errNotFound": "{resource} wasn't found. If it's private, add a token with access in Settings.",
+  "@errNotFound": {
+    "placeholders": {
+      "resource": {
+        "type": "String",
+        "example": "owner/repo"
+      }
+    }
+  },
+  "errTokenRejected": "GitHub rejected your access token. Check it in Settings → GitHub.",
+  "errRateLimited": "GitHub rate limit reached. It resets at {when, time, short}.{token, select, yes {} other { Add a token in Settings to raise the limit to 5,000 per hour.}}",
+  "@errRateLimited": {
+    "placeholders": {
+      "when": {
+        "type": "DateTime",
+        "example": "2026-11-15 10:30"
+      },
+      "token": {
+        "type": "String",
+        "example": "yes"
+      }
+    }
+  },
+  "errRateLimitedSoon": "GitHub rate limit reached. It resets soon.{token, select, yes {} other { Add a token in Settings to raise the limit to 5,000 per hour.}}",
+  "@errRateLimitedSoon": {
+    "placeholders": {
+      "token": {
+        "type": "String",
+        "example": "yes"
+      }
+    }
+  },
+  "errSiteRateLimited": "{site} rate limit reached. It resets at {when, time, short}.",
+  "@errSiteRateLimited": {
+    "placeholders": {
+      "site": {
+        "type": "String",
+        "example": "GitLab"
+      },
+      "when": {
+        "type": "DateTime",
+        "example": "2026-11-15 10:30"
+      }
+    }
+  },
+  "errSiteRateLimitedSoon": "{site} rate limit reached. It resets soon.",
+  "@errSiteRateLimitedSoon": {
+    "placeholders": {
+      "site": {
+        "type": "String",
+        "example": "GitLab"
+      }
+    }
+  },
+  "errUnreachable": "Can't reach {site}. Check your internet connection.",
+  "@errUnreachable": {
+    "placeholders": {
+      "site": {
+        "type": "String",
+        "example": "GitHub"
+      }
+    }
+  },
+  "errTimedOut": "{site} took too long to respond.",
+  "@errTimedOut": {
+    "placeholders": {
+      "site": {
+        "type": "String",
+        "example": "GitHub"
+      }
+    }
+  },
+  "errStatus": "{site} returned an error ({status}).",
+  "@errStatus": {
+    "placeholders": {
+      "site": {
+        "type": "String",
+        "example": "GitHub"
+      },
+      "status": {
+        "type": "int",
+        "example": "500"
+      }
+    }
+  },
+  "errNoProject": "{product} couldn't find a project at that address.",
+  "@errNoProject": {
+    "placeholders": {
+      "product": {
+        "type": "String",
+        "example": "Release Sync"
+      }
+    }
+  },
+  "errOther": "Something went wrong: {reason}",
+  "@errOther": {
+    "placeholders": {
+      "reason": {
+        "type": "String",
+        "example": "unexpected response"
+      }
+    }
+  },
+  "tokenTitle": "Access token",
+  "tokenHint": "A personal access token raises the request limit and lets you track private repositories. It is kept in your system's credential store.",
+  "tokenLabel": "GitHub access token",
+  "tokenPlaceholder": "Paste a token",
+  "tokenVerify": "Verify and save",
+  "tokenVerifying": "Verifying…",
+  "tokenSaved": "Saved. Signed in as {login}.",
+  "@tokenSaved": {
+    "placeholders": {
+      "login": {
+        "type": "String",
+        "example": "octocat"
+      }
+    }
+  },
+  "tokenRemove": "Remove token",
+  "tokenRemoved": "The saved token was removed.",
+  "tokenInvalid": "That token isn't valid.",
+  "tokenSaveFailed": "Could not save the token: {reason}",
+  "@tokenSaveFailed": {
+    "placeholders": {
+      "reason": {
+        "type": "String",
+        "example": "no credential store"
+      }
+    }
+  },
+  "tokenSavedBadge": "A token is saved.",
+  "cliTokenTitle": "Use the GitHub CLI's token",
+  "cliTokenHint": "When no token is saved, use the one from the gh command if it is installed and signed in.",
+  "cliTokenLabel": "Toggle using the GitHub CLI's token",
+  "checkOnStartup": "Check for updates at startup",
+  "checkOnStartupHint": "Look for new releases shortly after the app opens.",
+  "checkOnStartupLabel": "Toggle checking for updates at startup",
+  "parallelChecks": "Checks at once",
+  "parallelChecksHint": "How many repositories to check at the same time, from 1 to 8.",
+  "parallelChecksLabel": "Checks at once",
+  "defaultPrereleases": "Include pre-releases for new items",
+  "defaultPrereleasesHint": "The starting choice when you add a repository.",
+  "defaultPrereleasesLabel": "Toggle including pre-releases for new items",
+  "statusNoDownload": "No download for this PC",
+  "statusNeedsAttention": "Needs attention",
+  "architecture": "Preferred architecture",
+  "architectureHint": "Which build to download. Auto uses the one that matches this PC.",
+  "architectureLabel": "Choose the preferred architecture",
+  "architectureAuto": "Auto",
+  "architectureX64": "x64",
+  "architectureArm64": "ARM64",
+  "architectureX86": "x86",
+  "preferInstallers": "Prefer installers over portable archives",
+  "preferInstallersHint": "Choose a setup program when a release offers both.",
+  "preferInstallersLabel": "Toggle preferring installers over portable archives",
+  "downloadTitle": "Download",
+  "downloadFile": "File",
+  "downloadAutomatic": "Automatic (best match for this PC)",
+  "downloadFileOption": "{name} · {size}",
+  "@downloadFileOption": {
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "tool-x64-setup.exe"
+      },
+      "size": {
+        "type": "String",
+        "example": "12.4 MB"
+      }
+    }
+  },
+  "downloadWillInstall": "Will install: {file} · {size}",
+  "@downloadWillInstall": {
+    "placeholders": {
+      "file": {
+        "type": "String",
+        "example": "tool-x64-setup.exe"
+      },
+      "size": {
+        "type": "String",
+        "example": "12.4 MB"
+      }
+    }
+  },
+  "downloadNone": "This release has no download for this PC. You can still track it.",
+  "downloadNoneTracked": "None of the cached releases has a download for this PC.",
+  "downloadAmbiguous": "Several different downloads match. Check the file.",
+  "downloadNewestMissing": "{newest} has no download for this PC yet. {chosen} is the newest one that does.",
+  "@downloadNewestMissing": {
+    "placeholders": {
+      "newest": {
+        "type": "String",
+        "example": "v2.0.0"
+      },
+      "chosen": {
+        "type": "String",
+        "example": "v1.9.0"
+      }
+    }
+  },
+  "downloadChanged": "The download for {item} changed in {tag}. Check the file before updating.",
+  "@downloadChanged": {
+    "placeholders": {
+      "item": {
+        "type": "String",
+        "example": "Tool"
+      },
+      "tag": {
+        "type": "String",
+        "example": "v2.0.0"
+      }
+    }
+  },
+  "downloadOfferApp": "This project only publishes an installer. Install it as an app?",
+  "downloadOfferAppAction": "Install as an app",
+  "whyChosen": "You chose this file.",
+  "whyNative": "{kind} built for {arch}.",
+  "@whyNative": {
+    "placeholders": {
+      "kind": {
+        "type": "String",
+        "example": "Setup program"
+      },
+      "arch": {
+        "type": "String",
+        "example": "x64"
+      }
+    }
+  },
+  "whyEmulated": "{kind} built for {arch}. It runs on this PC through emulation.",
+  "@whyEmulated": {
+    "placeholders": {
+      "kind": {
+        "type": "String",
+        "example": "Setup program"
+      },
+      "arch": {
+        "type": "String",
+        "example": "x86"
+      }
+    }
+  },
+  "whyUnstated": "{kind}. Its name doesn't mention a CPU type, so it should run on this PC.",
+  "@whyUnstated": {
+    "placeholders": {
+      "kind": {
+        "type": "String",
+        "example": "Setup program"
+      }
+    }
+  },
+  "whyPrefersInstaller": "You prefer installers over portable downloads.",
+  "whyPrefersPortable": "You prefer portable downloads over installers.",
+  "artifactMsi": "Windows Installer package",
+  "artifactMsix": "Store package (MSIX)",
+  "artifactSetupExe": "Setup program",
+  "artifactStandaloneExe": "Standalone program",
+  "artifactArchive": "Archive",
+  "sizeBytes": "{size} B",
+  "@sizeBytes": {
+    "placeholders": {
+      "size": {
+        "type": "String",
+        "example": "900"
+      }
+    }
+  },
+  "sizeKB": "{size} KB",
+  "@sizeKB": {
+    "placeholders": {
+      "size": {
+        "type": "String",
+        "example": "512"
+      }
+    }
+  },
+  "sizeMB": "{size} MB",
+  "@sizeMB": {
+    "placeholders": {
+      "size": {
+        "type": "String",
+        "example": "12.4"
+      }
+    }
+  },
+  "sizeGB": "{size} GB",
+  "@sizeGB": {
+    "placeholders": {
+      "size": {
+        "type": "String",
+        "example": "1.2"
+      }
+    }
+  },
+  "installAs": "Install as",
+  "installAsAutomatic": "Automatic",
+  "installAsApp": "App",
+  "installAsTool": "Command-line tool",
+  "installMethod": "Install method",
+  "methodAutomatic": "Automatic",
+  "methodInstaller": "Installer",
+  "methodPortable": "Portable",
+  "addVersion": "Version",
+  "addVersionNoDownload": "{tag} · no download for this PC",
+  "@addVersionNoDownload": {
+    "placeholders": {
+      "tag": {
+        "type": "String",
+        "example": "v2.0.0"
+      }
+    }
+  },
+  "drawerVersionNoDownload": "No download for this PC",
+  "activityFileChosen": "Chose {file} for {item}",
+  "@activityFileChosen": {
+    "placeholders": {
+      "file": {
+        "type": "String",
+        "example": "tool-x64-setup.exe"
+      },
+      "item": {
+        "type": "String",
+        "example": "acme/tool"
+      }
+    }
+  },
+  "activityFileAutomatic": "{item} now takes the best matching file",
+  "@activityFileAutomatic": {
+    "placeholders": {
+      "item": {
+        "type": "String",
+        "example": "acme/tool"
+      }
+    }
+  },
+  "activityKindChanged": "{item} is set to install as: {kind}",
+  "@activityKindChanged": {
+    "placeholders": {
+      "item": {
+        "type": "String",
+        "example": "acme/tool"
+      },
+      "kind": {
+        "type": "String",
+        "example": "an app"
+      }
+    }
+  },
+  "activityMethodChanged": "{item} install method set to {method}",
+  "@activityMethodChanged": {
+    "placeholders": {
+      "item": {
+        "type": "String",
+        "example": "acme/tool"
+      },
+      "method": {
+        "type": "String",
+        "example": "Portable"
+      }
+    }
+  },
+  "chooseVersion": "Choose a version",
+  "chooseFile": "Choose a file",
+  "chooseInstallAs": "Choose what to install this as",
+  "chooseInstallMethod": "Choose the install method",
+  "downloadFileOnly": "Download file only",
+  "downloadShowAllFiles": "Show all files",
+  "downloadHideFiles": "Hide files",
+  "downloadNoFiles": "This release has no files.",
+  "downloadQueued": "Waiting in queue…",
+  "downloadStarting": "Starting…",
+  "downloadProgress": "Downloading {done} / {total} · {speed}/s",
+  "@downloadProgress": {
+    "placeholders": {
+      "done": {
+        "type": "String",
+        "example": "4.2 MB"
+      },
+      "total": {
+        "type": "String",
+        "example": "12.4 MB"
+      },
+      "speed": {
+        "type": "String",
+        "example": "1.1 MB"
+      }
+    }
+  },
+  "downloadProgressUnknown": "Downloading {done} · {speed}/s",
+  "@downloadProgressUnknown": {
+    "placeholders": {
+      "done": {
+        "type": "String",
+        "example": "4.2 MB"
+      },
+      "speed": {
+        "type": "String",
+        "example": "1.1 MB"
+      }
+    }
+  },
+  "downloadVerifying": "Verifying…",
+  "downloadCanceled": "Canceled. Resume to continue where it stopped.",
+  "downloadResume": "Resume",
+  "downloadRetry": "Try again",
+  "downloadDismiss": "Dismiss",
+  "downloadShowInFolder": "Show in folder",
+  "statusDownloading": "Downloading {percent}%",
+  "@statusDownloading": {
+    "placeholders": {
+      "percent": {
+        "type": "int",
+        "example": "42"
+      }
+    }
+  },
+  "statusDownloadingUnknown": "Downloading…",
+  "downloadErrorStatus": "The server answered with an error ({status}).",
+  "@downloadErrorStatus": {
+    "placeholders": {
+      "status": {
+        "type": "int",
+        "example": "500"
+      }
+    }
+  },
+  "downloadErrorNotFound": "The file could not be found on the server.",
+  "downloadErrorStalled": "No data arrived for a minute.",
+  "downloadErrorSize": "The file's size doesn't match the release.",
+  "downloadErrorNetwork": "The connection was interrupted. Check your internet connection and try again.",
+  "downloadErrorDisk": "Could not save the file: {reason}",
+  "@downloadErrorDisk": {
+    "placeholders": {
+      "reason": {
+        "type": "String",
+        "example": "the disk is full"
+      }
+    }
+  },
+  "verifyChecksumOk": "checksum verified ({origin})",
+  "@verifyChecksumOk": {
+    "placeholders": {
+      "origin": {
+        "type": "String",
+        "example": "GitHub"
+      }
+    }
+  },
+  "verifyNoChecksum": "no checksum published",
+  "verifySigned": "digitally signed",
+  "verifySignedBy": "signed by {signer}",
+  "@verifySignedBy": {
+    "placeholders": {
+      "signer": {
+        "type": "String",
+        "example": "Example Corp"
+      }
+    }
+  },
+  "verifyUnsigned": "not digitally signed",
+  "verifyUntrusted": "signature not trusted by Windows",
+  "verifyUntrustedBy": "signed by {signer} (not trusted by Windows)",
+  "@verifyUntrustedBy": {
+    "placeholders": {
+      "signer": {
+        "type": "String",
+        "example": "Example Corp"
+      }
+    }
+  },
+  "verifySignatureNotChecked": "signature not checked",
+  "verifyOff": "not verified",
+  "verifyChecksumMismatch": "The download's checksum doesn't match the one the publisher posted.",
+  "verifySignatureInvalid": "The download's digital signature is invalid.",
+  "verifyDeleted": "The file was deleted.",
+  "findingUnsigned": "It isn't digitally signed.",
+  "findingUntrusted": "Its signature isn't trusted by Windows.",
+  "findingNoChecksum": "The project publishes no checksum to compare against.",
+  "activityDownloaded": "Downloaded {file} from {item} · {summary}",
+  "@activityDownloaded": {
+    "placeholders": {
+      "file": {
+        "type": "String",
+        "example": "tool-x64.zip"
+      },
+      "item": {
+        "type": "String",
+        "example": "acme/tool"
+      },
+      "summary": {
+        "type": "String",
+        "example": "checksum verified (GitHub)"
+      }
+    }
+  },
+  "activityDownloadedCheck": "Downloaded {file} from {item} · {summary}. Check it before installing.",
+  "@activityDownloadedCheck": {
+    "placeholders": {
+      "file": {
+        "type": "String",
+        "example": "tool-x64.zip"
+      },
+      "item": {
+        "type": "String",
+        "example": "acme/tool"
+      },
+      "summary": {
+        "type": "String",
+        "example": "not digitally signed"
+      }
+    }
+  },
+  "activityDownloadBlocked": "Rejected {file} from {item}: {reason}",
+  "@activityDownloadBlocked": {
+    "placeholders": {
+      "file": {
+        "type": "String",
+        "example": "tool-x64.zip"
+      },
+      "item": {
+        "type": "String",
+        "example": "acme/tool"
+      },
+      "reason": {
+        "type": "String",
+        "example": "The download's checksum doesn't match the one the publisher posted."
+      }
+    }
+  },
+  "activityDownloadFailed": "Could not download {file} from {item}: {reason}",
+  "@activityDownloadFailed": {
+    "placeholders": {
+      "file": {
+        "type": "String",
+        "example": "tool-x64.zip"
+      },
+      "item": {
+        "type": "String",
+        "example": "acme/tool"
+      },
+      "reason": {
+        "type": "String",
+        "example": "The connection was interrupted."
+      }
+    }
+  },
+  "activityDownloadCanceled": "Canceled downloading {file} from {item}",
+  "@activityDownloadCanceled": {
+    "placeholders": {
+      "file": {
+        "type": "String",
+        "example": "tool-x64.zip"
+      },
+      "item": {
+        "type": "String",
+        "example": "acme/tool"
+      }
+    }
+  },
+  "toastDownloaded": "Downloaded {file}",
+  "@toastDownloaded": {
+    "placeholders": {
+      "file": {
+        "type": "String",
+        "example": "tool-x64.zip"
+      }
+    }
+  },
+  "toastDownloadedCheck": "Downloaded {file}. Check the findings before installing.",
+  "@toastDownloadedCheck": {
+    "placeholders": {
+      "file": {
+        "type": "String",
+        "example": "tool-x64.zip"
+      }
+    }
+  },
+  "downloadFolder": "Download folder",
+  "downloadFolderHint": "Where downloaded files are saved.",
+  "downloadFolderBrowse": "Browse…",
+  "downloadFolderOpen": "Open",
+  "downloadFolderChoose": "Choose the download folder",
+  "downloadFolderOpenFailed": "Could not open the download folder.",
+  "keepDownloads": "Keep downloaded files",
+  "keepDownloadsHint": "When off, finished downloads are removed the next time the app starts.",
+  "keepDownloadsLabel": "Toggle keeping downloaded files",
+  "verifyDownloads": "Verify checksums and signatures",
+  "verifyDownloadsHint": "Compare each download with the checksum its publisher posted and check the signature of programs before they are used.",
+  "verifyDownloadsLabel": "Toggle verifying downloads",
+  "installAfterAdding": "Install right after adding",
+  "installAfterAddingHint": "Start installing as soon as a repository is added to the library.",
+  "installAfterAddingLabel": "Toggle installing right after adding",
+  "portableFolder": "Portable apps folder",
+  "portableFolderHint": "Where portable apps are unpacked, one folder for each.",
+  "portableFolderChoose": "Choose the portable apps folder",
+  "toolsFolder": "Tools folder",
+  "toolsFolderHint": "Where command-line tools are placed. It is added to your PATH the first time a tool is installed.",
+  "toolsFolderChoose": "Choose the tools folder",
+  "folderOpenFailed": "Could not open the folder.",
+  "startMenuShortcuts": "Create Start menu shortcuts",
+  "startMenuShortcutsHint": "Add a Start menu shortcut for each portable app that is installed.",
+  "startMenuShortcutsLabel": "Toggle creating Start menu shortcuts",
+  "confirmRemove": "Confirm before removing apps",
+  "confirmRemoveHint": "Ask first when uninstalling an app or stopping tracking one.",
+  "confirmRemoveLabel": "Toggle confirming before removing apps",
+  "addInstallAfter": "Install after adding",
+  "addInstallLocation": "Install location",
+  "addInstallLocationDefault": "Default location",
+  "addInstallLocationChoose": "Choose where to install",
+  "addInstallLocationUseDefault": "Use the default",
+  "installFolderTooBroad": "That install folder is too broad to manage safely. Choose a dedicated folder for this app.",
+  "actionInstall": "Install",
+  "actionUpdate": "Update",
+  "actionLaunch": "Launch",
+  "actionSeeFileLocation": "See file location",
+  "actionOpenFolder": "Open folder",
+  "actionUninstall": "Uninstall from this PC",
+  "actionUpdateEverything": "Update everything",
+  "drawerStopTrackingInstalled": "Stop tracking (keeps it installed)",
+  "versionInstall": "Install this version",
+  "versionReinstall": "Reinstall this version",
+  "versionRollback": "Roll back to this version",
+  "drawerInstalledIn": "Installed in",
+  "drawerCommands": "Commands",
+  "stageWaiting": "Waiting for you",
+  "stageClosing": "Closing the program…",
+  "stageInstalling": "Installing…",
+  "stageUpdating": "Updating…",
+  "stageRollingBack": "Rolling back…",
+  "stageRemoving": "Removing…",
+  "toastInstalled": "{item} installed: {tag}",
+  "@toastInstalled": {
+    "placeholders": {
+      "item": {
+        "type": "String",
+        "example": "Tool"
+      },
+      "tag": {
+        "type": "String",
+        "example": "v1.2.0"
+      }
+    }
+  },
+  "toastUpdated": "{item} updated to {tag}",
+  "@toastUpdated": {
+    "placeholders": {
+      "item": {
+        "type": "String",
+        "example": "Tool"
+      },
+      "tag": {
+        "type": "String",
+        "example": "v1.2.0"
+      }
+    }
+  },
+  "toastRolledBack": "{item} rolled back to {tag}",
+  "@toastRolledBack": {
+    "placeholders": {
+      "item": {
+        "type": "String",
+        "example": "Tool"
+      },
+      "tag": {
+        "type": "String",
+        "example": "v1.0.0"
+      }
+    }
+  },
+  "toastReinstalled": "{item} reinstalled: {tag}",
+  "@toastReinstalled": {
+    "placeholders": {
+      "item": {
+        "type": "String",
+        "example": "Tool"
+      },
+      "tag": {
+        "type": "String",
+        "example": "v1.2.0"
+      }
+    }
+  },
+  "toastUninstalled": "{item} uninstalled",
+  "@toastUninstalled": {
+    "placeholders": {
+      "item": {
+        "type": "String",
+        "example": "Tool"
+      }
+    }
+  },
+  "toastUninstalledLeft": "{item} uninstalled. {count, plural, one {# other file was} other {# other files were}} left in its folder.",
+  "@toastUninstalledLeft": {
+    "placeholders": {
+      "item": {
+        "type": "String",
+        "example": "Tool"
+      },
+      "count": {
+        "type": "int",
+        "example": "3"
+      }
+    }
+  },
+  "toastNewTerminal": "Open a new terminal to run {commands}.",
+  "@toastNewTerminal": {
+    "placeholders": {
+      "commands": {
+        "type": "String",
+        "example": "tool, other"
+      }
+    }
+  },
+  "toastUpdateAll": "{updated} updated",
+  "@toastUpdateAll": {
+    "placeholders": {
+      "updated": {
+        "type": "int",
+        "example": "3"
+      }
+    }
+  },
+  "toastUpdateAllAttention": "{updated} updated, {attention} need attention",
+  "@toastUpdateAllAttention": {
+    "placeholders": {
+      "updated": {
+        "type": "int",
+        "example": "3"
+      },
+      "attention": {
+        "type": "int",
+        "example": "1"
+      }
+    }
+  },
+  "toastLaunchFailed": "Could not start {item}.",
+  "@toastLaunchFailed": {
+    "placeholders": {
+      "item": {
+        "type": "String",
+        "example": "Tool"
+      }
+    }
+  },
+  "activityInstalled": "Installed {item} {tag}",
+  "@activityInstalled": {
+    "placeholders": {
+      "item": {
+        "type": "String",
+        "example": "acme/tool"
+      },
+      "tag": {
+        "type": "String",
+        "example": "v1.2.0"
+      }
+    }
+  },
+  "activityUpdated": "Updated {item} to {tag}",
+  "@activityUpdated": {
+    "placeholders": {
+      "item": {
+        "type": "String",
+        "example": "acme/tool"
+      },
+      "tag": {
+        "type": "String",
+        "example": "v1.2.0"
+      }
+    }
+  },
+  "activityRolledBack": "Rolled {item} back to {tag}",
+  "@activityRolledBack": {
+    "placeholders": {
+      "item": {
+        "type": "String",
+        "example": "acme/tool"
+      },
+      "tag": {
+        "type": "String",
+        "example": "v1.0.0"
+      }
+    }
+  },
+  "activityReinstalled": "Reinstalled {item} {tag}",
+  "@activityReinstalled": {
+    "placeholders": {
+      "item": {
+        "type": "String",
+        "example": "acme/tool"
+      },
+      "tag": {
+        "type": "String",
+        "example": "v1.2.0"
+      }
+    }
+  },
+  "activityUninstalled": "Uninstalled {item}",
+  "@activityUninstalled": {
+    "placeholders": {
+      "item": {
+        "type": "String",
+        "example": "acme/tool"
+      }
+    }
+  },
+  "activityInstallFailed": "Could not install {item} {tag}: {reason}",
+  "@activityInstallFailed": {
+    "placeholders": {
+      "item": {
+        "type": "String",
+        "example": "acme/tool"
+      },
+      "tag": {
+        "type": "String",
+        "example": "v1.2.0"
+      },
+      "reason": {
+        "type": "String",
+        "example": "The file is in use."
+      }
+    }
+  },
+  "activityUpdateFailed": "Could not update {item} to {tag}: {reason}",
+  "@activityUpdateFailed": {
+    "placeholders": {
+      "item": {
+        "type": "String",
+        "example": "acme/tool"
+      },
+      "tag": {
+        "type": "String",
+        "example": "v1.2.0"
+      },
+      "reason": {
+        "type": "String",
+        "example": "The file is in use."
+      }
+    }
+  },
+  "activityRollbackFailed": "Could not roll {item} back to {tag}: {reason}",
+  "@activityRollbackFailed": {
+    "placeholders": {
+      "item": {
+        "type": "String",
+        "example": "acme/tool"
+      },
+      "tag": {
+        "type": "String",
+        "example": "v1.0.0"
+      },
+      "reason": {
+        "type": "String",
+        "example": "The file is in use."
+      }
+    }
+  },
+  "activityUninstallFailed": "Could not uninstall {item}: {reason}",
+  "@activityUninstallFailed": {
+    "placeholders": {
+      "item": {
+        "type": "String",
+        "example": "acme/tool"
+      },
+      "reason": {
+        "type": "String",
+        "example": "The file is in use."
+      }
+    }
+  },
+  "activityInstallCanceled": "Canceled installing {item} {tag}",
+  "@activityInstallCanceled": {
+    "placeholders": {
+      "item": {
+        "type": "String",
+        "example": "acme/tool"
+      },
+      "tag": {
+        "type": "String",
+        "example": "v1.2.0"
+      }
+    }
+  },
+  "activityUpdateCanceled": "Canceled updating {item} to {tag}",
+  "@activityUpdateCanceled": {
+    "placeholders": {
+      "item": {
+        "type": "String",
+        "example": "acme/tool"
+      },
+      "tag": {
+        "type": "String",
+        "example": "v1.2.0"
+      }
+    }
+  },
+  "activityRollbackCanceled": "Canceled rolling {item} back to {tag}",
+  "@activityRollbackCanceled": {
+    "placeholders": {
+      "item": {
+        "type": "String",
+        "example": "acme/tool"
+      },
+      "tag": {
+        "type": "String",
+        "example": "v1.0.0"
+      }
+    }
+  },
+  "activityUninstallCanceled": "Canceled uninstalling {item}",
+  "@activityUninstallCanceled": {
+    "placeholders": {
+      "item": {
+        "type": "String",
+        "example": "acme/tool"
+      }
+    }
+  },
+  "activityInstallWarning": "{item}: {problem}",
+  "@activityInstallWarning": {
+    "placeholders": {
+      "item": {
+        "type": "String",
+        "example": "acme/tool"
+      },
+      "problem": {
+        "type": "String",
+        "example": "The shortcut could not be made."
+      }
+    }
+  },
+  "warningShortcut": "The Start menu shortcut could not be made: {reason}",
+  "@warningShortcut": {
+    "placeholders": {
+      "reason": {
+        "type": "String",
+        "example": "access denied"
+      }
+    }
+  },
+  "warningPath": "The tools folder could not be added to your PATH: {reason}",
+  "@warningPath": {
+    "placeholders": {
+      "reason": {
+        "type": "String",
+        "example": "access denied"
+      }
+    }
+  },
+  "warningCleanup": "The previous installation could not be removed completely: {reason}",
+  "@warningCleanup": {
+    "placeholders": {
+      "reason": {
+        "type": "String",
+        "example": "access denied"
+      }
+    }
+  },
+  "warningReopen": "{item} could not be opened again: {reason}",
+  "@warningReopen": {
+    "placeholders": {
+      "item": {
+        "type": "String",
+        "example": "Tool"
+      },
+      "reason": {
+        "type": "String",
+        "example": "access denied"
+      }
+    }
+  },
+  "questionDowngradeTitle": "Go back to {tag}?",
+  "@questionDowngradeTitle": {
+    "placeholders": {
+      "tag": {
+        "type": "String",
+        "example": "v1.0.0"
+      }
+    }
+  },
+  "questionDowngradeBody": "{item} {installed} is installed. {tag} is an older version.",
+  "@questionDowngradeBody": {
+    "placeholders": {
+      "item": {
+        "type": "String",
+        "example": "Tool"
+      },
+      "installed": {
+        "type": "String",
+        "example": "v1.2.0"
+      },
+      "tag": {
+        "type": "String",
+        "example": "v1.0.0"
+      }
+    }
+  },
+  "questionDowngradeConfirm": "Go back",
+  "questionRunningTitle": "{item} is running",
+  "@questionRunningTitle": {
+    "placeholders": {
+      "item": {
+        "type": "String",
+        "example": "Tool"
+      }
+    }
+  },
+  "questionRunningBody": "It has to be closed before its files can be replaced. Unsaved work in it may be lost.",
+  "questionRunningRemoveBody": "It has to be closed before its files can be removed. Unsaved work in it may be lost.",
+  "questionRunningUpdate": "Close it and update",
+  "questionRunningUninstall": "Close it and uninstall",
+  "questionRunningReopen": "Open it again afterwards",
+  "questionVerifyTitle": "Install {file}?",
+  "@questionVerifyTitle": {
+    "placeholders": {
+      "file": {
+        "type": "String",
+        "example": "tool-x64.exe"
+      }
+    }
+  },
+  "questionVerifyConfirm": "Install anyway",
+  "questionReplaceTitle": "Replace the existing {name}?",
+  "@questionReplaceTitle": {
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "tool"
+      }
+    }
+  },
+  "questionReplaceBody": "The tools folder already has {file}, and {item} did not put it there.",
+  "@questionReplaceBody": {
+    "placeholders": {
+      "file": {
+        "type": "String",
+        "example": "tool.exe"
+      },
+      "item": {
+        "type": "String",
+        "example": "Tool"
+      }
+    }
+  },
+  "questionReplaceConfirm": "Replace",
+  "questionProgramsTitle": "Which programs should be added to PATH?",
+  "questionProgramsBody": "Choose the programs you want to run from a terminal.",
+  "questionProgramsMissing": "{tag} no longer has {programs}. Choose again.",
+  "@questionProgramsMissing": {
+    "placeholders": {
+      "tag": {
+        "type": "String",
+        "example": "v1.2.0"
+      },
+      "programs": {
+        "type": "String",
+        "example": "bin/tool.exe"
+      }
+    }
+  },
+  "questionProgramsConfirm": "Add to PATH",
+  "installErrorReplace": "Couldn't replace the existing files. Close the app if it's running and try again. Your previous version was put back.",
+  "installErrorReplaceFailed": "Couldn't replace the existing files. Close the app if it's running and try again.",
+  "installErrorTaken": "The command {command} already belongs to {owner}.",
+  "@installErrorTaken": {
+    "placeholders": {
+      "command": {
+        "type": "String",
+        "example": "tool"
+      },
+      "owner": {
+        "type": "String",
+        "example": "acme/tool"
+      }
+    }
+  },
+  "installErrorNoProgram": "There is no program in this download to run.",
+  "installErrorFormat": "This kind of file can't be unpacked.",
+  "installErrorUnsafe": "The download contains a file that isn't safe to unpack, so nothing was installed.",
+  "installErrorNoDownload": "{tag} has no download for this PC.",
+  "@installErrorNoDownload": {
+    "placeholders": {
+      "tag": {
+        "type": "String",
+        "example": "v1.2.0"
+      }
+    }
+  },
+  "installErrorUnpack": "The download couldn't be unpacked: {reason}",
+  "@installErrorUnpack": {
+    "placeholders": {
+      "reason": {
+        "type": "String",
+        "example": "unexpected EOF"
+      }
+    }
+  },
+  "installErrorOther": "Something went wrong: {reason}",
+  "@installErrorOther": {
+    "placeholders": {
+      "reason": {
+        "type": "String",
+        "example": "access denied"
+      }
+    }
+  },
+  "uninstallTitle": "Uninstall {name} from this PC?",
+  "@uninstallTitle": {
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "Tool"
+      }
+    }
+  },
+  "uninstallBodyFolder": "This deletes {folder}, including anything {name} saved there.",
+  "@uninstallBodyFolder": {
+    "placeholders": {
+      "folder": {
+        "type": "String",
+        "example": "C:\\Apps\\tool"
+      },
+      "name": {
+        "type": "String",
+        "example": "Tool"
+      }
+    }
+  },
+  "uninstallBodyFiles": "This deletes the files {name} installed in {folder}. Other files in the folder stay.",
+  "@uninstallBodyFiles": {
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "Tool"
+      },
+      "folder": {
+        "type": "String",
+        "example": "D:\\Mine"
+      }
+    }
+  },
+  "uninstallBodyCommands": "This removes the commands {commands}. Your PATH is left as it is.",
+  "@uninstallBodyCommands": {
+    "placeholders": {
+      "commands": {
+        "type": "String",
+        "example": "tool, other"
+      }
+    }
+  },
+  "uninstallConfirm": "Uninstall",
+  "drawerStopTrackingDelete": "Also delete the files {name} installed",
+  "@drawerStopTrackingDelete": {
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "Tool"
+      }
+    }
+  },
+  "silentInstalls": "Silent installs",
+  "silentInstallsHint": "Run setup programs and uninstallers without their windows when they can.",
+  "silentInstallsLabel": "Toggle silent installs",
+  "installForEveryone": "Install apps for everyone on this PC",
+  "installForEveryoneHint": "Install apps that come with a setup program for every user, and prefer downloads built that way. Windows asks for permission.",
+  "installForEveryoneLabel": "Toggle installing apps for everyone on this PC",
+  "drawerInstallerArgs": "Custom installer arguments",
+  "drawerInstallerArgsHint": "Replace the switches that make the setup program run quietly.",
+  "drawerInstallerArgsPlaceholder": "For example /S /NORESTART",
+  "drawerInstallerArgsSave": "Save",
+  "drawerInstallFolder": "Install folder",
+  "drawerInstallFolderHint": "Used the next time it's installed or updated. The copy that's installed now isn't moved.",
+  "drawerInstallForEveryone": "Install for everyone",
+  "addInstallLocationNote": "Setup programs are asked to use it — most do, but a few ignore the request.",
+  "installUnlisted": "Windows doesn't list this program. To launch it, locate it.",
+  "installUnlistedLocate": "Locate the program…",
+  "installUnlistedChoose": "Choose the program to launch",
+  "installFromStartMenu": "Open it from the Start menu.",
+  "toastInstallCancelled": "Installation was cancelled.",
+  "toastUninstallCancelled": "Uninstall was cancelled.",
+  "toastRestartNeeded": "{item} needs your PC to restart to finish installing.",
+  "@toastRestartNeeded": {
+    "placeholders": {
+      "item": {
+        "type": "String",
+        "example": "Tool"
+      }
+    }
+  },
+  "activityRestartNeeded": "{item} needs your PC to restart to finish installing.",
+  "@activityRestartNeeded": {
+    "placeholders": {
+      "item": {
+        "type": "String",
+        "example": "Tool"
+      }
+    }
+  },
+  "activityUnlisted": "Windows doesn't list {item} after installing it, so it can't be uninstalled from here.",
+  "@activityUnlisted": {
+    "placeholders": {
+      "item": {
+        "type": "String",
+        "example": "Tool"
+      }
+    }
+  },
+  "activityUpdatedOutside": "{item} was updated outside {product}",
+  "@activityUpdatedOutside": {
+    "placeholders": {
+      "item": {
+        "type": "String",
+        "example": "Tool"
+      },
+      "product": {
+        "type": "String",
+        "example": "Release Sync"
+      }
+    }
+  },
+  "activityLicenseAccepted": "Accepted the license of {item} and added {setting} to its installer arguments",
+  "@activityLicenseAccepted": {
+    "placeholders": {
+      "item": {
+        "type": "String",
+        "example": "Tool"
+      },
+      "setting": {
+        "type": "String",
+        "example": "ACCEPTLICENSE=YES"
+      }
+    }
+  },
+  "installErrorSetup": "The installer closed with code {code}. If you cancelled it, you can try again.",
+  "@installErrorSetup": {
+    "placeholders": {
+      "code": {
+        "type": "String",
+        "example": "1603"
+      }
+    }
+  },
+  "installErrorMSI": "{item} couldn't be installed. {reason}",
+  "@installErrorMSI": {
+    "placeholders": {
+      "item": {
+        "type": "String",
+        "example": "Tool"
+      },
+      "reason": {
+        "type": "String",
+        "example": "access denied"
+      }
+    }
+  },
+  "installErrorMSIBlocked": "Windows blocked part of this installer.",
+  "installErrorMSIAdministrator": "This installer needs an administrator account.",
+  "installErrorMSIOldVersion": "Windows couldn't remove the old version. Uninstall it from Installed apps, then install again.",
+  "installErrorMSIOtherVersion": "Another version is already installed. Uninstall it from Installed apps, then install again.",
+  "installErrorMSIBusy": "Another installer is running. Wait for it to finish.",
+  "installErrorMSIFileInUse": "A file it needs to replace is in use. Close the app and try again.",
+  "installErrorMSIDiskSpace": "There isn't enough free disk space.",
+  "installErrorMSICustomAction": "A step inside the app's own installer failed.",
+  "installErrorMSICode": "The installer stopped with error {code}. Close the app if it is open and try again.",
+  "@installErrorMSICode": {
+    "placeholders": {
+      "code": {
+        "type": "String",
+        "example": "1603"
+      }
+    }
+  },
+  "installErrorLog": "{text} Details: {log}",
+  "@installErrorLog": {
+    "placeholders": {
+      "text": {
+        "type": "String",
+        "example": "Something went wrong."
+      },
+      "log": {
+        "type": "String",
+        "example": "C:\\Logs\\tool-install.log"
+      }
+    }
+  },
+  "installErrorStillListed": "The uninstaller finished, but the program still appears installed. It may have been cancelled.",
+  "installErrorNoUninstaller": "Windows doesn't list this program, so it can't be uninstalled from here.",
+  "uninstallBodyInstaller": "{name} is removed with its own uninstaller. Windows may ask for permission.",
+  "@uninstallBodyInstaller": {
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "Tool"
+      }
+    }
+  },
+  "questionLicenseTitle": "Accept the license of {item}?",
+  "@questionLicenseTitle": {
+    "placeholders": {
+      "item": {
+        "type": "String",
+        "example": "Tool"
+      }
+    }
+  },
+  "questionLicenseBody": "{item}'s installer needs its license accepted before it installs quietly. If you accept it, {setting} is added to the installer arguments of {item} and the installer runs again.",
+  "@questionLicenseBody": {
+    "placeholders": {
+      "item": {
+        "type": "String",
+        "example": "Tool"
+      },
+      "setting": {
+        "type": "String",
+        "example": "ACCEPTLICENSE=YES"
+      }
+    }
+  },
+  "questionLicenseConfirm": "I accept the license",
+  "questionReinstallTitle": "Reinstall {item}?",
+  "@questionReinstallTitle": {
+    "placeholders": {
+      "item": {
+        "type": "String",
+        "example": "Tool"
+      }
+    }
+  },
+  "questionReinstallBody": "{item} is uninstalled first, then {tag} is installed again.",
+  "@questionReinstallBody": {
+    "placeholders": {
+      "item": {
+        "type": "String",
+        "example": "Tool"
+      },
+      "tag": {
+        "type": "String",
+        "example": "v1.0.0"
+      }
+    }
+  },
+  "questionReinstallConfirm": "Reinstall",
+  "questionEveryone": "Install for everyone on this PC",
+  "warningRecord": "The install could not be recorded completely: {reason}",
+  "@warningRecord": {
+    "placeholders": {
+      "reason": {
+        "type": "String",
+        "example": "access denied"
+      }
+    }
+  },
+  "programFiles": "Programs",
+  "activityLocated": "Located the program of {item}: {file}",
+  "@activityLocated": {
+    "placeholders": {
+      "item": {
+        "type": "String",
+        "example": "Tool"
+      },
+      "file": {
+        "type": "String",
+        "example": "tool.exe"
+      }
+    }
+  },
+  "drawerInstallerArgsLabel": "Installer arguments for this app",
+  "startAtLogin": "Start with Windows",
+  "startAtLoginHint": "Open {product} in the background when you sign in.",
+  "@startAtLoginHint": {
+    "placeholders": {
+      "product": {
+        "type": "String",
+        "example": "Release Sync"
+      }
+    }
+  },
+  "startAtLoginLabel": "Toggle starting with Windows",
+  "startMinimized": "Start minimized",
+  "startMinimizedHint": "When {product} starts with Windows, stay in the tray instead of opening the window.",
+  "@startMinimizedHint": {
+    "placeholders": {
+      "product": {
+        "type": "String",
+        "example": "Release Sync"
+      }
+    }
+  },
+  "startMinimizedLabel": "Toggle starting minimized",
+  "showTrayIcon": "Show tray icon",
+  "showTrayIconHint": "Keep an icon in the notification area to open {product}, check for updates and quit.",
+  "@showTrayIconHint": {
+    "placeholders": {
+      "product": {
+        "type": "String",
+        "example": "Release Sync"
+      }
+    }
+  },
+  "showTrayIconLabel": "Toggle the tray icon",
+  "closeToTray": "Close button minimizes to tray",
+  "closeToTrayHint": "Closing the window keeps {product} running in the tray. Quit it from the tray menu.",
+  "@closeToTrayHint": {
+    "placeholders": {
+      "product": {
+        "type": "String",
+        "example": "Release Sync"
+      }
+    }
+  },
+  "closeToTrayLabel": "Toggle minimizing to the tray when the window is closed",
+  "checkInterval": "Check for updates",
+  "checkIntervalHint": "How often {product} looks for new releases while it is running.",
+  "@checkIntervalHint": {
+    "placeholders": {
+      "product": {
+        "type": "String",
+        "example": "Release Sync"
+      }
+    }
+  },
+  "checkIntervalLabel": "How often to check for updates",
+  "interval15m": "Every 15 minutes",
+  "interval30m": "Every 30 minutes",
+  "interval1h": "Every hour",
+  "interval3h": "Every 3 hours",
+  "interval6h": "Every 6 hours",
+  "interval12h": "Every 12 hours",
+  "interval24h": "Daily",
+  "intervalManual": "Manually only",
+  "notifyUpdates": "Notify me about updates",
+  "notifyUpdatesHint": "Show a notification when new versions are found or installed.",
+  "notifyUpdatesLabel": "Toggle update notifications",
+  "autoInstall": "Install updates automatically",
+  "autoInstallHint": "Update apps and tools in the background when that needs no question, no administrator permission and no running program to close.",
+  "autoInstallLabel": "Toggle installing updates automatically",
+  "drawerAutoUpdate": "Update automatically",
+  "trayOpen": "Open",
+  "trayUpdateEverything": "Update everything ({count})",
+  "@trayUpdateEverything": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "example": "3"
+      }
+    }
+  },
+  "trayQuit": "Quit",
+  "trayToolTip": "{product}",
+  "@trayToolTip": {
+    "placeholders": {
+      "product": {
+        "type": "String",
+        "example": "Release Sync"
+      }
+    }
+  },
+  "trayToolTipUpdates": "{product}: {count, plural, one {# update} other {# updates}} available",
+  "@trayToolTipUpdates": {
+    "placeholders": {
+      "product": {
+        "type": "String",
+        "example": "Release Sync"
+      },
+      "count": {
+        "type": "int",
+        "example": "2"
+      }
+    }
+  },
+  "notifyUpdateTitle": "Update available",
+  "notifyUpdatesTitle": "{count} updates available",
+  "@notifyUpdatesTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "example": "3"
+      }
+    }
+  },
+  "notifyUpdatedTitle": "{count, plural, one {# update installed} other {# updates installed}}",
+  "@notifyUpdatedTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "example": "2"
+      }
+    }
+  },
+  "notifyNamesMore": "{names} and {more} more",
+  "@notifyNamesMore": {
+    "placeholders": {
+      "names": {
+        "type": "String",
+        "example": "a, b, c, d"
+      },
+      "more": {
+        "type": "int",
+        "example": "3"
+      }
+    }
+  },
+  "trayNoticeTitle": "{product} is still running",
+  "@trayNoticeTitle": {
+    "placeholders": {
+      "product": {
+        "type": "String",
+        "example": "Release Sync"
+      }
+    }
+  },
+  "trayNoticeBody": "Use the tray icon to open it again, or choose Quit from its menu to exit.",
+  "activityAutoNotManaged": "{item} wasn't updated automatically: {product} didn't install it.",
+  "@activityAutoNotManaged": {
+    "placeholders": {
+      "item": {
+        "type": "String",
+        "example": "acme/tool"
+      },
+      "product": {
+        "type": "String",
+        "example": "Release Sync"
+      }
+    }
+  },
+  "activityAutoLink": "{item} wasn't updated automatically: confirm it follows the right project.",
+  "@activityAutoLink": {
+    "placeholders": {
+      "item": {
+        "type": "String",
+        "example": "acme/tool"
+      }
+    }
+  },
+  "activityAutoAttention": "{item} wasn't updated automatically: it needs attention first.",
+  "@activityAutoAttention": {
+    "placeholders": {
+      "item": {
+        "type": "String",
+        "example": "acme/tool"
+      }
+    }
+  },
+  "activityAutoElevation": "{item} wasn't updated automatically: the update needs administrator permission.",
+  "@activityAutoElevation": {
+    "placeholders": {
+      "item": {
+        "type": "String",
+        "example": "acme/tool"
+      }
+    }
+  },
+  "activityAutoInterface": "{item} wasn't updated automatically: its installer can't run without a window.",
+  "@activityAutoInterface": {
+    "placeholders": {
+      "item": {
+        "type": "String",
+        "example": "acme/tool"
+      }
+    }
+  },
+  "activityAutoLicense": "{item} wasn't updated automatically: its installer asks for a license to be accepted.",
+  "@activityAutoLicense": {
+    "placeholders": {
+      "item": {
+        "type": "String",
+        "example": "acme/tool"
+      }
+    }
+  },
+  "activityAutoVerify": "Skipped automatic install of {item}: {findings}.",
+  "@activityAutoVerify": {
+    "placeholders": {
+      "item": {
+        "type": "String",
+        "example": "acme/tool"
+      },
+      "findings": {
+        "type": "String",
+        "example": "the file is not signed"
+      }
+    }
+  },
+  "startAtLoginFailed": "Could not change whether {product} starts with Windows.",
+  "@startAtLoginFailed": {
+    "placeholders": {
+      "product": {
+        "type": "String",
+        "example": "Release Sync"
+      }
+    }
+  },
+  "scanTitle": "Look through installed programs",
+  "scanIntro": "Reads the programs Windows lists as installed, your Desktop and Start menu shortcuts, and the folders you add. Programs that link to their GitHub page are matched automatically; for the rest you can search GitHub by name.",
+  "scanNow": "Scan now",
+  "scanReading": "Reading installed programs, shortcuts and your folders…",
+  "scanLinking": "Looking for project links… {done}/{total}",
+  "@scanLinking": {
+    "placeholders": {
+      "done": {
+        "type": "int",
+        "example": "12"
+      },
+      "total": {
+        "type": "int",
+        "example": "80"
+      }
+    }
+  },
+  "scanChecking": "Checking {total, plural, one {# linked program} other {# linked programs}} on GitHub… {done}/{total}",
+  "@scanChecking": {
+    "placeholders": {
+      "done": {
+        "type": "int",
+        "example": "3"
+      },
+      "total": {
+        "type": "int",
+        "example": "9"
+      }
+    }
+  },
+  "scanDone": "Done. {linked, plural, one {# program} other {# programs}} linked to GitHub, {others} others.",
+  "@scanDone": {
+    "placeholders": {
+      "linked": {
+        "type": "int",
+        "example": "4"
+      },
+      "others": {
+        "type": "int",
+        "example": "120"
+      }
+    }
+  },
+  "scanCanceled": "Scan canceled.",
+  "scanUnsupported": "Scanning for installed programs is not available on this system.",
+  "scanFailed": "The scan could not read the installed programs: {reason}",
+  "@scanFailed": {
+    "placeholders": {
+      "reason": {
+        "type": "String",
+        "example": "access denied"
+      }
+    }
+  },
+  "scanLimited": "GitHub's request limit was reached, so some programs were not checked. Scan again later to check them.",
+  "scanWinget": "Also read winget packages",
+  "scanWingetReading": "Reading your winget packages (this takes a moment)…",
+  "scanWingetChecking": "Checking {total} winget packages for project pages… {done}/{total}",
+  "@scanWingetChecking": {
+    "placeholders": {
+      "done": {
+        "type": "int",
+        "example": "3"
+      },
+      "total": {
+        "type": "int",
+        "example": "40"
+      }
+    }
+  },
+  "scanWingetDone": "winget: {count, plural, one {# more program} other {# more programs}} linked to a project page.",
+  "@scanWingetDone": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "example": "2"
+      }
+    }
+  },
+  "scanWingetMissing": "winget isn't available on this PC.",
+  "scanAddFolder": "Add a folder to look in…",
+  "scanAddFolderChoose": "Choose a folder that holds portable programs, each in its own sub-folder",
+  "scanRemoveFolder": "Stop looking in {folder}",
+  "@scanRemoveFolder": {
+    "placeholders": {
+      "folder": {
+        "type": "String",
+        "example": "D:\\Portable"
+      }
+    }
+  },
+  "scanNoLinks": "None of your installed programs link straight to GitHub. That's common: many projects don't put their repository in Windows. Use “Find on GitHub” below to look programs up by name.",
+  "scanLinkedHeader": "Linked to GitHub · {count}",
+  "@scanLinkedHeader": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "example": "4"
+      }
+    }
+  },
+  "scanSelectAll": "Select all",
+  "scanSelectNone": "Select none",
+  "scanOtherHeader": "Other programs · {count}",
+  "@scanOtherHeader": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "example": "120"
+      }
+    }
+  },
+  "scanOtherHint": "No GitHub link was found in these. “Find on GitHub” searches by name and shows how confident the match is. Nothing is added until you tick it.",
+  "scanFindAllSeconds": "Find all on GitHub (~{seconds} s)",
+  "@scanFindAllSeconds": {
+    "placeholders": {
+      "seconds": {
+        "type": "int",
+        "example": "45"
+      }
+    }
+  },
+  "scanFindAllMinutes": "Find all on GitHub (~{minutes} min)",
+  "@scanFindAllMinutes": {
+    "placeholders": {
+      "minutes": {
+        "type": "int",
+        "example": "4"
+      }
+    }
+  },
+  "scanFindAllProgress": "Looking for “{name}” on GitHub… {done}/{total}",
+  "@scanFindAllProgress": {
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "Some Tool"
+      },
+      "done": {
+        "type": "int",
+        "example": "3"
+      },
+      "total": {
+        "type": "int",
+        "example": "40"
+      }
+    }
+  },
+  "scanFindAllDone": "Finished looking up {count, plural, one {# program} other {# programs}}: found {found} on GitHub.",
+  "@scanFindAllDone": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "example": "40"
+      },
+      "found": {
+        "type": "int",
+        "example": "6"
+      }
+    }
+  },
+  "scanFindAllStopped": "Stopped after {count, plural, one {# lookup} other {# lookups}}: found {found} on GitHub.",
+  "@scanFindAllStopped": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "example": "12"
+      },
+      "found": {
+        "type": "int",
+        "example": "2"
+      }
+    }
+  },
+  "scanHideSystem": "Hide Windows, Microsoft and driver components",
+  "scanLink": "Link…",
+  "scanFind": "Find on GitHub",
+  "scanKindProgram": "Linked by the program",
+  "scanKindUser": "Linked by you",
+  "scanKindLikely": "Likely match",
+  "scanKindPossible": "Possible match",
+  "scanStatusTracked": "Already in your library",
+  "scanStatusChecking": "Checking releases…",
+  "scanStatusNoReleases": "No releases published",
+  "scanStatusUnchecked": "Releases were not checked",
+  "scanStatusFailed": "Releases could not be checked",
+  "scanStatusLatest": "Latest release {latest}",
+  "@scanStatusLatest": {
+    "placeholders": {
+      "latest": {
+        "type": "String",
+        "example": "v1.2.0"
+      }
+    }
+  },
+  "scanStatusUpdate": "Update available: {have} → {latest}",
+  "@scanStatusUpdate": {
+    "placeholders": {
+      "have": {
+        "type": "String",
+        "example": "1.0.0"
+      },
+      "latest": {
+        "type": "String",
+        "example": "v1.2.0"
+      }
+    }
+  },
+  "scanStatusCurrent": "Up to date ({latest})",
+  "@scanStatusCurrent": {
+    "placeholders": {
+      "latest": {
+        "type": "String",
+        "example": "v1.2.0"
+      }
+    }
+  },
+  "scanVersionUnknown": "version unknown",
+  "scanNoteDead": "The project page it points to couldn't be read",
+  "scanNoteShort": "Name too short to search for",
+  "scanNoteNoMatch": "No match found on GitHub",
+  "scanNoteLimit": "GitHub's search limit was reached. Try again in a minute.",
+  "scanFooter": "Adding links each program to its GitHub page. Nothing gets reinstalled — {product} just starts tracking the version you have.",
+  "@scanFooter": {
+    "placeholders": {
+      "product": {
+        "type": "String",
+        "example": "Release Sync"
+      }
+    }
+  },
+  "scanAdd": "{count, plural, one {Add # app to library} other {Add # apps to library}}",
+  "@scanAdd": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "example": "3"
+      }
+    }
+  },
+  "scanLinkTitle": "Link {name} to its project page",
+  "@scanLinkTitle": {
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "Some Tool"
+      }
+    }
+  },
+  "scanLinkBody": "Paste the address of its GitHub repository.",
+  "scanLinkPlaceholder": "https://github.com/owner/project",
+  "scanLinkLabel": "Repository address",
+  "scanLinkConfirm": "Link it",
+  "scanLinkInvalid": "That doesn't look like a repository address.",
+  "scanToastLinked": "Linked {name} to {repo}",
+  "@scanToastLinked": {
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "Some Tool"
+      },
+      "repo": {
+        "type": "String",
+        "example": "acme/tool"
+      }
+    }
+  },
+  "scanToastAdded": "{count, plural, one {Added # app} other {Added # apps}}",
+  "@scanToastAdded": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "example": "3"
+      }
+    }
+  },
+  "scanToastAddedUpdates": "{count, plural, one {Added # app} other {Added # apps}}: {updates, plural, one {# has an update waiting} other {# have updates waiting}}",
+  "@scanToastAddedUpdates": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "example": "3"
+      },
+      "updates": {
+        "type": "int",
+        "example": "2"
+      }
+    }
+  },
+  "scanToastAddedLimited": "{count, plural, one {Added # app} other {Added # apps}}. GitHub's request limit was reached, so the rest were not added.",
+  "@scanToastAddedLimited": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "example": "3"
+      }
+    }
+  },
+  "activityScanned": "Scanned this PC: {linked, plural, one {# program} other {# programs}} linked to GitHub, {others} others",
+  "@activityScanned": {
+    "placeholders": {
+      "linked": {
+        "type": "int",
+        "example": "4"
+      },
+      "others": {
+        "type": "int",
+        "example": "120"
+      }
+    }
+  },
+  "activityScanFailed": "Scan failed: {reason}",
+  "@activityScanFailed": {
+    "placeholders": {
+      "reason": {
+        "type": "String",
+        "example": "access denied"
+      }
+    }
+  },
+  "activityScanAdded": "Added {name} from the PC scan",
+  "@activityScanAdded": {
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "acme/tool"
+      }
+    }
+  },
+  "activityScanAddFailed": "Could not add {name} from the PC scan: {reason}",
+  "@activityScanAddFailed": {
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "Some Tool"
+      },
+      "reason": {
+        "type": "String",
+        "example": "not found"
+      }
+    }
+  },
+  "linkGuessTitle": "Is this the right project?",
+  "linkGuessBody": "{product} matched this program to the repository above by its name only. Check it before updating: if it's wrong, an update could install something else.",
+  "@linkGuessBody": {
+    "placeholders": {
+      "product": {
+        "type": "String",
+        "example": "Release Sync"
+      }
+    }
+  },
+  "linkGuessYes": "Yes, it's right",
+  "linkGuessChange": "Change repository…",
+  "linkGuessFind": "Find a better match",
+  "relinkTitle": "Change the repository of {name}",
+  "@relinkTitle": {
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "Some Tool"
+      }
+    }
+  },
+  "relinkBody": "It's currently linked to {repo}. Paste the address of the right project. {product} keeps your notes, group and installed version, and checks the new repository for updates.",
+  "@relinkBody": {
+    "placeholders": {
+      "repo": {
+        "type": "String",
+        "example": "acme/tool"
+      },
+      "product": {
+        "type": "String",
+        "example": "Release Sync"
+      }
+    }
+  },
+  "relinkConfirm": "Switch",
+  "relinkWorking": "Switching…",
+  "betterTitle": "Find a better match for {name}",
+  "@betterTitle": {
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "Some Tool"
+      }
+    }
+  },
+  "betterSearching": "Searching GitHub…",
+  "betterNone": "No other match was found on GitHub.",
+  "betterUse": "Use this one",
+  "betterRepository": "Use {repo} for {name}",
+  "@betterRepository": {
+    "placeholders": {
+      "repo": {
+        "type": "String",
+        "example": "acme/tool"
+      },
+      "name": {
+        "type": "String",
+        "example": "Some Tool"
+      }
+    }
+  },
+  "activityLinkConfirmed": "Confirmed that {name} follows {repo}",
+  "@activityLinkConfirmed": {
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "Some Tool"
+      },
+      "repo": {
+        "type": "String",
+        "example": "acme/tool"
+      }
+    }
+  },
+  "activityRepoChanged": "{name} now follows {repo}",
+  "@activityRepoChanged": {
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "Some Tool"
+      },
+      "repo": {
+        "type": "String",
+        "example": "acme/tool"
+      }
+    }
+  },
+  "toastRepoChanged": "{name} now follows {repo}",
+  "@toastRepoChanged": {
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "Some Tool"
+      },
+      "repo": {
+        "type": "String",
+        "example": "acme/tool"
+      }
+    }
+  },
+  "toastRepoChangeFailed": "Could not switch repositories: {reason}",
+  "@toastRepoChangeFailed": {
+    "placeholders": {
+      "reason": {
+        "type": "String",
+        "example": "not found"
+      }
+    }
+  },
+  "questionLinkTitle": "Is {repo} the right project?",
+  "@questionLinkTitle": {
+    "placeholders": {
+      "repo": {
+        "type": "String",
+        "example": "acme/tool"
+      }
+    }
+  },
+  "questionLinkBody": "{product} matched “{name}” to {url} by its name only. If that's a different project, installing its update could replace your program with something else entirely. Check the page, and go on only if it's the right one. If it's wrong, cancel and use Change repository.",
+  "@questionLinkBody": {
+    "placeholders": {
+      "product": {
+        "type": "String",
+        "example": "Release Sync"
+      },
+      "name": {
+        "type": "String",
+        "example": "Some Tool"
+      },
+      "url": {
+        "type": "String",
+        "example": "https://github.com/acme/tool"
+      }
+    }
+  },
+  "questionLinkConfirm": "Yes, it's the right one",
+  "addOnPcTitle": "Already on this PC?",
+  "addOnPcFound": "Found “{name}” {version} in Windows' installed programs.",
+  "@addOnPcFound": {
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "Some Tool"
+      },
+      "version": {
+        "type": "String",
+        "example": "1.2.0"
+      }
+    }
+  },
+  "addOnPcLocated": "Using {path}.",
+  "@addOnPcLocated": {
+    "placeholders": {
+      "path": {
+        "type": "String",
+        "example": "D:\\Tools\\tool.exe"
+      }
+    }
+  },
+  "addOnPcLocate": "Locate…",
+  "addOnPcChoose": "Choose the program",
+  "warningShadowed": "{command} already runs from {folder}, which is earlier on your PATH than the tools folder. That copy runs instead of this one.",
+  "@warningShadowed": {
+    "placeholders": {
+      "command": {
+        "type": "String",
+        "example": "rg"
+      },
+      "folder": {
+        "type": "String",
+        "example": "C:\\Users\\me\\scoop\\shims"
+      }
+    }
+  },
+  "scanSelectRow": "Select {name}",
+  "@scanSelectRow": {
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "Some Tool"
+      }
+    }
+  },
+  "discoverTabTrending": "Trending",
+  "discoverTabPopular": "Popular",
+  "discoverTabNew": "New",
+  "discoverTabUpdated": "Updated",
+  "discoverTabFeatured": "Featured",
+  "discoverTabStars": "Your stars",
+  "discoverTabsLabel": "Lists",
+  "discoverBlurbTrending": "Projects gaining stars fastest right now. Movement arrows show how the ranking changed.",
+  "discoverBlurbPopular": "The most-starred projects of all time.",
+  "discoverBlurbNew": "Projects created in the last two months, by stars.",
+  "discoverBlurbUpdated": "Well-liked projects that were updated in the past week.",
+  "discoverBlurbFeatured": "Hand-picked favourites: emulators, game ports and decompilations, and the tools people reach for first.",
+  "discoverBlurbStars": "Everything you have starred on GitHub, newest first. Add the ones you want kept up to date.",
+  "discoverCategoryLabel": "Category",
+  "discoverCategoryAll": "Everything",
+  "discoverCategoryGames": "Games & ports",
+  "discoverCategoryEmulators": "Emulators",
+  "discoverCategoryUtilities": "Utilities",
+  "discoverCategoryMedia": "Media",
+  "discoverCategoryDev": "Developer tools",
+  "discoverCategoryPrivacy": "Privacy & security",
+  "discoverCategoryProductivity": "Productivity",
+  "discoverCategoryCustomize": "Customization",
+  "discoverCategoryGraphics": "Graphics & design",
+  "discoverCategoryCommunication": "Communication",
+  "discoverCategoryAi": "AI & data",
+  "discoverCategoryInternet": "Browsers & internet",
+  "discoverCategoryCli": "Command-line tools",
+  "discoverCompareLabel": "Compare movement",
+  "discoverCompareDay": "Since yesterday",
+  "discoverCompareWeek": "Since last week",
+  "discoverDownloadsOnly": "Only projects with downloads for this PC",
+  "discoverRefresh": "Refresh",
+  "discoverLoadMore": "Load more",
+  "discoverLoading": "Loading…",
+  "discoverTryAgain": "Try again",
+  "discoverFilterStars": "Filter your stars",
+  "discoverEmpty": "Nothing matched here right now. Try another list or category.",
+  "discoverEmptyDownloads": "Nothing here has a download for this PC right now. Try another list or category, or turn off “Only projects with downloads for this PC”.",
+  "discoverStarsNeedToken": "Add a GitHub token in Settings to see the projects you have starred.",
+  "discoverStarsEmpty": "You have not starred any projects yet.",
+  "discoverStarsNoMatch": "None of your stars match that filter.",
+  "discoverStatusShown": "{count} shown",
+  "@discoverStatusShown": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "example": "36"
+      }
+    }
+  },
+  "discoverStatusStars": "{shown} of {total} starred projects",
+  "@discoverStatusStars": {
+    "placeholders": {
+      "shown": {
+        "type": "int",
+        "example": "12"
+      },
+      "total": {
+        "type": "int",
+        "example": "300"
+      }
+    }
+  },
+  "discoverStatusUpdated": "Updated {when, date, medium}, {when, time, short}",
+  "@discoverStatusUpdated": {
+    "placeholders": {
+      "when": {
+        "type": "DateTime",
+        "example": "2026-11-15 10:30"
+      }
+    }
+  },
+  "discoverStatusMovementYesterday": "Movement since yesterday",
+  "discoverStatusMovementWeek": "Movement since last week",
+  "discoverStatusMovementDays": "Movement since {days} days ago",
+  "@discoverStatusMovementDays": {
+    "placeholders": {
+      "days": {
+        "type": "int",
+        "example": "3"
+      }
+    }
+  },
+  "discoverStatusFirstVisit": "Movement arrows appear on your next visit — today's ranking is saved.",
+  "discoverStatusPaused": "Download check paused to save your requests",
+  "discoverStatusStale": "Showing a saved list; a newer one is being downloaded",
+  "discoverStatusPartial": "Some searches failed, so this list may be incomplete",
+  "discoverAllowance": "{remaining} of {limit} requests left this hour (resets at {when, time, short})",
+  "@discoverAllowance": {
+    "placeholders": {
+      "remaining": {
+        "type": "int",
+        "example": "4980"
+      },
+      "limit": {
+        "type": "int",
+        "example": "5000"
+      },
+      "when": {
+        "type": "DateTime",
+        "example": "2026-11-15 10:30"
+      }
+    }
+  },
+  "discoverAllowanceNoReset": "{remaining} of {limit} requests left this hour",
+  "@discoverAllowanceNoReset": {
+    "placeholders": {
+      "remaining": {
+        "type": "int",
+        "example": "4980"
+      },
+      "limit": {
+        "type": "int",
+        "example": "5000"
+      }
+    }
+  },
+  "discoverIntroTitle": "Discover uses your GitHub requests",
+  "discoverIntroWithToken": "With your token you have {limit} requests an hour.",
+  "@discoverIntroWithToken": {
+    "placeholders": {
+      "limit": {
+        "type": "String",
+        "example": "5,000"
+      }
+    }
+  },
+  "discoverIntroWithoutToken": "Without a token you only have {limit} requests an hour, so Discover works but runs out quickly. A free token raises that to {raised} (Settings → GitHub).",
+  "@discoverIntroWithoutToken": {
+    "placeholders": {
+      "limit": {
+        "type": "String",
+        "example": "60"
+      },
+      "raised": {
+        "type": "String",
+        "example": "5,000"
+      }
+    }
+  },
+  "discoverIntroOptions": "Full mode shows {full} projects per list and prepares the other lists in the background. Light mode shows {light} and prepares nothing. Looking up which projects have a download for this PC costs about one request per project.",
+  "@discoverIntroOptions": {
+    "placeholders": {
+      "full": {
+        "type": "int",
+        "example": "36"
+      },
+      "light": {
+        "type": "int",
+        "example": "15"
+      }
+    }
+  },
+  "discoverIntroGotIt": "Got it",
+  "discoverIntroLight": "Use Light mode",
+  "discoverCardAdd": "Add",
+  "discoverCardInLibrary": "In library",
+  "discoverCardMenu": "More actions for {name}",
+  "@discoverCardMenu": {
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "owner/repo"
+      }
+    }
+  },
+  "discoverCardDetails": "Details",
+  "discoverCardTryLater": "Try later",
+  "discoverCardRemoveTryLater": "Remove from Try later",
+  "discoverCardMore": "More from this developer",
+  "discoverCardOpen": "Open on GitHub",
+  "discoverBadgeDownload": "Download for this PC",
+  "discoverMoveUp": "▲ {places}",
+  "@discoverMoveUp": {
+    "placeholders": {
+      "places": {
+        "type": "int",
+        "example": "3"
+      }
+    }
+  },
+  "discoverMoveDown": "▼ {places}",
+  "@discoverMoveDown": {
+    "placeholders": {
+      "places": {
+        "type": "int",
+        "example": "2"
+      }
+    }
+  },
+  "discoverMoveSame": "—",
+  "discoverMoveNew": "New",
+  "discoverMoveUpLabel": "Up {places, plural, one {# place} other {# places}}",
+  "@discoverMoveUpLabel": {
+    "placeholders": {
+      "places": {
+        "type": "int",
+        "example": "3"
+      }
+    }
+  },
+  "discoverMoveDownLabel": "Down {places, plural, one {# place} other {# places}}",
+  "@discoverMoveDownLabel": {
+    "placeholders": {
+      "places": {
+        "type": "int",
+        "example": "2"
+      }
+    }
+  },
+  "discoverMoveSameLabel": "Unchanged",
+  "discoverMoveNewLabel": "New on this list",
+  "discoverGained": "+{count} ★",
+  "@discoverGained": {
+    "placeholders": {
+      "count": {
+        "type": "String",
+        "example": "1.2k"
+      }
+    }
+  },
+  "discoverStars": "★ {count}",
+  "@discoverStars": {
+    "placeholders": {
+      "count": {
+        "type": "String",
+        "example": "12.3k"
+      }
+    }
+  },
+  "discoverSearchTitle": "Results for “{text}”",
+  "@discoverSearchTitle": {
+    "placeholders": {
+      "text": {
+        "type": "String",
+        "example": "editor"
+      }
+    }
+  },
+  "discoverBack": "Back to Discover",
+  "discoverSearchCount": "Showing {shown} of {total} results",
+  "@discoverSearchCount": {
+    "placeholders": {
+      "shown": {
+        "type": "int",
+        "example": "24"
+      },
+      "total": {
+        "type": "int",
+        "example": "812"
+      }
+    }
+  },
+  "discoverSearchNone": "No repositories matched “{text}”.",
+  "@discoverSearchNone": {
+    "placeholders": {
+      "text": {
+        "type": "String",
+        "example": "editor"
+      }
+    }
+  },
+  "discoverOwnerTitle": "More from {owner}",
+  "@discoverOwnerTitle": {
+    "placeholders": {
+      "owner": {
+        "type": "String",
+        "example": "octocat"
+      }
+    }
+  },
+  "discoverOwnerNone": "{owner} has no other public repositories.",
+  "@discoverOwnerNone": {
+    "placeholders": {
+      "owner": {
+        "type": "String",
+        "example": "octocat"
+      }
+    }
+  },
+  "repoStars": "Stars",
+  "repoForks": "Forks",
+  "repoIssues": "Open issues",
+  "repoUpdated": "Last updated",
+  "repoLanguage": "Language",
+  "repoLicense": "License",
+  "repoCreated": "Created",
+  "repoReadme": "README",
+  "repoReadmeLoading": "Loading the README…",
+  "repoReadmeNone": "This repository has no README.",
+  "repoReadmeFailed": "The README could not be loaded. {error}",
+  "@repoReadmeFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String",
+        "example": "GitHub could not be reached."
+      }
+    }
+  },
+  "repoMoreFrom": "More from {owner}",
+  "@repoMoreFrom": {
+    "placeholders": {
+      "owner": {
+        "type": "String",
+        "example": "octocat"
+      }
+    }
+  },
+  "repoOpen": "Open on GitHub",
+  "repoWebsite": "Website",
+  "repoTryLater": "Try later",
+  "repoAdd": "Add",
+  "repoInLibrary": "In library",
+  "tryLaterSearchLabel": "Search saved repositories",
+  "tryLaterSearchPlaceholder": "Search by name, note, type or topic…",
+  "tryLaterSortLabel": "Sort saved repositories",
+  "tryLaterSortRecent": "Recently saved",
+  "tryLaterSortOldest": "Oldest first",
+  "tryLaterSortName": "Name A–Z",
+  "tryLaterSortStars": "Most stars",
+  "tryLaterSortType": "Type",
+  "tryLaterGroup": "Group by type",
+  "tryLaterCount": "{count, plural, one {# saved} other {# saved}}",
+  "@tryLaterCount": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "example": "4"
+      }
+    }
+  },
+  "tryLaterShown": "Showing {shown} of {total}",
+  "@tryLaterShown": {
+    "placeholders": {
+      "shown": {
+        "type": "int",
+        "example": "2"
+      },
+      "total": {
+        "type": "int",
+        "example": "4"
+      }
+    }
+  },
+  "tryLaterNoMatches": "No saved repositories match that search.",
+  "tryLaterOther": "Other",
+  "tryLaterMenu": "More actions for {name}",
+  "@tryLaterMenu": {
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "owner/repo"
+      }
+    }
+  },
+  "tryLaterAddToLibrary": "Add to library",
+  "tryLaterRemove": "Remove from this list",
+  "tryLaterEditNote": "Edit note",
+  "tryLaterOpenProject": "Open project page",
+  "tryLaterNoteTitle": "Note for {name}",
+  "@tryLaterNoteTitle": {
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "owner/repo"
+      }
+    }
+  },
+  "tryLaterNoteLabel": "Note",
+  "tryLaterNotePlaceholder": "What do you want to remember about it?",
+  "tryLaterNoteSave": "Save",
+  "tryLaterSavedOn": "Saved {when, date, medium}",
+  "@tryLaterSavedOn": {
+    "placeholders": {
+      "when": {
+        "type": "DateTime",
+        "example": "2026-11-15"
+      }
+    }
+  },
+  "activityTryLaterSaved": "Saved {name} for later",
+  "@activityTryLaterSaved": {
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "owner/repo"
+      }
+    }
+  },
+  "activityTryLaterRemoved": "Removed {name} from Try later",
+  "@activityTryLaterRemoved": {
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "owner/repo"
+      }
+    }
+  },
+  "activityTryLaterFailed": "Could not change the saved repository {name}: {error}",
+  "@activityTryLaterFailed": {
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "owner/repo"
+      },
+      "error": {
+        "type": "String",
+        "example": "database is locked"
+      }
+    }
+  },
+  "activityStarsRead": "Read {count, plural, one {# starred project} other {# starred projects}} from GitHub",
+  "@activityStarsRead": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "example": "12"
+      }
+    }
+  },
+  "activityDiscoverFailed": "Could not load the {list} list: {error}",
+  "@activityDiscoverFailed": {
+    "placeholders": {
+      "list": {
+        "type": "String",
+        "example": "Trending"
+      },
+      "error": {
+        "type": "String",
+        "example": "GitHub could not be reached."
+      }
+    }
+  },
+  "activityPrepareFailed": "Could not prepare Discover lists ahead of time: {error}",
+  "@activityPrepareFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String",
+        "example": "GitHub could not be reached."
+      }
+    }
+  },
+  "toastSavedForLater": "Saved {name} for later",
+  "@toastSavedForLater": {
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "owner/repo"
+      }
+    }
+  },
+  "toastAlreadySaved": "{name} is already saved for later",
+  "@toastAlreadySaved": {
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "owner/repo"
+      }
+    }
+  },
+  "discoverSettingsTitle": "Discover and your request allowance",
+  "discoverLightTitle": "Light mode",
+  "discoverLightHint": "Shows {light} projects per list and prepares nothing ahead of time, which uses far fewer GitHub requests.",
+  "@discoverLightHint": {
+    "placeholders": {
+      "light": {
+        "type": "int",
+        "example": "15"
+      }
+    }
+  },
+  "discoverLightLabel": "Toggle Light mode",
+  "discoverDownloadsTitle": "Only show projects with downloads for this PC",
+  "discoverDownloadsHint": "Costs about one request per project, so it needs a GitHub token. A project that could not be checked stays in the list.",
+  "discoverDownloadsLabel": "Toggle showing only projects with downloads for this PC",
+  "discoverIntroAgainTitle": "Show the explainer again",
+  "discoverIntroAgainHint": "Explains how Discover spends your GitHub requests.",
+  "discoverIntroAgain": "Show",
+  "filterFavorites": "★ Favorites",
+  "filterHidden": "Hidden",
+  "kindFilterLabel": "Filter by kind",
+  "kindApps": "Apps",
+  "kindTools": "Command-line tools",
+  "groupFilterLabel": "Filter by group",
+  "groupAll": "All groups",
+  "groupNew": "New group",
+  "groupUngrouped": "Ungrouped",
+  "libraryAuto": "Auto",
+  "libraryAutoLabel": "Show apps without a group of their own under their type",
+  "librarySections": "Group apps into sections",
+  "libraryFoldAll": "Fold all sections",
+  "libraryOpenAll": "Open all sections",
+  "libraryApps": "{count, plural, one {# app} other {# apps}}",
+  "@libraryApps": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "example": "12"
+      }
+    }
+  },
+  "libraryUpdateSummary": "{count, plural, =0 {everything is up to date} one {# update available} other {# updates available}}",
+  "@libraryUpdateSummary": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "example": "2"
+      }
+    }
+  },
+  "libraryHiddenCount": "{count} hidden",
+  "@libraryHiddenCount": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "example": "3"
+      }
+    }
+  },
+  "libraryGroupEmpty": "Nothing here yet. Drag an app onto this group to add it.",
+  "libraryGroupDrop": "Drop {name} here to move it to {group}",
+  "@libraryGroupDrop": {
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "Release Sync"
+      },
+      "group": {
+        "type": "String",
+        "example": "Work tools"
+      }
+    }
+  },
+  "libraryGroupLabel": "{group}, {count, plural, one {# app} other {# apps}}",
+  "@libraryGroupLabel": {
+    "placeholders": {
+      "group": {
+        "type": "String",
+        "example": "Work tools"
+      },
+      "count": {
+        "type": "int",
+        "example": "4"
+      }
+    }
+  },
+  "librarySectionLabel": "Show or hide the apps in {group}",
+  "@librarySectionLabel": {
+    "placeholders": {
+      "group": {
+        "type": "String",
+        "example": "Work tools"
+      }
+    }
+  },
+  "categoryGames": "Games & Emulation",
+  "categoryMedia": "Media & Entertainment",
+  "categoryGraphics": "Graphics & Design",
+  "categoryProductivity": "Productivity",
+  "categorySecurity": "Security & Privacy",
+  "categoryInternet": "Browsers & Internet",
+  "categoryCommunication": "Communication",
+  "categoryAi": "AI & Data",
+  "categorySystem": "System & Utilities",
+  "categoryDeveloper": "Developer Tools",
+  "categoryOther": "Other",
+  "groupNewTitle": "New group",
+  "groupNewBody": "Groups let you organize your library your own way. Drag apps onto a group to fill it.",
+  "groupNewBodyFor": "Create a group and move {name} into it.",
+  "@groupNewBodyFor": {
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "Release Sync"
+      }
+    }
+  },
+  "groupNameLabel": "Group name",
+  "groupNamePlaceholder": "e.g. Work tools",
+  "groupCreate": "Create group",
+  "groupRenameTitle": "Rename group",
+  "groupRename": "Rename",
+  "groupMenuRename": "Rename group…",
+  "groupMenuDelete": "Delete group…",
+  "groupDeleteTitle": "Delete “{name}”?",
+  "@groupDeleteTitle": {
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "Work tools"
+      }
+    }
+  },
+  "groupDeleteBody": "The {count, plural, one {# app} other {# apps}} inside go back to their automatic groups. Nothing is uninstalled.",
+  "@groupDeleteBody": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "example": "3"
+      }
+    }
+  },
+  "groupDeleteEmpty": "This group is empty.",
+  "groupDelete": "Delete group",
+  "groupNameRequired": "Give the group a name.",
+  "groupNameExists": "A group with that name already exists.",
+  "toastGroupMoved": "Moved {name} to {group}",
+  "@toastGroupMoved": {
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "Release Sync"
+      },
+      "group": {
+        "type": "String",
+        "example": "Work tools"
+      }
+    }
+  },
+  "toastGroupAutomatic": "{name} is back in its automatic group",
+  "@toastGroupAutomatic": {
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "Release Sync"
+      }
+    }
+  },
+  "toastGroupCreated": "Created group “{name}”",
+  "@toastGroupCreated": {
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "Work tools"
+      }
+    }
+  },
+  "itemMenuLabel": "More actions for {name}",
+  "@itemMenuLabel": {
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "Release Sync"
+      }
+    }
+  },
+  "menuOpenDetails": "Open details",
+  "menuAddFavorite": "Add to favorites",
+  "menuRemoveFavorite": "Remove from favorites",
+  "favoriteAdd": "Add {name} to favorites",
+  "@favoriteAdd": {
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "Release Sync"
+      }
+    }
+  },
+  "favoriteRemove": "Remove {name} from favorites",
+  "@favoriteRemove": {
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "Release Sync"
+      }
+    }
+  },
+  "menuMoveToGroup": "Move to group",
+  "menuGroupAutomatic": "Automatic (by type)",
+  "menuGroupNone": "No group",
+  "menuNewGroup": "New group…",
+  "menuManage": "Manage",
+  "menuReinstall": "Reinstall",
+  "menuProject": "Project",
+  "menuRepositoryDetails": "Repository details",
+  "menuMoreFromDeveloper": "More from this developer",
+  "menuHide": "Hide from library",
+  "menuUnhide": "Unhide",
+  "drawerYourNotes": "Your notes",
+  "drawerNoteLabel": "Note",
+  "drawerNotePlaceholder": "Write something to remember about this app",
+  "drawerTagsLabel": "Tags",
+  "drawerTagsPlaceholder": "Tags, separated by commas",
+  "drawerNotesSave": "Save notes",
+  "drawerTagChip": "Tag {tag}",
+  "@drawerTagChip": {
+    "placeholders": {
+      "tag": {
+        "type": "String",
+        "example": "work"
+      }
+    }
+  },
+  "drawerGroup": "Group",
+  "drawerGroupLabel": "Choose a group",
+  "addGroup": "Group",
+  "settingsLibraryView": "Library view",
+  "settingsViewGrid": "Grid",
+  "settingsViewList": "List",
+  "settingsAutoGroups": "Automatic groups",
+  "settingsAutoGroupsHint": "Show apps that are not in a group of yours under their type, such as Developer Tools.",
+  "settingsGroupSections": "Group apps in the library",
+  "settingsGroupSectionsHint": "Split the library into sections, one for each group.",
+  "toastHidden": "{name} is hidden. Find it under Hidden.",
+  "@toastHidden": {
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "Release Sync"
+      }
+    }
+  },
+  "verifyScanClean": "Windows Security: clean",
+  "verifyScanUnavailable": "Windows Security: couldn't scan",
+  "verifyProvenanceHeld": "build provenance: GitHub holds a signed build record for this file",
+  "verifyProvenanceFrom": "build provenance: built from {repository}",
+  "@verifyProvenanceFrom": {
+    "placeholders": {
+      "repository": {
+        "type": "String",
+        "example": "acme/tool"
+      }
+    }
+  },
+  "verifyProvenanceFromBy": "build provenance: built from {repository} by {workflow}",
+  "@verifyProvenanceFromBy": {
+    "placeholders": {
+      "repository": {
+        "type": "String",
+        "example": "acme/tool"
+      },
+      "workflow": {
+        "type": "String",
+        "example": ".github/workflows/release.yml"
+      }
+    }
+  },
+  "verifyVirusTotalFlagged": "VirusTotal: {flagged}/{total} flagged",
+  "@verifyVirusTotalFlagged": {
+    "placeholders": {
+      "flagged": {
+        "type": "int",
+        "example": "2"
+      },
+      "total": {
+        "type": "int",
+        "example": "70"
+      }
+    }
+  },
+  "verifyVirusTotalNeverSeen": "VirusTotal: never seen (that's common for new releases)",
+  "verifyVirusTotalNoResults": "VirusTotal: no results yet",
+  "verifyVirusTotalKeyRejected": "VirusTotal: your API key was rejected",
+  "verifyVirusTotalLimited": "VirusTotal: limit reached",
+  "verifyVirusTotalUnavailable": "VirusTotal: unavailable right now",
+  "findingThreat": "Windows Security says this download is dangerous ({threat}). {product} stopped and deleted it.",
+  "@findingThreat": {
+    "placeholders": {
+      "threat": {
+        "type": "String",
+        "example": "Virus:DOS/EICAR_Test_File"
+      },
+      "product": {
+        "type": "String",
+        "example": "Release Sync"
+      }
+    }
+  },
+  "findingThreatUnnamed": "Windows Security says this download is dangerous. {product} stopped and deleted it.",
+  "@findingThreatUnnamed": {
+    "placeholders": {
+      "product": {
+        "type": "String",
+        "example": "Release Sync"
+      }
+    }
+  },
+  "findingThreatRemoved": "Windows Security removed this download because it is dangerous. {product} stopped the install.",
+  "@findingThreatRemoved": {
+    "placeholders": {
+      "product": {
+        "type": "String",
+        "example": "Release Sync"
+      }
+    }
+  },
+  "findingProvenanceMismatch": "Its build record says it was built from a different repository ({repository}).",
+  "@findingProvenanceMismatch": {
+    "placeholders": {
+      "repository": {
+        "type": "String",
+        "example": "someone/else"
+      }
+    }
+  },
+  "findingVirusTotal": "{flagged} of {total} antivirus engines on VirusTotal flag this file",
+  "@findingVirusTotal": {
+    "placeholders": {
+      "flagged": {
+        "type": "int",
+        "example": "2"
+      },
+      "total": {
+        "type": "int",
+        "example": "70"
+      }
+    }
+  },
+  "questionAntivirusTitle": "Some antivirus engines flag this download",
+  "scanDownloads": "Scan downloads with Windows Security",
+  "scanDownloadsHint": "Have the antivirus built into Windows scan each download. A file it flags is stopped and deleted. If it cannot scan, the download goes on.",
+  "scanDownloadsLabel": "Toggle scanning downloads with Windows Security",
+  "checkProvenance": "Check build provenance (GitHub)",
+  "checkProvenanceHint": "Ask GitHub whether it holds a signed record of where a download was built. You are asked first when the record names a different repository.",
+  "checkProvenanceLabel": "Toggle checking build provenance",
+  "safetyHints": "Safety hints when adding",
+  "safetyHintsHint": "Show a few plain-language signals about a repository, such as its age and whether it states a license, before you add it. They never block anything.",
+  "safetyHintsLabel": "Toggle safety hints when adding",
+  "virusTotalTitle": "VirusTotal",
+  "useVirusTotal": "Look files up on VirusTotal",
+  "useVirusTotalHint": "Send each download's hash to VirusTotal, never the file, and ask before installing a file that antivirus engines flag. Needs your own API key.",
+  "useVirusTotalLabel": "Toggle looking files up on VirusTotal",
+  "virusTotalKeyTitle": "VirusTotal API key",
+  "virusTotalKeyHint": "Kept in the system's credential store, never in the database, a backup or an export.",
+  "virusTotalKeyLabel": "Your VirusTotal API key",
+  "virusTotalKeyPlaceholder": "Paste your API key",
+  "virusTotalKeySave": "Save key",
+  "virusTotalKeyRemove": "Remove key",
+  "virusTotalKeySaved": "Key saved.",
+  "virusTotalKeyKept": "A key is saved.",
+  "virusTotalKeyRemoved": "Key removed.",
+  "virusTotalKeySaveFailed": "Couldn't keep the key: {reason}",
+  "@virusTotalKeySaveFailed": {
+    "placeholders": {
+      "reason": {
+        "type": "String",
+        "example": "access denied"
+      }
+    }
+  },
+  "hintsTitle": "At a glance",
+  "ageDays": "{count, plural, one {# day} other {# days}}",
+  "@ageDays": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "example": "12"
+      }
+    }
+  },
+  "ageMonths": "{count, plural, one {# month} other {# months}}",
+  "@ageMonths": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "example": "8"
+      }
+    }
+  },
+  "ageYears": "{years} years",
+  "@ageYears": {
+    "placeholders": {
+      "years": {
+        "type": "String",
+        "example": "3.5"
+      }
+    }
+  },
+  "hintNewRepository": "This repository is only {age} old.",
+  "@hintNewRepository": {
+    "placeholders": {
+      "age": {
+        "type": "String",
+        "example": "12 days"
+      }
+    }
+  },
+  "hintEstablishedRepository": "Active for {age}.",
+  "@hintEstablishedRepository": {
+    "placeholders": {
+      "age": {
+        "type": "String",
+        "example": "3.5 years"
+      }
+    }
+  },
+  "hintArchived": "It's archived, so it is no longer maintained.",
+  "hintStale": "Not updated since {when, date, medium}.",
+  "@hintStale": {
+    "placeholders": {
+      "when": {
+        "type": "DateTime",
+        "example": "2023-02-01"
+      }
+    }
+  },
+  "hintFewStars": "Very few people have starred it ({count}).",
+  "@hintFewStars": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "example": "2"
+      }
+    }
+  },
+  "hintManyStars": "Widely used ({stars} stars).",
+  "@hintManyStars": {
+    "placeholders": {
+      "stars": {
+        "type": "String",
+        "example": "1.2k"
+      }
+    }
+  },
+  "hintNoLicense": "No license is stated.",
+  "hintFork": "This is a fork of another project.",
+  "hintChecksums": "Its downloads come with checksums {product} can verify.",
+  "@hintChecksums": {
+    "placeholders": {
+      "product": {
+        "type": "String",
+        "example": "Release Sync"
+      }
+    }
+  },
+  "hintNewOwner": "The publisher's account is only {age} old.",
+  "@hintNewOwner": {
+    "placeholders": {
+      "age": {
+        "type": "String",
+        "example": "12 days"
+      }
+    }
+  },
+  "hintOrganization": "Published by an organization.",
+  "hintOrganizationNamed": "Published by an organization ({name}).",
+  "@hintOrganizationNamed": {
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "Acme Inc"
+      }
+    }
+  },
+  "backupsTitle": "Previous versions",
+  "backupBeforeUpdate": "Version {tag}, before an update",
+  "@backupBeforeUpdate": {
+    "placeholders": {
+      "tag": {
+        "type": "String",
+        "example": "v1.2.0"
+      }
+    }
+  },
+  "backupBeforeRemoval": "Version {tag}, before it was removed",
+  "@backupBeforeRemoval": {
+    "placeholders": {
+      "tag": {
+        "type": "String",
+        "example": "v1.2.0"
+      }
+    }
+  },
+  "backupDetail": "{when, date, medium}, {when, time, short} · {size}",
+  "@backupDetail": {
+    "placeholders": {
+      "when": {
+        "type": "DateTime",
+        "example": "2026-11-15 10:30"
+      },
+      "size": {
+        "type": "String",
+        "example": "12.0 MB"
+      }
+    }
+  },
+  "backupRestore": "Restore",
+  "questionRestoreTitle": "Restore {item} from this backup?",
+  "@questionRestoreTitle": {
+    "placeholders": {
+      "item": {
+        "type": "String",
+        "example": "Tool"
+      }
+    }
+  },
+  "questionRestoreBody": "{item}'s files are put back as they were in version {tag}. It is closed first if it is running. Unsaved work in it may be lost.",
+  "@questionRestoreBody": {
+    "placeholders": {
+      "item": {
+        "type": "String",
+        "example": "Tool"
+      },
+      "tag": {
+        "type": "String",
+        "example": "v1.2.0"
+      }
+    }
+  },
+  "questionRestoreConfirm": "Restore backup",
+  "activityRestored": "Restored {item} to {tag} from a backup",
+  "@activityRestored": {
+    "placeholders": {
+      "item": {
+        "type": "String",
+        "example": "acme/tool"
+      },
+      "tag": {
+        "type": "String",
+        "example": "v1.2.0"
+      }
+    }
+  },
+  "activityRestoreFailed": "Could not restore {item} to {tag}: {reason}",
+  "@activityRestoreFailed": {
+    "placeholders": {
+      "item": {
+        "type": "String",
+        "example": "acme/tool"
+      },
+      "tag": {
+        "type": "String",
+        "example": "v1.2.0"
+      },
+      "reason": {
+        "type": "String",
+        "example": "access denied"
+      }
+    }
+  },
+  "activityRestoreCanceled": "Canceled restoring {item} to {tag}",
+  "@activityRestoreCanceled": {
+    "placeholders": {
+      "item": {
+        "type": "String",
+        "example": "acme/tool"
+      },
+      "tag": {
+        "type": "String",
+        "example": "v1.2.0"
+      }
+    }
+  },
+  "toastRestored": "{item} restored to {tag}",
+  "@toastRestored": {
+    "placeholders": {
+      "item": {
+        "type": "String",
+        "example": "Tool"
+      },
+      "tag": {
+        "type": "String",
+        "example": "v1.2.0"
+      }
+    }
+  },
+  "stageRestoring": "Restoring…",
+  "actionMove": "Move to another folder…",
+  "moveChoose": "Choose the folder to move {item} to",
+  "@moveChoose": {
+    "placeholders": {
+      "item": {
+        "type": "String",
+        "example": "Tool"
+      }
+    }
+  },
+  "moveInstallerNote": "Apps installed with a setup program can't be moved: the setup program decides where its files go.",
+  "moveRefusedInstaller": "{item} was installed with a setup program, so it can't be moved.",
+  "@moveRefusedInstaller": {
+    "placeholders": {
+      "item": {
+        "type": "String",
+        "example": "Tool"
+      }
+    }
+  },
+  "moveRefusedMissing": "The app's current folder can't be found.",
+  "moveRefusedSame": "It's already in that folder.",
+  "moveRefusedInside": "That folder is inside the app's current folder. Choose a folder somewhere else.",
+  "moveRefusedNotEmpty": "That folder already has files in it. Choose an empty folder.",
+  "moveRefusedNoSpace": "There isn't enough free space there.",
+  "moveRefusedOther": "Couldn't check that folder: {reason}",
+  "@moveRefusedOther": {
+    "placeholders": {
+      "reason": {
+        "type": "String",
+        "example": "access denied"
+      }
+    }
+  },
+  "installErrorNotPortable": "This app isn't a portable install, so it can't be restored or moved this way.",
+  "questionRunningMoveBody": "It has to be closed before its files can be moved. Unsaved work in it may be lost.",
+  "questionRunningMove": "Close it and move",
+  "activityMoved": "Moved {item} from {from} to {to}",
+  "@activityMoved": {
+    "placeholders": {
+      "item": {
+        "type": "String",
+        "example": "acme/tool"
+      },
+      "from": {
+        "type": "String",
+        "example": "C:\\Apps\\tool"
+      },
+      "to": {
+        "type": "String",
+        "example": "D:\\Apps\\tool"
+      }
+    }
+  },
+  "activityMoveFailed": "Could not move {item}: {reason}",
+  "@activityMoveFailed": {
+    "placeholders": {
+      "item": {
+        "type": "String",
+        "example": "acme/tool"
+      },
+      "reason": {
+        "type": "String",
+        "example": "access denied"
+      }
+    }
+  },
+  "activityMoveCanceled": "Canceled moving {item}",
+  "@activityMoveCanceled": {
+    "placeholders": {
+      "item": {
+        "type": "String",
+        "example": "acme/tool"
+      }
+    }
+  },
+  "toastMoved": "{item} moved to {folder}",
+  "@toastMoved": {
+    "placeholders": {
+      "item": {
+        "type": "String",
+        "example": "Tool"
+      },
+      "folder": {
+        "type": "String",
+        "example": "D:\\Apps\\tool"
+      }
+    }
+  },
+  "toastMovedLeft": "{item} moved. {count, plural, one {# file} other {# files}} could not be deleted from the old folder.",
+  "@toastMovedLeft": {
+    "placeholders": {
+      "item": {
+        "type": "String",
+        "example": "Tool"
+      },
+      "count": {
+        "type": "int",
+        "example": "2"
+      }
+    }
+  },
+  "warningShortcutsRepoint": "Some shortcuts could not be pointed at the new folder: {reason}",
+  "@warningShortcutsRepoint": {
+    "placeholders": {
+      "reason": {
+        "type": "String",
+        "example": "access denied"
+      }
+    }
+  },
+  "stageMoving": "Moving…",
+  "backupsSettingsTitle": "Backups",
+  "backupApps": "Back up an app before changing it",
+  "backupAppsHint": "Before a portable app is updated or removed, its folder is zipped and the newest three backups are kept. Folders over 2 GB are skipped, and files that are in use are left out. Restore one from the app's details.",
+  "backupAppsLabel": "Toggle backing up an app before changing it",
+  "backupEvery": "Back up automatically",
+  "backupEveryHint": "Save a backup of your library and settings on a schedule.",
+  "backupEveryLabel": "How often to back up",
+  "backupOff": "Off",
+  "backupEvery6h": "Every 6 hours",
+  "backupEvery12h": "Every 12 hours",
+  "backupEveryDay": "Daily",
+  "backupEvery3d": "Every 3 days",
+  "backupEveryWeek": "Weekly",
+  "backupEvery2w": "Every 2 weeks",
+  "backupEveryMonth": "Monthly",
+  "backupFolder": "Where to save backups",
+  "backupFolderHint": "A folder on another drive, a network location or a cloud-synced folder keeps your backups safe if this PC fails.",
+  "backupFolderChoose": "Choose where to save backups",
+  "backupInclude": "What to include",
+  "backupIncludeHint": "Portable apps' files can make a backup large. Setup-program apps are never included.",
+  "backupIncludeLabel": "What a backup includes",
+  "backupIncludeLibrary": "The library and settings",
+  "backupIncludeApps": "The library, settings and portable apps' files",
+  "backupKeep": "How many to keep",
+  "backupKeepHint": "The oldest backups are deleted when there are more.",
+  "backupKeepLabel": "How many backups to keep",
+  "backupKeepNewest": "Newest {count}",
+  "@backupKeepNewest": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "example": "10"
+      }
+    }
+  },
+  "backupKeepAll": "All",
+  "backupNow": "Back up now",
+  "backupLast": "Last backup: {when, date, medium}, {when, time, short}",
+  "@backupLast": {
+    "placeholders": {
+      "when": {
+        "type": "DateTime",
+        "example": "2026-11-15 10:30"
+      }
+    }
+  },
+  "backupNever": "No backup has been made yet.",
+  "restoreFromFile": "Restore from a backup file…",
+  "restoreChoose": "Choose a backup to restore",
+  "backupFiles": "Backups",
+  "questionRestoreLibraryTitle": "Restore from this backup?",
+  "questionRestoreLibraryBody": "This backup was made on {when, date, medium}, {when, time, short} on {machine} by version {version}.",
+  "@questionRestoreLibraryBody": {
+    "placeholders": {
+      "when": {
+        "type": "DateTime",
+        "example": "2026-11-15 10:30"
+      },
+      "machine": {
+        "type": "String",
+        "example": "DESKTOP-1"
+      },
+      "version": {
+        "type": "String",
+        "example": "0.1.0"
+      }
+    }
+  },
+  "questionRestoreLibraryApps": "It also holds the files of {count, plural, one {# portable app} other {# portable apps}}. Any that are running are closed first.",
+  "@questionRestoreLibraryApps": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "example": "3"
+      }
+    }
+  },
+  "questionRestoreLibraryWarning": "Your library and settings are replaced with the backup's. A copy of the current ones is kept first, and {product} restarts.",
+  "@questionRestoreLibraryWarning": {
+    "placeholders": {
+      "product": {
+        "type": "String",
+        "example": "Release Sync"
+      }
+    }
+  },
+  "questionRestoreLibraryConfirm": "Restore and restart",
+  "restoreRefusedNewer": "That backup was made by a newer version of {product}. Update {product} to restore it.",
+  "@restoreRefusedNewer": {
+    "placeholders": {
+      "product": {
+        "type": "String",
+        "example": "Release Sync"
+      }
+    }
+  },
+  "restoreRefusedNotBackup": "That file isn't a {product} backup.",
+  "@restoreRefusedNotBackup": {
+    "placeholders": {
+      "product": {
+        "type": "String",
+        "example": "Release Sync"
+      }
+    }
+  },
+  "restoreRefusedOther": "Couldn't read that backup: {reason}",
+  "@restoreRefusedOther": {
+    "placeholders": {
+      "reason": {
+        "type": "String",
+        "example": "access denied"
+      }
+    }
+  },
+  "toastRestoreAppsFailed": "Nothing was restored, because some apps' files could not be put back: {reason}",
+  "@toastRestoreAppsFailed": {
+    "placeholders": {
+      "reason": {
+        "type": "String",
+        "example": "access denied"
+      }
+    }
+  },
+  "toastLibraryBackedUp": "Backed up to {file}",
+  "@toastLibraryBackedUp": {
+    "placeholders": {
+      "file": {
+        "type": "String",
+        "example": "release-sync-library-20261115-103000.zip"
+      }
+    }
+  },
+  "toastLibraryBackupFailed": "Couldn't back up your library: {reason}",
+  "@toastLibraryBackupFailed": {
+    "placeholders": {
+      "reason": {
+        "type": "String",
+        "example": "access denied"
+      }
+    }
+  },
+  "toastBackupUnreachable": "Couldn't reach {folder}. Check that the drive or network location is available, or choose another folder.",
+  "@toastBackupUnreachable": {
+    "placeholders": {
+      "folder": {
+        "type": "String",
+        "example": "Z:\\Backups"
+      }
+    }
+  },
+  "activityLibraryBackedUp": "Backed up the library to {path} ({size})",
+  "@activityLibraryBackedUp": {
+    "placeholders": {
+      "path": {
+        "type": "String",
+        "example": "D:\\Backups\\release-sync-library-20261115-103000.zip"
+      },
+      "size": {
+        "type": "String",
+        "example": "1.2 MB"
+      }
+    }
+  },
+  "activityLibraryBackupSkipped": "Left out the files of apps over 2 GB: {apps}",
+  "@activityLibraryBackupSkipped": {
+    "placeholders": {
+      "apps": {
+        "type": "String",
+        "example": "Big Game"
+      }
+    }
+  },
+  "activityLibraryBackupFailed": "Couldn't back up the library: {reason}",
+  "@activityLibraryBackupFailed": {
+    "placeholders": {
+      "reason": {
+        "type": "String",
+        "example": "access denied"
+      }
+    }
+  },
+  "activityBackupUnreachable": "Couldn't reach the backup folder {folder}. It will be tried again later.",
+  "@activityBackupUnreachable": {
+    "placeholders": {
+      "folder": {
+        "type": "String",
+        "example": "Z:\\Backups"
+      }
+    }
+  },
+  "notifyBackupTitle": "Couldn't back up your library",
+  "notifyBackupBody": "{folder} can't be reached. It will be tried again later.",
+  "@notifyBackupBody": {
+    "placeholders": {
+      "folder": {
+        "type": "String",
+        "example": "Z:\\Backups"
+      }
+    }
+  },
+  "syncSettingsTitle": "Your devices and sharing",
+  "syncMode": "Sync across your devices",
+  "syncModeHint": "Keep your library, groups, notes and try-later list the same on every PC you use. What is installed stays separate on each one.",
+  "syncModeLabel": "How to sync",
+  "syncModeOff": "Off",
+  "syncModeGist": "Private GitHub Gist",
+  "syncModeFolder": "A shared folder",
+  "syncGist": "Your gist",
+  "syncGistHint": "The library is kept in a private gist on your GitHub account. This uses your GitHub token, which needs permission to read and write gists.",
+  "syncGistNone": "The gist is made on the first sync.",
+  "syncGistId": "Gist {id}",
+  "@syncGistId": {
+    "placeholders": {
+      "id": {
+        "type": "String",
+        "example": "0123456789abcdef"
+      }
+    }
+  },
+  "syncFolder": "Shared folder",
+  "syncFolderHint": "Choose a folder that OneDrive, Dropbox, Syncthing or the like keeps in step between your PCs. {product} keeps one file in it.",
+  "@syncFolderHint": {
+    "placeholders": {
+      "product": {
+        "type": "String",
+        "example": "Release Sync"
+      }
+    }
+  },
+  "syncFolderNone": "No folder chosen yet.",
+  "syncFolderChoose": "Choose the folder to share",
+  "syncPassphrase": "Lock with a passphrase",
+  "syncPassphraseHint": "Encrypts the shared file, so only someone with the passphrase can read it. Enter the same passphrase on each PC. It is kept in this PC's credential store, never in the file. At least 8 characters.",
+  "syncPassphraseLabel": "Passphrase",
+  "syncPassphrasePlaceholder": "At least 8 characters",
+  "syncPassphraseSet": "Use passphrase",
+  "syncPassphraseRemove": "Remove passphrase",
+  "syncPassphraseOn": "The shared file is locked with a passphrase.",
+  "syncPassphraseShort": "A passphrase needs at least 8 characters.",
+  "syncPassphraseSaveFailed": "Couldn't keep the passphrase: {reason}",
+  "@syncPassphraseSaveFailed": {
+    "placeholders": {
+      "reason": {
+        "type": "String",
+        "example": "access denied"
+      }
+    }
+  },
+  "syncDeviceName": "This device's name",
+  "syncDeviceNameHint": "How this PC is listed on your other devices.",
+  "syncDeviceNameLabel": "Device name",
+  "syncDeviceNameSave": "Save name",
+  "syncNow": "Sync now",
+  "syncStatusTitle": "Sync status",
+  "syncing": "Syncing…",
+  "syncStatusNever": "Not synced yet.",
+  "syncStatusOk": "Synced at {when, date, medium}, {when, time, short} · {apps, plural, one {# app} other {# apps}}, {later} on your try-later list · {devices, plural, =0 {no other devices} one {# other device} other {# other devices}}",
+  "@syncStatusOk": {
+    "placeholders": {
+      "when": {
+        "type": "DateTime",
+        "example": "2026-11-15 10:30"
+      },
+      "apps": {
+        "type": "int",
+        "example": "12"
+      },
+      "later": {
+        "type": "int",
+        "example": "3"
+      },
+      "devices": {
+        "type": "int",
+        "example": "2"
+      }
+    }
+  },
+  "syncStatusProblem": "Sync problem: {message}",
+  "@syncStatusProblem": {
+    "placeholders": {
+      "message": {
+        "type": "String",
+        "example": "Couldn't reach GitHub. Check your internet connection."
+      }
+    }
+  },
+  "syncDevices": "Your devices",
+  "syncDeviceThis": "{name} (this device)",
+  "@syncDeviceThis": {
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "Desktop"
+      }
+    }
+  },
+  "syncDeviceLine": "{platform} · version {version} · last seen {when, date, medium}, {when, time, short}",
+  "@syncDeviceLine": {
+    "placeholders": {
+      "platform": {
+        "type": "String",
+        "example": "Windows"
+      },
+      "version": {
+        "type": "String",
+        "example": "1.4.0"
+      },
+      "when": {
+        "type": "DateTime",
+        "example": "2026-11-15 10:30"
+      }
+    }
+  },
+  "syncErrLocked": "This sync file is locked. Enter the passphrase you set up on your other device.",
+  "syncErrWrongPassphrase": "That passphrase doesn't open the sync file.",
+  "syncErrDamaged": "The sync file is damaged.",
+  "syncErrUnreadable": "The sync file isn't readable, so nothing was changed.",
+  "syncErrNewer": "The sync file was made by a newer version of {product}. Update {product} and try again.",
+  "@syncErrNewer": {
+    "placeholders": {
+      "product": {
+        "type": "String",
+        "example": "Release Sync"
+      }
+    }
+  },
+  "syncErrNoToken": "Add a GitHub token in Settings to sync through a gist.",
+  "syncErrTokenRejected": "GitHub didn't accept your token. Add a fresh one in Settings.",
+  "syncErrRateLimited": "GitHub's hourly request limit is used up. Sync will work again when it resets.",
+  "syncErrGist": "GitHub wouldn't open the sync gist. Your token needs permission to read and write gists, or the gist was deleted.",
+  "syncErrUnreachable": "Couldn't reach GitHub. Check your internet connection.",
+  "syncErrTimedOut": "GitHub took too long to answer.",
+  "syncErrStatus": "GitHub answered {status}.",
+  "@syncErrStatus": {
+    "placeholders": {
+      "status": {
+        "type": "int",
+        "example": "502"
+      }
+    }
+  },
+  "syncErrFolder": "Couldn't use the sync folder: {reason}",
+  "@syncErrFolder": {
+    "placeholders": {
+      "reason": {
+        "type": "String",
+        "example": "access denied"
+      }
+    }
+  },
+  "syncErrNoFolder": "Choose a folder to sync through.",
+  "activitySynced": "Synced with your other devices: {added} added, {updated} updated, {removed} removed.",
+  "@activitySynced": {
+    "placeholders": {
+      "added": {
+        "type": "int",
+        "example": "2"
+      },
+      "updated": {
+        "type": "int",
+        "example": "1"
+      },
+      "removed": {
+        "type": "int",
+        "example": "0"
+      }
+    }
+  }
+}

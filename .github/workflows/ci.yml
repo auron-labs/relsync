@@ -1,0 +1,51 @@
+# Tests the application on Linux and Windows on every push and pull request,
+# lints the Go sources, and fails when generated files are stale.
+name: CI
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    name: ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-go@v7
+        with:
+          go-version-file: go.mod
+      - run: go mod download
+      - name: Install NSIS
+        if: runner.os == 'Windows'
+        run: choco install nsis --no-progress -y
+      - run: go build ./...
+      - run: go vet ./...
+      - run: go tool mygo vet .
+      - name: Test
+        run: go test ./...
+        env:
+          CGO_ENABLED: 0
+
+  lint:
+    name: Lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-go@v7
+        with:
+          go-version-file: go.mod
+      - uses: golangci/golangci-lint-action@v9
+        with:
+          version: v2.15.0
+      - name: Check generated files are fresh
+        run: |
+          go tool mygo generate .
+          git diff --exit-code -- locales/catalog_gen.go

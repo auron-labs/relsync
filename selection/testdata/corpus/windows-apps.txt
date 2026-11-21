@@ -1,0 +1,176 @@
+# Windows software with installers of several kinds: MSI, setup programs, portable builds.
+
+== notepad-plus-plus/notepad-plus-plus kind=app topics=editor,windows
+npp.8.6.7.Installer.x64.exe 5000000
+npp.8.6.7.Installer.exe 4900000
+npp.8.6.7.Installer.arm64.exe 4800000
+npp.8.6.7.portable.x64.zip 8000000
+npp.8.6.7.portable.zip 7900000
+npp.8.6.7.portable.arm64.zip 7800000
+npp.8.6.7.portable.x64.7z 5000000
+npp.8.6.7.bin.x64.zip 8000000
+npp.8.6.7.bin.minimalist.x64.7z 4000000
+npp.8.6.7.checksums.sha256 900
+npp.8.6.7.Installer.x64.exe.sig 100
+-> x64: npp.8.6.7.Installer.x64.exe
+-> arm64: npp.8.6.7.Installer.arm64.exe
+# The installer is known to be for Windows and the archives do not say, so the
+# portable preference does not change the choice.
+
+== PowerShell/PowerShell kind=app topics=shell,powershell
+PowerShell-7.4.2-win-x64.msi 105000000
+PowerShell-7.4.2-win-x86.msi 100000000
+PowerShell-7.4.2-win-arm64.msi 100000000
+PowerShell-7.4.2-win-x64.zip 105000000
+PowerShell-7.4.2-win-x86.zip 100000000
+PowerShell-7.4.2-win-arm64.zip 100000000
+PowerShell-7.4.2-win.msixbundle 300000000
+powershell-7.4.2-1.rh.x86_64.rpm 70000000
+powershell_7.4.2-1.deb_amd64.deb 70000000
+powershell-7.4.2-linux-x64.tar.gz 70000000
+powershell-7.4.2-osx-arm64.pkg 70000000
+hashes.sha256 2000
+-> x64/installers: PowerShell-7.4.2-win-x64.msi
+-> arm64/installers: PowerShell-7.4.2-win-arm64.msi
+-> x64/portable: PowerShell-7.4.2-win-x64.zip
+-> arm64/portable: PowerShell-7.4.2-win-arm64.zip
+
+== ip7z/7zip kind=app topics=archiver
+7z2406-x64.exe 1600000
+7z2406.exe 1500000
+7z2406-arm64.exe 1500000
+7z2406-x64.msi 1800000
+7z2406-linux-x64.tar.xz 1500000
+7z2406-linux-arm64.tar.xz 1500000
+7z2406-mac.tar.xz 1500000
+7z2406-src.7z 1700000
+7z2406-extra.7z 1000000
+-> x64/installers: 7z2406-x64.msi
+-> arm64/installers: 7z2406-arm64.exe
+-> x64/portable: 7z2406-x64.exe
+-> arm64/portable: 7z2406-arm64.exe
+
+== keepassxreboot/keepassxc kind=app topics=password-manager
+KeePassXC-2.7.7-Win64.msi 25000000
+KeePassXC-2.7.7-Win64.zip 24000000
+KeePassXC-2.7.7-Win64-LegacyWindows.msi 25000000
+KeePassXC-2.7.7-Win64-LegacyWindows.zip 24000000
+KeePassXC-2.7.7-arm64.dmg 30000000
+KeePassXC-2.7.7-x86_64.dmg 30000000
+KeePassXC-2.7.7-x86_64.AppImage 35000000
+KeePassXC-2.7.7-src.tar.xz 10000000
+KeePassXC-2.7.7-Win64.msi.sig 100
+KeePassXC-2.7.7-Win64.msi.DIGEST 100
+-> installers: KeePassXC-2.7.7-Win64.msi
+-> portable: KeePassXC-2.7.7-Win64.zip
+
+== microsoft/PowerToys kind=app topics=utilities,windows
+PowerToysSetup-0.80.1-x64.exe 300000000
+PowerToysSetup-0.80.1-arm64.exe 290000000
+PowerToysUserSetup-0.80.1-x64.exe 300000000
+PowerToysUserSetup-0.80.1-arm64.exe 290000000
+-> x64: PowerToysSetup-0.80.1-x64.exe
+-> arm64: PowerToysSetup-0.80.1-arm64.exe
+# "UserSetup" is one token, so neither file states a scope and the shorter name wins.
+
+== ShareX/ShareX kind=app topics=screenshot,windows
+ShareX-16.1.0-setup.exe 6000000
+ShareX-16.1.0-portable.zip 8000000
+ShareX-16.1.0-debug.zip 20000000
+ShareX-16.1.0-setup.exe.sha256 100
+-> all: ShareX-16.1.0-setup.exe
+# The setup program is known to be for Windows and the archive does not say, so
+# they tie on score under the portable preference and the setup program wins on
+# stated facts.
+
+== Flow-Launcher/Flow.Launcher kind=app topics=launcher,windows
+Flow-Launcher-Setup.exe 70000000
+Flow-Launcher-Portable.zip 70000000
+Flow-Launcher-v1.19.1-full.nupkg 70000000
+Flow-Launcher-v1.19.1-delta.nupkg 3000000
+RELEASES 400
+# As with ShareX, the archive names no system.
+-> all: Flow-Launcher-Setup.exe
+
+== obsproject/obs-studio kind=app topics=streaming
+OBS-Studio-30.1.2-Windows-Installer.exe 120000000
+OBS-Studio-30.1.2-Windows.zip 130000000
+OBS-Studio-30.1.2-macOS-Apple.dmg 130000000
+OBS-Studio-30.1.2-macOS-Intel.dmg 130000000
+OBS-Studio-30.1.2-Ubuntu-24.04-x86_64.deb 90000000
+OBS-Studio-30.1.2-Sources.tar.gz 90000000
+-> installers: OBS-Studio-30.1.2-Windows-Installer.exe
+-> portable: OBS-Studio-30.1.2-Windows.zip
+
+== WinMerge/winmerge kind=app topics=diff,windows
+WinMerge-2.16.40-x64-Setup.exe 15000000
+WinMerge-2.16.40-x64-PerUser-Setup.exe 15000000
+WinMerge-2.16.40-ARM64-Setup.exe 14000000
+WinMerge-2.16.40-ARM64-PerUser-Setup.exe 14000000
+WinMerge-2.16.40-Setup.exe 14000000
+WinMerge-2.16.40-x64-Exe.zip 20000000
+WinMerge-2.16.40-ARM64-Exe.zip 19000000
+WinMerge-2.16.40-Exe.zip 19000000
+WinMerge-2.16.40-full-src.7z 30000000
+# The per-user setup agrees with not installing for everyone.
+-> x64: WinMerge-2.16.40-x64-PerUser-Setup.exe
+-> arm64: WinMerge-2.16.40-ARM64-PerUser-Setup.exe
+
+== pbatard/rufus kind=app topics=usb,windows
+rufus-4.5.exe 1500000
+rufus-4.5p.exe 1500000
+rufus-4.5_arm64.exe 1500000
+rufus-4.5_x86.exe 1500000
+-> x64: rufus-4.5.exe
+-> arm64: rufus-4.5_arm64.exe
+
+== AutoHotkey/AutoHotkey kind=app topics=automation
+AutoHotkey_2.0.18_setup.exe 3000000
+AutoHotkey_2.0.18.zip 2500000
+-> all: AutoHotkey_2.0.18_setup.exe
+
+== git-for-windows/git kind=app topics=git,windows
+Git-2.45.2-64-bit.exe 60000000
+Git-2.45.2-32-bit.exe 55000000
+Git-2.45.2-arm64.exe 50000000
+PortableGit-2.45.2-64-bit.7z.exe 60000000
+PortableGit-2.45.2-32-bit.7z.exe 55000000
+PortableGit-2.45.2-arm64.7z.exe 50000000
+MinGit-2.45.2-64-bit.zip 30000000
+MinGit-2.45.2-32-bit.zip 28000000
+MinGit-2.45.2-arm64.zip 27000000
+MinGit-2.45.2-busybox-64-bit.zip 25000000
+Git-2.45.2-64-bit.tar.bz2 60000000
+-> x64: Git-2.45.2-64-bit.exe
+-> arm64: Git-2.45.2-arm64.exe
+
+== mRemoteNG/mRemoteNG kind=app topics=remote,windows
+mRemoteNG-Installer-1.77.3.2036-NB.msi 40000000
+mRemoteNG-Portable-1.77.3.2036-NB.zip 40000000
+mRemoteNG-1.77.3.2036-NB-symbols.zip 90000000
+-> all: mRemoteNG-Installer-1.77.3.2036-NB.msi
+
+== microsoft/terminal kind=app topics=terminal,windows
+Microsoft.WindowsTerminal_1.20.11271.0_x64.zip 20000000
+Microsoft.WindowsTerminal_1.20.11271.0_arm64.zip 20000000
+Microsoft.WindowsTerminal_1.20.11271.0_x86.zip 20000000
+Microsoft.WindowsTerminal_Win10_1.20.11271.0_8wekyb3d8bbwe.msixbundle 40000000
+Microsoft.WindowsTerminal_Win11_1.20.11271.0_8wekyb3d8bbwe.msixbundle 40000000
+Microsoft.WindowsTerminalPreview_1.21.2361.0_x64.zip 20000000
+-> installers: Microsoft.WindowsTerminal_Win10_1.20.11271.0_8wekyb3d8bbwe.msixbundle
+-> x64/portable: Microsoft.WindowsTerminal_1.20.11271.0_x64.zip
+-> arm64/portable: Microsoft.WindowsTerminal_1.20.11271.0_arm64.zip
+
+== wixtoolset/wix kind=app topics=installer,windows
+wix-cli-x64.msi 80000000
+wix-cli-arm64.msi 78000000
+wix311.exe 40000000
+wix311-binaries.zip 30000000
+-> x64: wix-cli-x64.msi
+-> arm64: wix-cli-arm64.msi
+
+== lencx/Noi kind=app topics=tauri,ai
+Noi_0.1.0_x64-setup.exe 30000000
+Noi_0.1.0_x64_en-US.msi 31000000
+Noi_0.1.0_aarch64.dmg 35000000
+-> all: Noi_0.1.0_x64-setup.exe

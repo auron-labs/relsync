@@ -1,0 +1,18 @@
+{
+  "nameStartsWith": [
+    "awesome"
+  ],
+  "nameEndsWith": [
+    "awesome"
+  ],
+  "nameContains": [
+    "awesome-list"
+  ],
+  "descriptionContains": [
+    "curated list",
+    "awesome list"
+  ],
+  "descriptionStartsWith": [
+    "a list of"
+  ]
+}

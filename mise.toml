@@ -1,0 +1,36 @@
+[tools]
+go = "1.27.3"
+golangci-lint = "2.15.0"
+hk = "2.8.0"
+
+[tasks.install]
+description = "Install Go dependencies"
+run = "go mod download"
+
+[tasks.check]
+description = "Run the repository's configured lint and formatting checks"
+run = "hk check --all"
+
+[tasks.fix]
+description = "Apply the repository's configured fixes"
+run = "hk fix --all"
+
+[tasks.test]
+description = "Run the Go tests"
+run = "go test ./..."
+
+[tasks.build]
+description = "Compile every package"
+run = "go build ./..."
+
+[tasks.dev]
+description = "Run the application with live reload"
+run = "go tool framework dev"
+
+[tasks.doctor]
+description = "Check the machine's native build prerequisites"
+run = "go tool framework doctor"
+
+[tasks.package]
+description = "Build installers and update packages for this platform"
+run = "go tool framework build"

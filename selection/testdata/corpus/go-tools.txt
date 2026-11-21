@@ -1,0 +1,275 @@
+# Command-line tools from Go projects: name_version_os_arch archives.
+
+== cli/cli kind=app topics=cli,github
+gh_2.49.0_windows_amd64.msi 14680064
+gh_2.49.0_windows_amd64.zip 14000000
+gh_2.49.0_windows_arm64.msi 13000000
+gh_2.49.0_windows_arm64.zip 13000000
+gh_2.49.0_windows_386.msi 13000000
+gh_2.49.0_windows_386.zip 13000000
+gh_2.49.0_linux_amd64.tar.gz 13000000
+gh_2.49.0_linux_amd64.deb 13000000
+gh_2.49.0_linux_arm64.rpm 13000000
+gh_2.49.0_macOS_amd64.zip 13000000
+gh_2.49.0_macOS_arm64.zip 13000000
+gh_2.49.0_checksums.txt 2000
+# Published with an MSI, so guessed as an app.
+-> x64/installers: gh_2.49.0_windows_amd64.msi
+-> arm64/installers: gh_2.49.0_windows_arm64.msi
+-> x64/portable: gh_2.49.0_windows_amd64.zip
+-> arm64/portable: gh_2.49.0_windows_arm64.zip
+
+== jqlang/jq kind=tool topics=cli,json
+jq-windows-amd64.exe 3145728
+jq-windows-i386.exe 3000000
+jq-linux-amd64 3000000
+jq-linux-arm64 3000000
+jq-linux-i386 3000000
+jq-macos-amd64 3000000
+jq-macos-arm64 3000000
+jq-1.7.1.tar.gz 2000000
+jq-1.7.1.zip 2500000
+sha256sum.txt 1000
+-> x64: jq-windows-amd64.exe
+# An archive that names neither system nor CPU counts as native, and native
+# ranks ahead of score: on arm64 the source tarball beats the emulated x64
+# program, the zip over the tarball by name length. The spec orders the keys that way.
+-> arm64: jq-1.7.1.zip
+
+== junegunn/fzf kind=tool topics=cli,fuzzy-finder
+fzf-0.54.0-windows_amd64.zip 2097152
+fzf-0.54.0-windows_arm64.zip 2000000
+fzf-0.54.0-windows_armv7.zip 2000000
+fzf-0.54.0-linux_amd64.tar.gz 2000000
+fzf-0.54.0-linux_arm64.tar.gz 2000000
+fzf-0.54.0-darwin_arm64.zip 2000000
+fzf_0.54.0_checksums.txt 1000
+-> x64: fzf-0.54.0-windows_amd64.zip
+-> arm64: fzf-0.54.0-windows_arm64.zip
+
+== jesseduffield/lazygit kind=tool topics=cli,git,tui
+lazygit_0.42.0_Windows_x86_64.zip 6291456
+lazygit_0.42.0_Windows_arm64.zip 6000000
+lazygit_0.42.0_Windows_armv6.zip 6000000
+lazygit_0.42.0_Windows_32-bit.zip 6000000
+lazygit_0.42.0_Linux_x86_64.tar.gz 6000000
+lazygit_0.42.0_Linux_arm64.tar.gz 6000000
+lazygit_0.42.0_Darwin_x86_64.tar.gz 6000000
+lazygit_0.42.0_checksums.txt 1000
+-> x64: lazygit_0.42.0_Windows_x86_64.zip
+-> arm64: lazygit_0.42.0_Windows_arm64.zip
+
+== derailed/k9s kind=tool topics=cli,kubernetes,tui
+k9s_Windows_amd64.zip 30000000
+k9s_Windows_arm64.zip 29000000
+k9s_Linux_amd64.tar.gz 30000000
+k9s_Linux_arm64.tar.gz 29000000
+k9s_Darwin_all.tar.gz 30000000
+k9s_linux_amd64.deb 30000000
+k9s_linux_amd64.rpm 30000000
+checksums.sha256 1000
+-> x64: k9s_Windows_amd64.zip
+-> arm64: k9s_Windows_arm64.zip
+
+== cloudflare/cloudflared kind=app topics=cloudflare,tunnel
+cloudflared-windows-amd64.exe 25165824
+cloudflared-windows-amd64.msi 26214400
+cloudflared-windows-386.exe 24000000
+cloudflared-windows-386.msi 25000000
+cloudflared-linux-amd64 25000000
+cloudflared-linux-arm64 25000000
+cloudflared-darwin-amd64.tgz 25000000
+cloudflared-amd64.pkg 25000000
+cloudflared-linux-amd64.deb 25000000
+# Published with an MSI, so guessed as an app. Both are installers: the MSI
+# outweighs the plain .exe, which names no setup.
+-> x64/installers: cloudflared-windows-amd64.msi
+-> x64/portable: cloudflared-windows-amd64.exe
+-> arm64/installers: cloudflared-windows-amd64.msi
+-> arm64/portable: cloudflared-windows-amd64.exe
+
+== FiloSottile/mkcert kind=tool topics=cli,tls
+mkcert-v1.4.4-windows-amd64.exe 4194304
+mkcert-v1.4.4-windows-arm64.exe 4000000
+mkcert-v1.4.4-linux-amd64 4000000
+mkcert-v1.4.4-linux-arm64 4000000
+mkcert-v1.4.4-darwin-amd64 4000000
+mkcert-v1.4.4-darwin-arm64 4000000
+-> x64: mkcert-v1.4.4-windows-amd64.exe
+-> arm64: mkcert-v1.4.4-windows-arm64.exe
+
+== FiloSottile/age kind=tool topics=cli,encryption
+age-v1.2.0-windows-amd64.zip 5242880
+age-v1.2.0-windows-arm64.zip 5000000
+age-v1.2.0-linux-amd64.tar.gz 5000000
+age-v1.2.0-linux-arm64.tar.gz 5000000
+age-v1.2.0-linux-arm.tar.gz 5000000
+age-v1.2.0-darwin-arm64.tar.gz 5000000
+age-v1.2.0-freebsd-amd64.tar.gz 5000000
+-> x64: age-v1.2.0-windows-amd64.zip
+-> arm64: age-v1.2.0-windows-arm64.zip
+
+== getsops/sops kind=tool topics=cli,secrets
+sops-v3.9.0.exe 25000000
+sops-v3.9.0.amd64.exe 25000000
+sops-v3.9.0.arm64.exe 24000000
+sops-v3.9.0.linux.amd64 25000000
+sops-v3.9.0.linux.arm64 25000000
+sops-v3.9.0.darwin.arm64 25000000
+sops_3.9.0_amd64.deb 25000000
+sops-3.9.0-1.aarch64.rpm 25000000
+sops-v3.9.0.checksums.txt 1000
+sops-v3.9.0.checksums.sigstore.json 4000
+-> x64: sops-v3.9.0.amd64.exe
+-> arm64: sops-v3.9.0.arm64.exe
+
+== charmbracelet/gum kind=tool topics=cli,tui
+gum_0.14.1_Windows_x86_64.zip 5000000
+gum_0.14.1_Windows_arm64.zip 5000000
+gum_0.14.1_Windows_i386.zip 5000000
+gum_0.14.1_Windows_armv7.zip 5000000
+gum_0.14.1_Linux_x86_64.tar.gz 5000000
+gum_0.14.1_Linux_arm64.tar.gz 5000000
+gum_0.14.1_amd64.deb 5000000
+gum-0.14.1.x86_64.rpm 5000000
+checksums.txt 1000
+-> x64: gum_0.14.1_Windows_x86_64.zip
+-> arm64: gum_0.14.1_Windows_arm64.zip
+
+== charmbracelet/glow kind=tool topics=cli,markdown
+glow_2.0.0_Windows_x86_64.zip 7000000
+glow_2.0.0_Windows_arm64.zip 7000000
+glow_2.0.0_Windows_i386.zip 7000000
+glow_2.0.0_Linux_x86_64.tar.gz 7000000
+glow_2.0.0_Darwin_arm64.tar.gz 7000000
+glow_2.0.0_checksums.txt 1000
+-> x64: glow_2.0.0_Windows_x86_64.zip
+-> arm64: glow_2.0.0_Windows_arm64.zip
+
+== caddyserver/caddy kind=tool topics=cli,web-server
+caddy_2.8.4_windows_amd64.zip 17000000
+caddy_2.8.4_windows_arm64.zip 16000000
+caddy_2.8.4_windows_armv5.zip 16000000
+caddy_2.8.4_windows_amd64.sbom 4000
+caddy_2.8.4_linux_amd64.deb 17000000
+caddy_2.8.4_linux_amd64.tar.gz 17000000
+caddy_2.8.4_src.tar.gz 1000000
+caddy_2.8.4_checksums.txt 2000
+caddy_2.8.4_checksums.txt.pem 4000
+-> x64: caddy_2.8.4_windows_amd64.zip
+-> arm64: caddy_2.8.4_windows_arm64.zip
+
+== gohugoio/hugo kind=tool topics=cli,static-site
+hugo_0.128.0_windows-amd64.zip 20000000
+hugo_extended_0.128.0_windows-amd64.zip 28000000
+hugo_extended_withdeploy_0.128.0_windows-amd64.zip 40000000
+hugo_0.128.0_windows-arm64.zip 19000000
+hugo_extended_0.128.0_windows-arm64.zip 27000000
+hugo_0.128.0_linux-amd64.deb 20000000
+hugo_0.128.0_darwin-universal.tar.gz 40000000
+hugo_0.128.0_checksums.txt 2000
+# Only the product named like the repository competes; hugo_extended is another product.
+-> x64: hugo_0.128.0_windows-amd64.zip
+-> arm64: hugo_0.128.0_windows-arm64.zip
+
+== direnv/direnv kind=tool topics=cli,shell
+direnv.windows-amd64.exe 8000000
+direnv.windows-arm64.exe 8000000
+direnv.linux-amd64 8000000
+direnv.linux-arm64 8000000
+direnv.darwin-arm64 8000000
+direnv.freebsd-386 8000000
+-> x64: direnv.windows-amd64.exe
+-> arm64: direnv.windows-arm64.exe
+
+== rclone/rclone kind=tool topics=cli,cloud-storage
+rclone-v1.67.0-windows-amd64.zip 25000000
+rclone-v1.67.0-windows-arm64.zip 24000000
+rclone-v1.67.0-windows-386.zip 24000000
+rclone-v1.67.0-linux-amd64.zip 25000000
+rclone-v1.67.0-linux-amd64.deb 25000000
+rclone-v1.67.0-osx-arm64.zip 24000000
+rclone-v1.67.0-freebsd-amd64.zip 25000000
+rclone-v1.67.0-plan9-amd64.zip 25000000
+rclone-v1.67.0-solaris-amd64.zip 25000000
+SHA256SUMS 3000
+-> x64: rclone-v1.67.0-windows-amd64.zip
+-> arm64: rclone-v1.67.0-windows-arm64.zip
+
+== restic/restic kind=tool topics=cli,backup
+restic_0.16.5_windows_amd64.zip 9000000
+restic_0.16.5_windows_386.zip 9000000
+restic_0.16.5_linux_amd64.bz2 9000000
+restic_0.16.5_linux_arm64.bz2 9000000
+restic_0.16.5_darwin_arm64.bz2 9000000
+SHA256SUMS 3000
+SHA256SUMS.asc 800
+# No arm64 build: the x64 one is the closest to arm64 under emulation, ahead of x86.
+-> all: restic_0.16.5_windows_amd64.zip
+
+== mikefarah/yq kind=tool topics=cli,yaml
+yq_windows_amd64.exe 9000000
+yq_windows_amd64.zip 4000000
+yq_windows_arm64.exe 8000000
+yq_windows_arm64.zip 4000000
+yq_windows_386.exe 8000000
+yq_linux_amd64 9000000
+yq_linux_amd64.tar.gz 4000000
+yq_darwin_arm64 9000000
+checksums 4000
+checksums_hashes_order 100
+install-man-page.sh 800
+yq.1 20000
+-> x64: yq_windows_amd64.exe
+-> arm64: yq_windows_arm64.exe
+
+== wagoodman/dive kind=tool topics=cli,docker
+dive_0.12.0_windows_amd64.zip 8000000
+dive_0.12.0_windows_arm64.zip 8000000
+dive_0.12.0_linux_amd64.deb 8000000
+dive_0.12.0_linux_amd64.tar.gz 8000000
+dive_0.12.0_darwin_amd64.tar.gz 8000000
+dive_0.12.0_checksums.txt 1000
+-> x64: dive_0.12.0_windows_amd64.zip
+-> arm64: dive_0.12.0_windows_arm64.zip
+
+== golangci/golangci-lint kind=tool topics=cli,linter
+golangci-lint-1.59.1-windows-amd64.zip 15000000
+golangci-lint-1.59.1-windows-arm64.zip 14000000
+golangci-lint-1.59.1-windows-386.zip 14000000
+golangci-lint-1.59.1-windows-armv6.zip 14000000
+golangci-lint-1.59.1-linux-amd64.tar.gz 15000000
+golangci-lint-1.59.1-linux-amd64.deb 15000000
+golangci-lint-1.59.1-source.tar.gz 5000000
+golangci-lint-1.59.1-checksums.txt 2000
+-> x64: golangci-lint-1.59.1-windows-amd64.zip
+-> arm64: golangci-lint-1.59.1-windows-arm64.zip
+
+== schollz/croc kind=tool topics=cli,transfer
+croc_v10.0.9_Windows-64bit.zip 7000000
+croc_v10.0.9_Windows-ARM64.zip 7000000
+croc_v10.0.9_Windows-32bit.zip 7000000
+croc_v10.0.9_Windows-ARM.zip 7000000
+croc_v10.0.9_Linux-64bit.tar.gz 7000000
+croc_v10.0.9_macOS-ARM64.tar.gz 7000000
+croc_10.0.9_checksums.txt 1000
+-> x64: croc_v10.0.9_Windows-64bit.zip
+-> arm64: croc_v10.0.9_Windows-ARM64.zip
+
+== muesli/duf kind=tool topics=cli,disk
+duf_0.8.1_windows_x86_64.zip 2000000
+duf_0.8.1_windows_i386.zip 2000000
+duf_0.8.1_linux_x86_64.tar.gz 2000000
+duf_0.8.1_linux_amd64.deb 2000000
+duf_0.8.1_darwin_arm64.tar.gz 2000000
+duf_0.8.1_checksums.txt 1000
+-> all: duf_0.8.1_windows_x86_64.zip
+
+== dundee/gdu kind=tool topics=cli,disk-usage
+gdu_windows_amd64.exe.zip 5000000
+gdu_linux_amd64.tgz 5000000
+gdu_linux_arm64.tgz 5000000
+gdu_darwin_arm64.tgz 5000000
+gdu_linux_amd64_static.tgz 5000000
+gdu_linux_amd64.deb 5000000
+-> all: gdu_windows_amd64.exe.zip

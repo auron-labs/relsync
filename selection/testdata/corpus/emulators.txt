@@ -1,0 +1,113 @@
+# Emulators: large archives, one per system and architecture, often 7z.
+
+== RPCS3/rpcs3-binaries-win kind=app topics=emulator,playstation
+rpcs3-v0.0.33-16543-abcdef01_win64.7z 70000000
+rpcs3-v0.0.33-16543-abcdef01_win64.7z.sha256 100
+rpcs3-v0.0.33-16543-abcdef01_win_aarch64.7z 68000000
+-> x64: rpcs3-v0.0.33-16543-abcdef01_win64.7z
+-> arm64: rpcs3-v0.0.33-16543-abcdef01_win_aarch64.7z
+
+== PCSX2/pcsx2 kind=app topics=emulator,playstation
+pcsx2-v2.0.2-windows-x64-Qt.7z 60000000
+pcsx2-v2.0.2-windows-x64-Qt-symbols.7z 100000000
+pcsx2-v2.0.2-windows-arm64-Qt.7z 58000000
+pcsx2-v2.0.2-linux-appimage-x64-Qt.AppImage 120000000
+pcsx2-v2.0.2-macos-Qt.tar.xz 90000000
+pcsx2-v2.0.2-windows-x64-Qt.7z.sha256 100
+-> x64: pcsx2-v2.0.2-windows-x64-Qt.7z
+-> arm64: pcsx2-v2.0.2-windows-arm64-Qt.7z
+
+== Ryubing/Ryujinx kind=app topics=emulator,switch
+ryujinx-1.1.1403-win_x64.zip 70000000
+ryujinx-1.1.1403-linux_x64.tar.gz 70000000
+ryujinx-1.1.1403-linux_arm64.tar.gz 70000000
+ryujinx-1.1.1403-macos_universal.app.tar.gz 70000000
+ryujinx-1.1.1403-x64.AppImage 70000000
+ryujinx-1.1.1403-sdl2-win_x64.zip 70000000
+-> all: ryujinx-1.1.1403-win_x64.zip
+# win_x64 is the only Windows build; on arm64 it runs under emulation.
+
+== cemu-project/Cemu kind=app topics=emulator,wiiu
+cemu-2.0-windows-x64.zip 60000000
+cemu-2.0-ubuntu-22.04-x64.zip 60000000
+cemu-2.0-macos-12-x64.dmg 60000000
+Cemu-2.0-x86_64.AppImage 60000000
+cemu-2.0-windows-x64.zip.sha256 100
+-> all: cemu-2.0-windows-x64.zip
+
+== melonDS-emu/melonDS kind=app topics=emulator,nds
+melonDS-0.9.5-win-x64.zip 8000000
+melonDS-0.9.5-win-arm64.zip 7000000
+melonDS-0.9.5-linux-x64.tar.xz 8000000
+melonDS-0.9.5-macOS-universal.zip 8000000
+melonDS-0.9.5-source.tar.gz 3000000
+-> x64: melonDS-0.9.5-win-x64.zip
+-> arm64: melonDS-0.9.5-win-arm64.zip
+
+== stenzek/duckstation kind=app topics=emulator,playstation
+duckstation-windows-x64-release.zip 25000000
+duckstation-windows-arm64-release.zip 24000000
+duckstation-windows-x64-debug.zip 50000000
+duckstation-mac-release.zip 25000000
+DuckStation-x64.AppImage 40000000
+DuckStation-arm64.AppImage 40000000
+-> x64: duckstation-windows-x64-release.zip
+-> arm64: duckstation-windows-arm64-release.zip
+
+== mgba-emu/mgba kind=app topics=emulator,gba
+mGBA-0.10.3-win64.7z 10000000
+mGBA-0.10.3-win64.zip 10000000
+mGBA-0.10.3-win32.7z 9000000
+mGBA-0.10.3-win32.zip 9000000
+mGBA-0.10.3-osx.tar.xz 10000000
+mGBA-0.10.3-ubuntu64-focal.tar.xz 10000000
+mGBA-0.10.3-appimage-x64.appimage 10000000
+mGBA-0.10.3-src.tar.xz 5000000
+-> all: mGBA-0.10.3-win64.7z
+# win64 states x64 only because no other architecture is named; the shorter .7z
+# name beats .zip. On arm64 the x64 build is the closest emulation.
+
+== visualboyadvance-m/visualboyadvance-m kind=app topics=emulator,gba
+visualboyadvance-m-Win-64bit.zip 12000000
+visualboyadvance-m-Win-32bit.zip 11000000
+visualboyadvance-m-Linux-64bit.zip 12000000
+visualboyadvance-m-Mac-64bit.zip 12000000
+visualboyadvance-m-Mac-Intel.zip 12000000
+visualboyadvance-m-x86_64.AppImage 12000000
+-> all: visualboyadvance-m-Win-64bit.zip
+
+== xemu-project/xemu kind=app topics=emulator,xbox
+xemu-win-release.zip 40000000
+xemu-win-aarch64-release.zip 38000000
+xemu-win-debug.zip 80000000
+xemu-macos-universal-release.zip 40000000
+xemu-v0.7.130-x86_64.AppImage 40000000
+-> x64: xemu-win-release.zip
+-> arm64: xemu-win-aarch64-release.zip
+
+== Vita3K/Vita3K kind=app topics=emulator,psvita
+windows-latest.zip 50000000
+ubuntu-latest.zip 50000000
+macos-latest.zip 50000000
+Vita3K-x86_64.AppImage 60000000
+-> all: windows-latest.zip
+
+== flyinghead/flycast kind=app topics=emulator,dreamcast
+flycast-2.4-windows.zip 20000000
+flycast-2.4-windows-x64-arm64.zip 20000000
+flycast-2.4-linux.AppImage 20000000
+flycast-2.4-macos.zip 20000000
+flycast-2.4-android.apk 20000000
+-> all: flycast-2.4-windows-x64-arm64.zip
+# A name that states two architectures is eligible when either runs here, and
+# it counts as exact for both.
+
+== libretro/RetroArch kind=app topics=emulator,libretro
+RetroArch.7z 150000000
+RetroArch_cores.7z 450000000
+RetroArch-Win64-setup.exe 130000000
+RetroArch-Win32-setup.exe 120000000
+-> x64: RetroArch-Win64-setup.exe
+# On arm64 the archive that names no architecture is native, which ranks ahead of
+# the x64 setup program that runs under emulation.
+-> arm64: RetroArch.7z

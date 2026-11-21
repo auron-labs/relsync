@@ -1,0 +1,310 @@
+[
+  {
+    "key": "all",
+    "topics": [
+      "topic:windows",
+      "topic:emulator",
+      "topic:decompilation",
+      "topic:source-port",
+      "topic:developer-tools topic:windows"
+    ],
+    "seeds": []
+  },
+  {
+    "key": "games",
+    "topics": [
+      "topic:decompilation",
+      "topic:source-port",
+      "topic:pc-port",
+      "topic:recompilation",
+      "topic:game topic:windows"
+    ],
+    "seeds": [
+      "HarbourMasters/Shipwright",
+      "HarbourMasters/2ship2harkinian",
+      "HarbourMasters/SpaghettiKart",
+      "HarbourMasters/Starship",
+      "zeldaret/tww",
+      "zeldaret/oot",
+      "zeldaret/mm",
+      "zeldaret/botw",
+      "Zelda64Recomp/Zelda64Recomp",
+      "N64Recomp/N64Recomp",
+      "sm64-port/sm64-port",
+      "n64decomp/sm64",
+      "pret/pokeemerald",
+      "pret/pokered",
+      "OpenRCT2/OpenRCT2",
+      "OpenTTD/OpenTTD",
+      "diasurgical/devilutionX",
+      "RSDKModding/RSDKv5-Decompilation",
+      "Eukaryot/sonic3air",
+      "ScummVM/scummvm",
+      "OpenMW/openmw",
+      "OpenRA/OpenRA",
+      "ZDoom/gzdoom",
+      "dhewm/dhewm3",
+      "yquake2/yquake2",
+      "OpenXcom/OpenXcom"
+    ]
+  },
+  {
+    "key": "emulators",
+    "topics": [
+      "topic:emulator",
+      "topic:emulation",
+      "topic:nintendo-switch topic:emulator",
+      "topic:playstation topic:emulator"
+    ],
+    "seeds": [
+      "dolphin-emu/dolphin",
+      "PCSX2/pcsx2",
+      "RPCS3/rpcs3",
+      "stenzek/duckstation",
+      "hrydgard/ppsspp",
+      "flyinghead/flycast",
+      "shadps4-emu/shadPS4",
+      "azahar-emu/azahar",
+      "cemu-project/Cemu",
+      "xemu-project/xemu",
+      "melonDS-emu/melonDS",
+      "mgba-emu/mgba",
+      "SourMesen/Mesen2",
+      "libretro/RetroArch",
+      "Vita3K/Vita3K",
+      "xenia-canary/xenia-canary",
+      "ares-emulator/ares",
+      "joncampbell123/dosbox-x",
+      "TASEmulators/BizHawk",
+      "snes9x/snes9x"
+    ]
+  },
+  {
+    "key": "utilities",
+    "topics": [
+      "topic:windows topic:utility",
+      "topic:windows topic:tool",
+      "topic:file-manager topic:windows",
+      "topic:windows-11"
+    ],
+    "seeds": [
+      "microsoft/PowerToys",
+      "files-community/Files",
+      "pbatard/rufus",
+      "ip7z/7zip",
+      "WinDirStat/windirstat",
+      "Flow-Launcher/Flow.Launcher",
+      "ScoopInstaller/Scoop",
+      "microsoft/winget-cli",
+      "Ventoy/Ventoy",
+      "balena-io/etcher",
+      "qbittorrent/qBittorrent",
+      "ShareX/ShareX",
+      "valinet/ExplorerPatcher",
+      "ramensoftware/windhawk"
+    ]
+  },
+  {
+    "key": "media",
+    "topics": [
+      "topic:media-player topic:windows",
+      "topic:video topic:windows",
+      "topic:music-player topic:windows",
+      "topic:streaming topic:windows"
+    ],
+    "seeds": [
+      "mpv-player/mpv",
+      "obsproject/obs-studio",
+      "HandBrake/HandBrake",
+      "yt-dlp/yt-dlp",
+      "Tyrrrz/YoutubeDownloader",
+      "jellyfin/jellyfin-desktop",
+      "xbmc/xbmc",
+      "audacity/audacity",
+      "spicetify/cli",
+      "mifi/lossless-cut"
+    ]
+  },
+  {
+    "key": "dev",
+    "topics": [
+      "topic:developer-tools topic:windows",
+      "topic:cli topic:windows",
+      "topic:terminal topic:windows",
+      "topic:code-editor topic:windows"
+    ],
+    "seeds": [
+      "microsoft/terminal",
+      "git-for-windows/git",
+      "neovim/neovim",
+      "helix-editor/helix",
+      "VSCodium/vscodium",
+      "zed-industries/zed",
+      "cli/cli",
+      "jesseduffield/lazygit",
+      "BurntSushi/ripgrep",
+      "sharkdp/bat",
+      "wez/wezterm",
+      "alacritty/alacritty",
+      "dandavison/delta"
+    ]
+  },
+  {
+    "key": "privacy",
+    "topics": [
+      "topic:privacy topic:windows",
+      "topic:security topic:windows",
+      "topic:password-manager",
+      "topic:encryption topic:windows"
+    ],
+    "seeds": [
+      "bitwarden/clients",
+      "keepassxreboot/keepassxc",
+      "Cryptomator/cryptomator",
+      "veracrypt/VeraCrypt",
+      "signalapp/Signal-Desktop",
+      "simplex-chat/simplex-chat",
+      "mullvad/mullvadvpn-app",
+      "ProtonVPN/win-app"
+    ]
+  },
+  {
+    "key": "productivity",
+    "topics": [
+      "topic:productivity topic:windows",
+      "topic:note-taking topic:windows",
+      "topic:knowledge-base",
+      "topic:todo topic:windows"
+    ],
+    "seeds": [
+      "logseq/logseq",
+      "laurent22/joplin",
+      "AppFlowy-IO/AppFlowy",
+      "siyuan-note/siyuan",
+      "toeverything/AFFiNE",
+      "TriliumNext/Notes",
+      "obsidianmd/obsidian-releases",
+      "Zettlr/Zettlr"
+    ]
+  },
+  {
+    "key": "customize",
+    "topics": [
+      "topic:customization topic:windows",
+      "topic:taskbar topic:windows",
+      "topic:windows-11 topic:theme",
+      "topic:wallpaper topic:windows"
+    ],
+    "seeds": [
+      "rainmeter/rainmeter",
+      "TranslucentTB/TranslucentTB",
+      "MicaForEveryone/MicaForEveryone",
+      "rocksdanister/lively",
+      "Open-Shell/Open-Shell-Menu",
+      "ramensoftware/windhawk",
+      "valinet/ExplorerPatcher"
+    ]
+  },
+  {
+    "key": "graphics",
+    "topics": [
+      "topic:graphics topic:windows",
+      "topic:image-editor",
+      "topic:3d topic:windows",
+      "topic:game-engine topic:windows"
+    ],
+    "seeds": [
+      "aseprite/aseprite",
+      "godotengine/godot",
+      "KDE/krita",
+      "upscayl/upscayl",
+      "penpot/penpot",
+      "ocornut/imgui",
+      "blender/blender",
+      "ShareX/ShareX"
+    ]
+  },
+  {
+    "key": "communication",
+    "topics": [
+      "topic:chat topic:windows",
+      "topic:messenger topic:windows",
+      "topic:voip",
+      "topic:discord-client"
+    ],
+    "seeds": [
+      "Vencord/Vesktop",
+      "signalapp/Signal-Desktop",
+      "element-hq/element-desktop",
+      "telegramdesktop/tdesktop",
+      "mumble-voip/mumble",
+      "simplex-chat/simplex-chat"
+    ]
+  },
+  {
+    "key": "ai",
+    "topics": [
+      "topic:llm topic:windows",
+      "topic:stable-diffusion topic:windows",
+      "topic:ai topic:desktop-app",
+      "topic:machine-learning topic:windows"
+    ],
+    "seeds": [
+      "ollama/ollama",
+      "janhq/jan",
+      "nomic-ai/gpt4all",
+      "Mintplex-Labs/anything-llm",
+      "comfyanonymous/ComfyUI",
+      "invoke-ai/InvokeAI",
+      "SillyTavern/SillyTavern",
+      "oobabooga/text-generation-webui"
+    ]
+  },
+  {
+    "key": "internet",
+    "topics": [
+      "topic:browser topic:windows",
+      "topic:download-manager",
+      "topic:vpn topic:windows",
+      "topic:rss-reader topic:windows"
+    ],
+    "seeds": [
+      "zen-browser/desktop",
+      "brave/brave-browser",
+      "Floorp-Projects/Floorp",
+      "mullvad/mullvad-browser",
+      "ungoogled-software/ungoogled-chromium-windows",
+      "agalwood/Motrix",
+      "qbittorrent/qBittorrent"
+    ]
+  },
+  {
+    "key": "cli",
+    "topics": [
+      "topic:cli",
+      "topic:command-line-tool",
+      "topic:tui",
+      "topic:terminal"
+    ],
+    "seeds": [
+      "cli/cli",
+      "BurntSushi/ripgrep",
+      "sharkdp/fd",
+      "sharkdp/bat",
+      "junegunn/fzf",
+      "jesseduffield/lazygit",
+      "ajeetdsouza/zoxide",
+      "starship/starship",
+      "eza-community/eza",
+      "jqlang/jq",
+      "charmbracelet/glow",
+      "aria2/aria2",
+      "dandavison/delta",
+      "sxyazi/yazi",
+      "ClementTsang/bottom",
+      "httpie/cli",
+      "direnv/direnv",
+      "bootandy/dust"
+    ]
+  }
+]

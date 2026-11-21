@@ -1,0 +1,9 @@
+{
+  "name": "Release Sync",
+  "identifier": "com.github.aaronflorey.releasesync",
+  "version": "0.1.0",
+  "out": "build",
+  "urlSchemes": ["release-sync"],
+  "i18n": { "dir": "locales", "source": "en" },
+  "updates": { "publicKey": "buh2hJ/Lkfm+37KavRleaZN0rEazy5wPdenHfEr4Msk=", "github": "aaronflorey/release-sync" }
+}
